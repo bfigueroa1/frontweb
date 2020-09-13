@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rules.css" type="text/css">
+    <title>Katak | Rules</title>
+    <nav class="navbar">
+        <a href="../index.html" class="link_logo">
+            <img class= "logo" src="../Logos/Logo Blanco.png" alt="logo">
+        </a>
+            <ul class="navbar_items">
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">Rules</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" class="navbar_link">Contact Us</a>
+                </li>
+            </ul>
+        <a href="#"><button class="log_in">Log In</button></a>
+        <a href="#"><button class="sign_up">Sign Up</button></a>
+    </nav>
+<body class="body_rules">
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Rules</h2>
+            <ul>
+                <li><a href="rules.html" class="general-rules">General Rules</a></li>
+                <li><a href="att_n_def.html" class="attack-n-def">Attack and Defense</a></li>
+                <li><a href="troops_n_supplies.html" class="constr">Construction and Upgrades</a></li>
+                <li><a href="#" class="spec">Special Weapons</a></li>
+                <li><a href="#" class="objetives">Objetives</a></li>
+            </ul> 
+        </div>
+        <div class="main_content">
+            <div class="header">Attack and Defense</div>  
+            <div class="info">
+                <div class="texto_generalrules">
+                    Al inicio del juego, cada jugador escoge un <strong>color de ejército</strong>, el cual define el color de sus fichas. 
+                    Luego de que todos los jugadores elijan ejército, se reparten los objetivos secretos y territorios aleatoriamente, 
+                    asignando <strong>1 ejército y 3 recursos</strong> (1 metal, 1 alimento y 1 cemento) por territorio.
+                    Hay tres tipos de ataques posibles: <strong>terrestre, aéreo y marítimo</strong>. El ataque terrestre es el 
+                    <strong>único que permite conquistar</strong> territorios y es realizado por las <strong>tropas</strong>.
+                </div>
+                <div class="texto_generalrules">
+                    Para conquistar terreno enemigo, el jugador debe seleccionar la cantidad de tropas que desea mandar al ataque. 
+                    El atacante podrá utilizar todas las tropas que disponga en el territorio para atacar, con excepción del mínimo de 
+                    <strong>1 tropa de defensa</strong> que se debe mantener en el territorio. El atacado defenderá con todas las tropas que posea 
+                    en el territorio y que haya <strong>dispuesto a la defensa</strong> al final de su turno, el resto de las tropas <strong>no defenderán</strong>.
+                    El daño causado es equivalente al lanzamiento de un dado y corresponde a un <strong>número entre 1 y 6</strong> elegido aleatoriamente 
+                    <strong>por cada tropa enviada</strong>, con un <strong>máximo de tres dados</strong>. Sin embargo, puede ser mejor mandar más de tres 
+                    ejércitos debido a las murallas que podría tener el territorio enemigo.
+                    Para el combate se compararán los dados en orden, de manera que el <strong>número más alto sacado por el defensor se comparará con el más alto del atacante</strong> 
+                    y así para abajo. Si los números son iguales <strong>gana el defensor</strong>. Si durante un ataque el defensor posee <strong>menos ejércitos que el atacante</strong> 
+                    y logra ganar sólo se descontarán del atacante la cantidad de ejércitos que tenga el defensor y se procederá a realizar el ataque nuevamente con 
+                    las tropas que le quedan al atacante.
+                </div>
+                <div class="texto_generalrules">
+                    Los ataques aéreos sirven para <strong>debilitar</strong> el territorio enemigo. Estos ataques se pueden realizar mediante 
+                    <strong>aviones o armamentos de largo alcance</strong>. Los aviones hacen <strong>3 de daño</strong> (<i>i.e</i> eliminan 3 tropas o 
+                    bajan 3 niveles a la muralla) y siempre parten por hacer daño a las murallas, luego, en el caso de destruir o que no haya muralla 
+                    en el territorio, se pasa a debilitar las tropas de defensa enemigas pero <strong>sin poder causar daño sobre la última</strong> de estas 
+                    tropas. Las armas de largo alcance pueden causar daño a murallas o sólo a tropas dependiendo de las <strong>características propias del arma</strong>.
+                    Los ataques marítimos se realizan mediante <strong>barcos</strong>  y tienen el mismo funcionamiento que los aviones, con la diferencia de que hacen <strong>2 de daño</strong> 
+                    y <strong>sólo pueden ser enviados y atacar a territorios que tienen salida al océano</strong>.
+                </div>
+                <div class="texto_generalrules">
+                    Aviones, barcos y armamentos se \textbf{pierden} al ser utilizados (<i>i.e.</i> no son reutilizables).
+                    Para la defensa, las murallas brindan protección contra <strong>bombas, aviones, barcos y tropas</strong>. La defensa de la muralla depende 
+                    del <strong>nivel</strong> en que se encuentre y en el caso de las tropas, la muralla <strong>destruye tantas tropas como niveles tenga</strong>, 
+                    pero por cada tropa enemiga eliminada, la muralla <strong>pierde un nivel</strong>.
+                    Cuando se realiza una conquista, el atacante se queda con <strong>todo lo que quede en el territorio</strong>, esto incluye recursos, 
+                    armas, aviones, barcos y tropas que no estaban defendiendo (las que son tomadas como esclavos).
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

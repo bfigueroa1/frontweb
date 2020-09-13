@@ -167,6 +167,14 @@
 
 /* Tha General Rules */
 
+.texto_generalrules{
+    padding: 1rem;
+ }
+ 
+ .texto_generalrules strong{
+    color: black;
+ }
+
 .tabla_territorios{
    width: 70rem;
    border-collapse: collapse;
@@ -179,14 +187,6 @@
 .tabla_territorios td{ 
    border: 1px solid black;
    padding: 1rem;
-}
-
-.texto_generalrules{
-   padding: 1rem;
-}
-
-.texto_generalrules strong{
-   color: black;
 }
 
 .tabla_recursos{
@@ -204,3 +204,81 @@
    border: 1px solid black;
    padding: 1rem;
 }
+
+.tabla_recursos2{
+    width: 20rem;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .tabla_recursos2 th{
+    border: 1px solid black;
+ }
+ 
+ .tabla_recursos2 td{
+    border: 1px solid black;
+    padding: 1rem;
+ }
+
+ .tabla_recursos3{
+    width: 20rem;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .tabla_recursos3 th{
+    border: 1px solid black;
+ }
+ 
+ .tabla_recursos3 td{
+    border: 1px solid black;
+    padding: 1rem;
+ }
+
+ .tabla_recursos4{
+    width: 20rem;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .tabla_recursos4 th{
+    border: 1px solid black;
+ }
+ 
+ .tabla_recursos4 td{
+    border: 1px solid black;
+    padding: 1rem;
+ }
+
+ .tabla_recursos5{
+    width: 50rem;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .tabla_recursos5 th{
+    border: 1px solid black;
+ }
+ 
+ .tabla_recursos5 td{
+    border: 1px solid black;
+    padding: 1rem;
+ }
+ 
+ .lista_spec{
+     padding: 1rem;
+     margin-left: 2rem;
+ }
+ 
+ .lista_spec strong{
+     color: black;
+ }
+
+ .list_objectives{
+    padding: 1rem;
+    margin-left: 1rem;
+ }

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* Navbar CSS */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,11 +14,11 @@
    justify-content: center;
    align-items: center;
    padding: 0.7rem;
-   border-bottom: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
    background-color: rgb(222, 159, 59);
    position: fixed;
    top: 0;
    width: 100%;
+   box-shadow: 0 0 20px rgba(72,98,85, 0.6)
 }
 
 .logo{
@@ -80,6 +82,10 @@
 .log_in:hover, .sign_up:hover{
    background-color: rgba(0, 136, 169, 0.8);
 }
+
+/* End of Navabar CSS*/
+
+/* Sidebar CSS */
 
 .body_rules{
    background-color: #f3f5f9;
@@ -163,7 +169,7 @@
    font-size: 16px;
 }
 
-
+/* End of Sidebar CSS */
 
 /* Tha General Rules */
 

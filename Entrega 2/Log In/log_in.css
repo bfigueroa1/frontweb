@@ -98,7 +98,7 @@ body{
   
 .container{
     max-width: 649px;
-    height: 525px;
+    height: 500px;
     background: #fff;
     margin: 50px auto;
     box-shadow: 0 0 20px rgba(72,98,85, 0.6);
@@ -111,7 +111,7 @@ p{
     text-align: center;
     letter-spacing: 1px;  
     font-size: 45px;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 3.5rem;
@@ -124,7 +124,6 @@ p{
     width: 25rem;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 2rem;
     border: 2px solid #e9eaea;
     font-size: 14px;
     border-radius: 5px;
@@ -133,15 +132,29 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.forgotten{
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.flex-1,
+.flex-2,
+.flex-3,
+.flex-4{
+    display: flex;
     padding: 1rem;
-    margin-top: ;
+    align-items: baseline;
 }
 
-.pw, .uname{
+
+.pw, 
+.uname{
     padding: 1rem;
-    width: 120px;
-    height: 51px;
+    width: 118px;
+}
+
+.forgotten{
+    padding: 1rem;
 }
   
 .btn{
@@ -155,7 +168,6 @@ p{
     color: #fff;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 3rem;
 }
 
 .btn:hover{

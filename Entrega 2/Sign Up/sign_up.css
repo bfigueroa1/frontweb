@@ -86,7 +86,7 @@
 
 /* End of Navbar CSS */
 
-/* Contact Us CSS*/
+/* Sign Up CSS*/
 
 body{
     background-color: beige;
@@ -132,7 +132,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.login{
+.flex-box{
     display: flex;
     flex-direction: column;
     align-items: center; 

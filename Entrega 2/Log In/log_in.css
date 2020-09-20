@@ -86,7 +86,7 @@
 
 /* End of Navbar CSS */
 
-/* Contact Us CSS*/
+/* Log In CSS*/
 
 body{
     background-color: beige;
@@ -98,7 +98,7 @@ body{
   
 .container{
     max-width: 649px;
-    height: 500px;
+    height: 490px;
     background: #fff;
     margin: 50px auto;
     box-shadow: 0 0 20px rgba(72,98,85, 0.6);
@@ -132,7 +132,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.login{
+.flex-box{
     display: flex;
     flex-direction: column;
     align-items: center;  

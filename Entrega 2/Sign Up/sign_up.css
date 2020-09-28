@@ -6,9 +6,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .navbar {
+.navbar {
     z-index: 100;
   background-color: rgb(222, 159, 59);
   box-shadow: 0 0 20px rgba(72,98,85, 0.6);
@@ -18,20 +18,17 @@
   overflow: hidden;
   top: 0;
   position: sticky;
-  }
+}
   
   
   
-  /* OPTION 3 */
-  /* move default logo position to left and hide it when window size is less than 886px */
-  /* uncomment .logo and .link_logo ^^up there and use the ones down here */
-   .logo{
+.logo{
     width: 4rem;
     height: 5rem;
     position: fixed;
     left: 5.313em;
     display: inline-block;
-  }
+}
   
   .link_logo { 
     margin-right: 40rem;

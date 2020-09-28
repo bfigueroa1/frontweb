@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rules.css" type="text/css">
+    <link rel="shortcut icon" href="../Logos/Logo Arena.png" type="image/png">
+    <title>Katak | Rules</title>
+    <nav class="navbar">
+        <a href="../index.html" class="link_logo">
+            <img class= "logo" src="../Logos/Logo Blanco.png" alt="logo">
+        </a>
+            <ul class="navbar_items">
+                <li class="navbar_item">
+                    <a href="rules.html" class="navbar_link">Rules</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="../About/about.html" class="navbar_link">About Us</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="../Contact Us/contact.html" class="navbar_link">Contact Us</a>
+                </li>
+            </ul>
+        <a href="../Log In/log_in.html"><button class="log_in">Login</button></a>
+        <a href="../Sign Up/sign_up.html"><button class="sign_up">Sign Up</button></a>
+    </nav>
+<body class="body_rules">
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>Rules</h2>
+            <ul>
+                <li><a href="rules.html" class="general-rules">General Rules</a></li>
+                <li><a href="att_n_def.html" class="attack-n-def">Attack and Defense</a></li>
+                <li><a href="constr_n_upgrade.html" class="constr">Construction and Upgrades</a></li>
+                <li><a href="spec.html" class="spec">Special Weapons</a></li>
+                <li><a href="objectives.html" class="objectives">Objectives</a></li>
+            </ul> 
+        </div>
+        <div class="main_content">
+            <div class="header">General Rules</div>  
+            <div class="info">
+                <div class="texto_generalrules">
+                  El juego se centra en un mapa del mundo donde se distinguen 6 continentes con sus respectivos territorios, los cuales corresponden a países o conjuntos de países. 
+                  El mapa cuenta con una totalidad de <strong>42 territorios</strong> que son repartidos equitativamente al principio del juego, <strong>no habrá territorios vacíos</strong> por el resto de la partida. 
+                  En la siguiente tabla se muestran los territorios de cada continente:
+                </div>
+                <table class="tabla_territorios">
+                    <tr>
+                        <th>Continente</th>
+                        <th>Territorios</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>América del Norte</td>
+                        <td>México, Nueva York, California, Vancouver, Ottawa, Labrador, Alaska, Mackenzie, Groelandia</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>América del Sur</td>
+                        <td>Chile-Bolivia-Perú, Argentina-Paraguay-Uruguay, Brasil, Venezuela-Colombia-Ecuador</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Europa</td>
+                        <td>Inglaterra, Islandia, España-Francia-Italia, Alemania, Polonia-Yugoslavia, Suecia, Moscú</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>África</td>
+                        <td>Argelia-Nigeria, Egipto, Sudán, El Congo, África del Sur, Madagascar</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Asia</td>
+                        <td>Medio Oriente, Aral, Omsk, Dudinka, India, Vietnam, China, Mongolia, Tchita, Siberia, Vladivostok, Japón</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Oceanía</td>
+                        <td>Australia, Sumatra, Borneo, Nueva Guinea</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+                <div class="texto_generalrules">
+                    Existen 3 tipos de recursos: <strong>básicos, intermedios y raros.</strong> 
+                     Los recursos básicos se pueden obtener en <strong>cualquier territorio</strong>, mientras que los intermedios y raros son <strong>propios de los continentes.</strong> 
+                     Los recursos básicos se utilizan para la construcción de barcos y aviones, murallas o tropas extras. 
+                     Los recursos intermedios y raros se utilizan para la construcción de armas especiales o mejoras. 
+                     A continuación se muestran las distribuciones de los recursos:
+                </div>
+                <table class="tabla_recursos">
+                    <tr>
+                        <th>Continente</th>
+                        <th>Recursos Intermedios</th>
+                        <th>Recursos Raros</th>
+                    </tr>
+                    <tr>
+                        <td>América del Norte</td>
+                        <td>Petróleo, Red</td>
+                        <td>Tecnología</td>
+                    </tr>
+                    <tr>
+                        <td>América del Sur</td>
+                        <td>Petróleo, Litio</td>
+                        <td>Niobio</td>
+                    </tr>
+                    <tr>
+                        <td>Europa</td>
+                        <td>Energía Nuclear</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>África</td>
+                        <td>Petróleo, Tribus</td>
+                        <td>Virus</td>
+                    </tr>
+                    <tr>
+                        <td>Asia</td>
+                        <td>Petróleo</td>
+                        <td>Mano de Obra</td>
+                    </tr>
+                    <tr>
+                        <td>Oceania</td>
+                        <td>Tesoros</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+                <div class="texto_generalrules">
+                    Hay dos <strong>casos especiales</strong>, Europa, cuyos territorios poseen <strong>inmunidad a ataques aéreos</strong>, 
+                    ya que los enemigos no quieren destruir todos los monumentos y lugares históricos presentes en el continente; y Oceanía, 
+                    dónde no hay recursos propios pero es el único continente donde se pueden obtener <strong>todos los recursos</strong>, 
+                    debido a que sus territorios están repletos de tesoros piratas en los cuales se puede encontrar cualquier recurso y en casos muy raros armas. 
+                    Durante un turno, los jugadores pueden realizar <strong>tantas movidas como tropas más aviones y barcos tengan</strong>, 
+                    es decir, pueden disponer cada una de sus tropas, aviones y barcos a cierta tarea. Las posibles actividades a realizar 
+                    son <strong>atacar, defender, buscar recursos, construir o mejorar y movilizar tropas o recursos</strong>.
+                </div>
+                <div class="texto_generalrules">
+                    El daño del ataque de las tropas depende <strong>únicamente de la cantidad de tropas enviadas</strong> a atacar, 
+                    lo mismo ocurre para la defensa por parte de las tropas. De suma a esto, existen objetos de defensa y ataque 
+                    <strong>mejorables</strong> que <strong>dependen del uso de recursos</strong>, este es el caso de <strong>armas, vehículos y murallas</strong>.
+                    No hay un máximo de tropas ni armas para tener en un territorio, pero se puede tener un <strong>máximo de 1 muralla</strong>.
+                    Al inicio de cada ronda se entrega a los jugadores una cantidad de <strong>T/2</strong> tropas, donde T representa la cantidad total de 
+                    territorios que tiene el jugador al <strong>inicio de la ronda</strong>, de modo que para número de territorios impares se considera la 
+                    <strong>parte entera</strong> del resultado. Al final del turno anterior, el jugador deberá seleccionar los territorios en los cuales quiere 
+                    recibir las tropas, luego estas serán distribuidas por el sistema y en el caso de perder todos los territorios seleccionados, el jugador 
+                    <strong>no recibirá las tropas</strong>.
+                </div>
+                <div class="texto_generalrules">
+                    Las tropas sólo pueden atacar a un <strong>territorio adyacente</strong>. Utilizando barcos, aviones y armas de larga distancia se puede <strong>debilitar</strong> 
+                    territorios no adyacentes. Sin embargo, para poder conquistar un territorio, se debe llegar a este por tierra <strong>mediante tropas</strong>.
+                    Las tropas, recursos, armas, barcos y aviones <strong>permanecen en los territorios</strong>, por lo que en el caso de perder el territorio se pierde 
+                    <strong>todo lo que hay</strong> en él y para transportar recursos o tropas entre territorios no adyacentes es necesario utilizar barcos o aviones.
+                    Para ganar el juego, los jugadores deberán cumplir cierto objetivo que se les otorgará aleatoriamente al comienzo de la partida y que 
+                    <strong>no se puede cambiar</strong>. Lo ideal es que los jugadores <strong>conozcan los objetivos</strong> que existen para poder indagar cuál están intentando 
+                    realizar sus contrincantes, por lo que se podrá revisar la <strong>lista de objetivos</strong> antes de iniciar una partida. El juego tendrá una cantidad de 
+                    <strong>rondas máximas</strong>, por lo que si las rondas terminan sin que ningún jugador cumpla su objetivo se considerará ganador al ejército con 
+                    <strong>mayor cantidad de territorios</strong>.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

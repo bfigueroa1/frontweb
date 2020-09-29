@@ -145,12 +145,12 @@
   align-items: center;
   width: 70%;
   min-width: 1100px;
+  height: 900px;
   text-align: center;
   background-color:  rgb(222, 159, 59);
   border-radius: 5px;
   margin: 0 auto;
   margin-top: 2%;
-  margin-bottom: 2%;
 }
 
 .titulo {
@@ -162,11 +162,11 @@
   border-radius: 5px;
   width: 50%;
   min-width: 500px;
-  margin-top: 1%;
   color: #edf0f1;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
+  margin-top: 1%;
 }
 
 
@@ -207,58 +207,152 @@ table.table2 th {
 
 table.table2 td {
   height: 100px;
-  width: 100px;
+  width: 300px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
 }
 
-.slider {
-  margin: auto;
-  margin-top: 2%;
-  max-width: 1000px;
-  min-width: 950px;
-  display: flex;
-  border-spacing: 10px 10px;
+
+#slider {
+   margin: 0 auto;
+   margin-top: 2%;
+   margin-bottom: 2%;
+   width: 80%;
+   max-width: 800px;
+   text-align: center;
+   justify-content: center;
 }
-
-.slider .card {
-  background: rgb(224, 181, 112);
-  flex: 1;
-  margin: auto;
-  margin: 10px 10px;
-  border-radius: 5px;
-  color: #edf0f1;
+#slider input[type=radio] {
+   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+   border-radius: 5px;
+}
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   background: #fff;
+   position: relative;
+   z-index: 1;
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 15%;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+   border-radius: 5px;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 650px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+#slides .slide_1 {
+   background: rgb(224, 181, 112);
+}
+#slides .slide_2 {
+   background: rgb(224, 181, 112);
+}
+#slides .slide_3 {
+   background: rgb(224, 181, 112);
+}
+#slides .slide_4 {
+   background: rgb(224, 181, 112);
+}
+#controls {
+   margin: -400px 0 0 -50px;
+   width: 900px;
+   height: 100px;
+   z-index: 3;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 100px;
+   height: 100px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
+}
+@media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1),
+   #slide1:checked ~ #controls label:nth-last-child(2),
+   #slide2:checked ~ #controls label:nth-last-child(3),
+   #slide3:checked ~ #controls label:nth-last-child(4),
+   #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}

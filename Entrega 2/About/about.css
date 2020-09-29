@@ -165,11 +165,32 @@ h4{
 
 .flex-box1{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.borja{
-  width: 10em;
+.borja,
+.shaggy,
+.juampa{
+  width: 11em;
   height: 17em;
   border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex: 1 1 auto;
+    counter-reset: grid;
+}
+
+.item {
+  background: white;
+  padding: 5px; 
+}
+
+.nombre{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1em;
 }

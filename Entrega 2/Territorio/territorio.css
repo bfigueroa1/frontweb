@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/* Navbar CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    z-index: 100;
+  background-color: rgb(222, 159, 59);
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  width: 100vw;
+  min-width: 1100px;
+  margin: 0 auto;
+  height: 7em;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+  }
+  
+  
+  
+  /* OPTION 3 */
+  /* move default logo position to left and hide it when window size is less than 886px */
+  /* uncomment .logo and .link_logo ^^up there and use the ones down here */
+   .logo{
+    width: 4rem;
+    height: 5rem;
+    position: fixed;
+    left: 5.313em;
+    display: inline-block;
+  }
+  
+  .link_logo { 
+    margin-right: 40rem;
+    display: inline-block;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .logo{
+        display: none;
+     }
+     .link_logo{
+         display: none;
+     }
+  } 
+  
+  .navbar_items{
+   list-style: none;
+   display: inline-block;
+   position: fixed;
+   right: 20.875em;
+   top: 2.5em;
+   white-space: nowrap;
+  
+  }
+  
+  .navbar_item{
+   font-family: "Montserrat", sans-serif;
+   padding: 0px 20px;
+   font-weight: 500;
+   font-size: 1em;
+   color: #edf0f1;
+   text-decoration: none;
+   display: inline-block;
+   overflow: hidden;
+  }
+  
+  .navbar_link,
+  .navbar_link:link,
+  .navbar_link:visited{
+   transition: all 0.3s ease 0s;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 1em;
+   color: #edf0f1;
+   text-decoration: none;
+   cursor: pointer;
+   display: inline-block;
+  }
+  
+  .navbar_link:hover{
+   color: black;
+   transform: scale(1.2);
+  } 
+  
+  
+  .sign_up {
+  margin-left: 1.250em;
+  padding: 0.563em 1.563em;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  white-space: nowrap;
+  position: fixed;
+  right: 5.250em;
+  top: 2em;
+  overflow: hidden;
+  }
+  
+  .log_in {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  position: fixed;
+  right: 13.625em;
+  top: 2em;
+  overflow: hidden;
+  }
+  
+  .log_in:hover, .sign_up:hover{
+   background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  
+  /* End of Navabar CSS*/
+
+/* Contact Us CSS*/
+
+
+.ejercito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  min-width: 1100px;
+  text-align: center;
+  background-color:  rgb(222, 159, 59);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 181, 112);
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+  min-width: 500px;
+  margin-top: 1%;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 136, 169, 1);
+  text-align: center;
+  border-radius: 5px;
+  min-width: 150px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+table.table2 {
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+  margin: auto;
+  margin-top: 2%; 
+}
+
+table.table2 th {
+  height: 100px;
+  width: 250px;
+  text-decoration: underline;
+  border-radius: 5px;
+  background-color:rgb(222, 159, 59);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+table.table2 td {
+  height: 100px;
+  width: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.slider {
+  margin: auto;
+  margin-top: 2%;
+  max-width: 1000px;
+  min-width: 950px;
+  display: flex;
+  border-spacing: 10px 10px;
+}
+
+.slider .card {
+  background: rgb(224, 181, 112);
+  flex: 1;
+  margin: auto;
+  margin: 10px 10px;
+  border-radius: 5px;
+  color: #edf0f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

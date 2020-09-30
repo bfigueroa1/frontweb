@@ -219,7 +219,17 @@ table.table2 td {
   font-size: 1.5rem;
 }
 
+#chess {
+  width: 60px;
+}
 
+#jet {
+  width: 80px;
+}
+
+#ship {
+  width: 80px;
+}
 
 
 

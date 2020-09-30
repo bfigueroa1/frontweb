@@ -256,6 +256,21 @@ input[type="number"] {
   font-size: large;
 }
 
+#chess {
+  width: 60px;
+  
+}
+
+#jet {
+  width: 80px;
+  
+}
+
+#ship {
+  width: 80px;
+  
+}
+
 
 
 

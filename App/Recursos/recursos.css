@@ -149,8 +149,8 @@ p{
   color: #DC7633;
 }
 
-.button{
-  width: 250px;
+.shop{
+  width: 150px;
   background-color: rgba(0, 136, 169, 1);
   height: 50px;
   line-height: 50px;
@@ -160,10 +160,35 @@ p{
   color: #fff;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
-  margin: auto;
+  border: none;
+  text-align: center;
 }
-.button:hover{
+
+.shop:hover,
+.territorios:hover{
   background-color: rgba(0, 136, 169, 0.8);
+}
+
+.territorios{
+  width: 150px;
+  background-color: rgba(0, 136, 169, 1);
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  text-align: center;
+}
+
+.shopxterritorios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
 }
 
 table.table2 {
@@ -183,6 +208,7 @@ table.table2 th {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 table.table2 td {

@@ -23,33 +23,30 @@
   
   
   
-  /* OPTION 3 */
-  /* move default logo position to left and hide it when window size is less than 886px */
-  /* uncomment .logo and .link_logo ^^up there and use the ones down here */
+.logo{
+   width: 4rem;
+   height: 5rem;
+   position: fixed;
+   left: 5.313em;
+   display: inline-block;
+}
+  
+.link_logo { 
+   margin-right: 40rem;
+   display: inline-block;
+   overflow: auto;
+}
+  
+@media screen and (max-width: 880px) {
    .logo{
-    width: 4rem;
-    height: 5rem;
-    position: fixed;
-    left: 5.313em;
-    display: inline-block;
-  }
+      display: none;
+   }
+   .link_logo{
+      display: none;
+   }
+} 
   
-  .link_logo { 
-    margin-right: 40rem;
-    display: inline-block;
-    overflow: auto;
-  }
-  
-  @media screen and (max-width: 880px) {
-    .logo{
-        display: none;
-     }
-     .link_logo{
-         display: none;
-     }
-  } 
-  
-  .navbar_items{
+.navbar_items{
    list-style: none;
    display: inline-block;
    position: fixed;
@@ -57,9 +54,9 @@
    top: 2.5em;
    white-space: nowrap;
 
-  }
+}
   
-  .navbar_item{
+.navbar_item{
    font-family: "Montserrat", sans-serif;
    padding: 0px 20px;
    font-weight: 500;
@@ -68,11 +65,11 @@
    text-decoration: none;
    display: inline-block;
    overflow: hidden;
-  }
+}
   
-  .navbar_link,
-  .navbar_link:link,
-  .navbar_link:visited{
+.navbar_link,
+.navbar_link:link,
+.navbar_link:visited{
    transition: all 0.3s ease 0s;
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
@@ -81,32 +78,32 @@
    text-decoration: none;
    cursor: pointer;
    display: inline-block;
-  }
+}
   
-  .navbar_link:hover{
+.navbar_link:hover{
    color: black;
    transform: scale(1.2);
-  } 
+} 
   
 .log_out {
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
-  position: fixed;
-  right: 3.625em;
-  top: 2em;
-  overflow: hidden;
-  }
-  
+   margin-left: 20px;
+   padding: 9px 25px;
+   background-color: rgba(0, 136, 169, 1);
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #edf0f1;
+   text-decoration: none;
+   position: fixed;
+   right: 3.625em;
+   top: 2em;
+   overflow: hidden;
+}
+
   .log_out:hover{
    background-color: rgba(0, 136, 169, 0.8);
   }
@@ -149,29 +146,30 @@ p{
    color: #DC7633;
    }
 
-.button{
-   width: 350px;
-   background-color: rgba(0, 136, 169, 1);
-   height: 100px;
-   line-height: 100px;
-   text-align: center;
-   border-radius: 50px;
-   margin: 0 auto;
-   color: #fff;
-   cursor: pointer;
-   font-family: 'Montserrat', sans-serif;
+.shop{
+    width: 250px;
+    background-color: rgba(0, 136, 169, 1);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
 }
-.button:hover{
+.shop:hover{
    background-color: rgba(0, 136, 169, 0.8);
 }
 
-table.table2 {
+.table2 {
   border-collapse: separate;
   border-spacing: 10px 10px;
   height: 100px;
 }
 
-table.table2 th {
+.table2 th {
   height: 100px;
   width: 100px;
   text-decoration: underline;
@@ -180,16 +178,16 @@ table.table2 th {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
+  text-decoration: none;
 }
 
-table.table2 td {
+.table2 td {
   height: 100px;
   min-width: 150px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
 }
-
 
 #slider {
    margin: 0 auto;
@@ -288,10 +286,10 @@ table.table2 td {
    margin: 0 -50px 0 0;
    display: block;
 }
-#slide1:checked ~ #controls label:nth-last-child(2),
-#slide2:checked ~ #controls label:nth-last-child(3),
-#slide3:checked ~ #controls label:nth-last-child(4),
-#slide4:checked ~ #controls label:nth-last-child(1) {
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(2),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(4) {
    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
    float:left;
    margin: 0 0 0 -50px;

@@ -164,8 +164,8 @@ p{
   color: #DC7633;
 }
 
-.button{
-  width: 250px;
+.comprar{
+  width: 150px;
   background-color: rgba(0, 136, 169, 1);
   height: 50px;
   line-height: 50px;
@@ -175,11 +175,53 @@ p{
   color: #fff;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
+  border: none;
 }
-.button:hover{
+.comprar:hover{
   background-color: rgba(0, 136, 169, 0.8);
 }
 
+.recursos{
+  width: 150px;
+  background-color: rgba(0, 136, 169, 1);
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  text-align: center;
+}
+
+.recursos:hover, 
+.territorios:hover{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.territorios{
+  width: 150px;
+  background-color: rgba(0, 136, 169, 1);
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  text-align: center;
+}
+
+.recursosxterritorios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+}
 
 table.table2 {
   border-collapse: separate;
@@ -198,6 +240,7 @@ table.table2 th {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
+  text-decoration: none;
 }
 
 table.table2 td {

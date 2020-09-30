@@ -2,86 +2,115 @@
 
 
 /* Navbar CSS */
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.navbar {
-   z-index: 100;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 0.7rem;
-   background-color: rgb(222, 159, 59);
-   position: fixed;
-   top: 0;
-   width: 100%;
-   box-shadow: 0 0 20px rgba(72,98,85, 0.6);
-}
-
-.logo{
-   width: 4rem;
-   height: 5rem;
-}
-
-.link_logo { 
-   margin-right: 40rem;
-}
-
-.navbar_items{
+  }
+  
+  .navbar {
+    z-index: 100;
+  background-color: rgb(222, 159, 59);
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  width: 100vw;
+  min-width: 1100px;
+  margin: 0 auto;
+  height: 7em;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+  }
+  
+  
+  
+  /* OPTION 3 */
+  /* move default logo position to left and hide it when window size is less than 886px */
+  /* uncomment .logo and .link_logo ^^up there and use the ones down here */
+   .logo{
+    width: 4rem;
+    height: 5rem;
+    position: fixed;
+    left: 5.313em;
+    display: inline-block;
+  }
+  
+  .link_logo { 
+    margin-right: 40rem;
+    display: inline-block;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 880px) {
+    .logo{
+        display: none;
+     }
+     .link_logo{
+         display: none;
+     }
+  } 
+  
+  .navbar_items{
    list-style: none;
-}
-
-.navbar_item{
    display: inline-block;
-   padding: 0px 20px;
+   position: fixed;
+   right: 10.875em;
+   top: 2.5em;
+   white-space: nowrap;
+
+  }
+  
+  .navbar_item{
    font-family: "Montserrat", sans-serif;
+   padding: 0px 20px;
    font-weight: 500;
-   font-size: 16px;
+   font-size: 1em;
    color: #edf0f1;
    text-decoration: none;
-}
-
-.navbar_link,
-.navbar_link:link,
-.navbar_link:visited{
+   display: inline-block;
+   overflow: hidden;
+  }
+  
+  .navbar_link,
+  .navbar_link:link,
+  .navbar_link:visited{
    transition: all 0.3s ease 0s;
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
-   font-size: 1rem;
+   font-size: 1em;
    color: #edf0f1;
    text-decoration: none;
    cursor: pointer;
    display: inline-block;
-}
-
-.navbar_link:hover{
+  }
+  
+  .navbar_link:hover{
    color: black;
    transform: scale(1.2);
-} 
- 
-.log_out{
-   margin-left: 20px;
-   padding: 9px 25px;
-   background-color: rgba(0, 136, 169, 1);
-   border: none;
-   border-radius: 50px;
-   cursor: pointer;
-   transition: all 0.3s ease 0s;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 500;
-   font-size: 16px;
-   color: #edf0f1;
-   text-decoration: none;
-}
-
-
-.log_in:hover, .sign_up:hover{
+  } 
+  
+.log_out {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  position: fixed;
+  right: 3.625em;
+  top: 2em;
+  overflow: hidden;
+  }
+  
+  .log_out:hover{
    background-color: rgba(0, 136, 169, 0.8);
-}
+  }
+  
 
 /* End of Navbar CSS */
 
@@ -103,7 +132,7 @@ body{
     box-shadow: 0 0 20px rgba(72,98,85, 0.6);
     box-sizing: border-box;
     padding: 40px;
-    margin-top: 10.5rem;
+    margin-top: 2.5rem;
 }
   
 p{

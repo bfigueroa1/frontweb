@@ -217,6 +217,10 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
+.flex-4 a:link, a:visited {
+  text-decoration: none;
+}
+
 .btn:hover{
     background-color: rgba(0, 136, 169, 0.8);
 }

@@ -116,13 +116,19 @@
 
 /* Contact Us CSS*/
 
+body{
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;  
+}
+
 dl {
   padding: 20px;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 3.5rem;
-  color: #edf0f1;
+  font-size: 1rem;
 }
 
 dt {
@@ -132,52 +138,44 @@ dt {
 }
 
 .ejercito {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  min-width: 1100px;
-  text-align: center;
-  background-color:  rgb(222, 159, 59);
   border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  max-width: 800px;
+  height: 600px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 6em;
+ 
 }
 
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(224, 181, 112);
+p{
   text-align: center;
-  border-radius: 5px;
-  width: 50%;
-  min-width: 500px;
-  margin-top: 1%;
-  color: #edf0f1;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #486255;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
+  color: #DC7633;
 }
+
 
 .row {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(224, 181, 112);
-  width: 90%;
-  min-width: 1000px;
+  background-color: rgb(222, 159, 59);
+  width: auto;
   border-radius: 5px;
-  margin-top: 1%;
-  margin-bottom: 1%;
   
 }
 
 .column {
-  background-color: rgb(224, 181, 112);
-  width: 100%;
+  background-color: rgb(222, 159, 59);
+  width: 200px;
   flex: 33.33%;
   padding: 5px;
   border-radius: 5px;
@@ -185,9 +183,9 @@ dt {
 }
 
 .column img {
-  width: 100%;
+  width: 200px;
   border-radius: 5px;
-  min-width: 400px;
+  min-width: 200px;
 }
 
 

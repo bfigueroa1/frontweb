@@ -118,63 +118,66 @@
 /* Contact Us CSS*/
 
 
+body{
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;  
+}
+
 dl {
   padding: 20px;
   border-radius: 5px;
-  font-size: 150%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 dt {
-  background-color:rgb(224, 181, 112);
+  background-color: rgb(224, 181, 112);
   border-radius: 5px;
   text-decoration: underline;
 }
 
 .ejercito {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  min-width: 1100px;
-  text-align: center;
-  background-color:  rgb(222, 159, 59);
   border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  max-width: 800px;
+  height: 850px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 6em;
+ 
 }
 
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(224, 181, 112);
+p{
   text-align: center;
-  border-radius: 5px;
-  width: 50%;
-  min-width: 500px;
-  margin-top: 1%;
-  color: #edf0f1;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #486255;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
+  color: #DC7633;
 }
+
 .button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 250px;
   background-color: rgba(0, 136, 169, 1);
+  height: 50px;
+  line-height: 50px;
   text-align: center;
-  border-radius: 5px;
-  min-width: 150px;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: #edf0f1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.button:hover{
+  background-color: rgba(0, 136, 169, 0.8);
 }
 
 
@@ -183,7 +186,6 @@ table.table2 {
   border-spacing: 10px 10px;
   margin: auto;
   margin-top: 2%; 
-  color: #edf0f1;
 }
 
 
@@ -195,7 +197,7 @@ table.table2 th {
   background-color:rgb(224, 181, 112);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 table.table2 td {
@@ -203,7 +205,7 @@ table.table2 td {
   width: 100px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 input[type="number"] {

@@ -149,21 +149,19 @@ p{
    color: #DC7633;
    }
 
-.flex-box a:link, a:visited {
-   width: 250px;
+.button{
+   width: 350px;
    background-color: rgba(0, 136, 169, 1);
-   height: 50px;
-   line-height: 50px;
+   height: 100px;
+   line-height: 100px;
    text-align: center;
    border-radius: 50px;
    margin: 0 auto;
    color: #fff;
    cursor: pointer;
    font-family: 'Montserrat', sans-serif;
-   text-decoration: none;
 }
-
-.flex-box a:hover, a:active {
+.button:hover{
    background-color: rgba(0, 136, 169, 0.8);
 }
 

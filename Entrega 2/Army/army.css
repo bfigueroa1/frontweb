@@ -142,13 +142,13 @@ dt {
 .ejercito {
   border-radius: 5px;
   max-width: 800px;
-  height: 600px;
+  height: 400px;
   background: #fff;
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72,98,85, 0.6);
   box-sizing: border-box;
-  padding: 40px;
-  margin-top: 6em;
+  padding: 20px;
+  margin-top: 2em;
  
 }
 
@@ -185,9 +185,8 @@ p{
 }
 
 .column img {
-  width: 350px;
+  width: 100%;
   border-radius: 5px;
-  min-width: 200px;
 }
 
 

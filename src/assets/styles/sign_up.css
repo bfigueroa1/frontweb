@@ -85,6 +85,8 @@ p{
     color: #fff;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-align: center;
 }
 
 .btn:hover{

@@ -1,10 +1,19 @@
+//Generate range function: https://dev.to/ycmjason/how-to-create-range-in-javascript-539i
+function range(end) {
+    var ans = [];
+    for (let i = 1; i <= end; i++) {
+        ans.push(i);
+    }
+    return ans;
+}
+
+// Jquery functionality
 $(function () {
 	// open modal when a territory is clicked
 	$('.modal-openBtn').click(function () {
 		$('.modal').addClass('modal-open');
 		// make modal draggable
 		$('.modal').draggable({handle: ".modal-header"});
-    	return false;
   	});
 
   	//close modal
@@ -12,6 +21,34 @@ $(function () {
     	$('.modal').removeClass('modal-open');
   	});
 
+  	//Change Modal data
+  	$('#egiptoClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+		$(".modal-title").empty();			//egiptoClick por (nombre_territorio)Click
+		$(".modal-title").append("Egipt");           //Cambiar en esta linea el nombre del territorio
+		$('#troops-sent').children().remove().end();
+		for (let i of range(5)){         //Agregar en range(_) la cantidad de tropas del territorio  
+			$('#troops-sent').append(`${`<option value="${i}">${i}</option>`}`)
+		}
+		for (let i of range(5)){         //Agregar en range(_) la cantidad de aviones del territorio  
+			$('#airplanes-sent').append(`${`<option value="${i}">${i}</option>`}`)
+		}
+		for (let i of range(5)){         //Agregar en range(_) la cantidad de barcos del territorio  
+			$('#ships-sent').append(`${`<option value="${i}">${i}</option>`}`)
+		}
+  	});
+
+  	//Attack botton clicked
+  	$('#attack-troopsBtn').click(function () {
+    	$('.modal').removeClass('modal-open');
+    	if ($(".modal-title").text() == "Egipt"){
+    		$(".argelia-nigeriaPath").css("fill", "black");
+    		$(".sudanPath").css("fill", "black");
+    		$(".medio-orientePath").css("fill", "black");
+    		$(".espana-francia-italiaPath").css("fill", "black");
+    		$(".polonia-yugoeslaviaPath").css("fill", "black");
+    	}
+  	});
+  
   	//Territories box
 
   	$('.vladivostok').hover(function () {
@@ -680,6 +717,248 @@ $(function () {
 		// change territory name
 		$("#territory-name").empty();
 		$("#territory-name").append("Mackenzie");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.alaska').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Alaska");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.vancouver').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Vancouver");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.ottawa').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Ottawa");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.labrador').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Labrador");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.california').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("California");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.nueva-york').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Nueva York");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.mexico').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Mexico");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.colombia-venezuela').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Colombia-Venezuela");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.brasil').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Brasil");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.argentina-paraguay-uruguay').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Argentina-Paraguay-Uruguay");
+		// change username
+		$("#uname").empty();
+		$("#uname").append("Username1");
+		$("#uname").css("color", "#ACA71E");
+		// change troops number
+		$("#troops-territory").empty();
+		$("#troops-territory").append("Troops: 3");
+		// change airplanes number
+		$("#airplanes-territory").empty();
+		$("#airplanes-territory").append("Airplanes: 2");
+		// change ships number
+		$("#ships-territory").empty();
+		$("#ships-territory").append("Ships: 2");
+    	return false;
+  	});
+
+  	$('.chile-bolivia-peru-ecuador').hover(function () {
+		// show territory box
+		$('.territory-box').addClass('territory-box-show');
+		// change territory name
+		$("#territory-name").empty();
+		$("#territory-name").append("Chile-Bolivia-Peru-Ecuador");
 		// change username
 		$("#uname").empty();
 		$("#uname").append("Username1");

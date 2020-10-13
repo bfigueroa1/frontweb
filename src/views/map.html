@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../assets/styles/map.css" type="text/css">
         <link rel="shortcut icon" href="../assets/imgs/Logo Arena.png" type="image/png">
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
         <title>Katak | Map</title>    
         <nav class="navbar">
             <a href="index loged.html" class="link_logo">
@@ -51,6 +53,52 @@
                     <label for="territoriesu5" class="territoriesu5">Territories: 9</label>
                 </div>
          	</div>
+	  			<div class="modal">
+				    <div class="modal-content">
+				        <div class="modal-header">
+				          <button class="modal-closeBtn">x</button>
+				          <h4 class="modal-title">Make Your Move</h4>
+				          <hr class="modal-hr">
+				        </div>
+				        <div class="modal-data">
+				            <div class="modal-flex">
+				                <img class="war-icon" src="../assets/imgs/troop.png">
+								<select name="troops-sent" id="troops-sent">
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								</select>
+								<button class="modal-chooseBtn" id="attack-troopsBtn">Attack</button>
+								<button class="modal-chooseBtn" id="search-resourcesBtn">Search Resources</button>
+				            </div>
+				            <div class="modal-flex">
+				                <img class="war-icon" src="../assets/imgs/airplane.png">
+								<select name="airplanes-sent" id="airplanes-sent">
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								</select>
+								<button class="modal-chooseBtn" id="attack-airplaneBtn">Attack</button>
+								<button class="modal-chooseBtn" id="transport-airplaneBtn">Transport</button>
+				            </div>
+				            <div class="modal-flex">
+				                <img class="war-icon" src="../assets/imgs/ship.png">
+								<select name="ships-sent" id="ships-sent">
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								</select>
+								<button class="modal-chooseBtn" id="attack-shipBtn">Attack</button>
+								<button class="modal-chooseBtn" id="transport-shipBtn">Transport</button>
+				            </div>
+				        </div>        
+	    			</div>
+
+	  			</div>
+      
 		    <div class="mapa">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600">
 					<!-- Asia -->
@@ -803,7 +851,7 @@
 
 						<!-- Egipto -->
 					<g class="egipto">
-						<a href="territories.html">
+						<a xlink:href="#" class="modal-openBtn">
 							<path class="africa" d="M780.2,314.2c0.3,0.4,0.6,0.9,0.9,1.3c0.5,0.8,0.9,1.6,1.4,2.4c0.8,1.2,1.5,2.5,2.3,3.7
 							c0.8,2.2,1.6,4.4,2.4,6.6c0.7,0.6,1.4,1.1,2.1,1.7c0.4,1.1,0.9,2.3,1.2,3.2c-5.3,0-10.5,0.1-15.6,0c-6-0.1-11.9-0.5-17.9-0.7
 							c-1.2,0-2.5,0.6-3.7,1c-0.2,0.2-0.4,0.3-0.5,0.5c-1.2,2-2.2,5.4-3.6,5.6c-2.9,0.4-6.1-0.9-9.1-1.6c-1-0.5-2.1-1.7-2.9-1.5
@@ -814,24 +862,24 @@
 						</a>
 					</g>
 				
-				<div class="vladivostok-box">
-                	<div class="flex-vladivostok">
+				<div class="territory-box">
+                	<div class="flex-territory">
                 		<g>
-                    	<label class='territory-name'>Vladivostok</label>
+                    	<label id='territory-name'>Vladivostok</label>
                     	</g>
                     	<g>
-                    	<label class="uname1">Username1</label>
+                    	<label id="uname">Username1</label>
                     	</g>
                     	<g>
-                    	<label class="troops-vladivostok">Troops: 3</label>
+                    	<label id="troops-territory">Troops: 3</label>
                     	<img class="war-icon" src="../assets/imgs/troop.png">
                     	</g>
                     	<g>
-                    	<label class="airplanes-vladivostok">Airplanes: 2</label>
+                    	<label id="airplanes-territory">Airplanes: 2</label>
                     	<img class="war-icon" src="../assets/imgs/airplane.png">
                     	</g>
                     	<g>
-                    	<label class="ships-vladivostok">Ships: 2</label>
+                    	<label id="ships-territory">Ships: 2</label>
                     	<img class="war-icon" src="../assets/imgs/ship.png">
                     	</g>
                 	</div>
@@ -840,6 +888,8 @@
 			</div>
 			<br>
             <div type="submit" class="btn">Send Move</div>           
-		</div>      
+			
+		</div>
+		<script src="../assets/js/map.js"></script>
     </body>
 </html>

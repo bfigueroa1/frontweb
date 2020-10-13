@@ -48,8 +48,9 @@ $(function () {
     		$(".polonia-yugoeslaviaPath").css("fill", "black");
     	}
   	});
-
+  
   	//Territories box
+
   	$('.vladivostok').hover(function () {
 		// show territory box
 		$('.territory-box').addClass('territory-box-show');

@@ -1003,7 +1003,7 @@ function my_Function(){
 
     for (var i = 0; i<= t_ls1; i++){
 
-        var option = document.createElement('option_t');
+        var option = document.createElement('option');
         option.value = i;
         option.innerHTML = i;
         select.options.add(option);
@@ -1013,7 +1013,7 @@ function my_Function(){
     
     for (var i = 0; i<= av_ls1; i++){
     
-        var option = document.createElement('option_a');
+        var option = document.createElement('option');
         option.value = i;
         option.innerHTML = i;
         select.options.add(option);
@@ -1023,7 +1023,7 @@ function my_Function(){
     
     for (var i = 0; i<= bq_ls1; i++){
     
-        var option = document.createElement('option_b');
+        var option = document.createElement('option');
         option.value = i;
         option.innerHTML = i;
         select.options.add(option);

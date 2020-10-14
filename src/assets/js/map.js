@@ -738,7 +738,7 @@ $(function () {
 		$("#ships-territory").append("Ships: 2");
     	return false;
   	});
-<<<<<<< HEAD
+
 
   	$('.alaska').hover(function () {
 		// show territory box
@@ -983,7 +983,6 @@ $(function () {
   	});
 });
 
-});
 
 //FUNCION para el SELECT con localStorage
 

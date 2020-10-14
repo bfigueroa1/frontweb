@@ -75,6 +75,25 @@ function check(){
                 //login success
                 alert('Login success');
                 window.location = './index loged.html';
+                //Pa que el usuario tenga cosas
+                localStorage.setItem("aviones_1",0);
+                localStorage.setItem("buques_1",0);
+                localStorage.setItem("muralla_1",0);
+                localStorage.setItem("tropas_1",10);
+
+                localStorage.setItem("metal_1",10)
+                localStorage.setItem("cemento_1",10)
+                localStorage.setItem("alimento_1",10)
+
+                localStorage.setItem("aviones_2",5);
+                localStorage.setItem("buques_2",5);
+                localStorage.setItem("muralla_2",2);
+                localStorage.setItem("tropas_2",5);
+
+                localStorage.setItem("metal_2",50)
+                localStorage.setItem("cemento_2",50)
+                localStorage.setItem("alimento_2",50)
+                //
             }
         }
     }else{

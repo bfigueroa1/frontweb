@@ -30,7 +30,6 @@
         </nav>
     </head>
     <body>
-
         <div class="ejercito">
             <p>SHOP</p>
             <table class="table2">
@@ -44,35 +43,37 @@
                 
                 <tr>
                     <td>Arma</td>
-                    <td>$ Recursos raros</td>
+                    <td id="buy">$ Recursos raros</td>
                     <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="ship" src="../assets/imgs/bomb-solid.png"></td>
-                    <td><a><button class="comprar">Comprar</button></a></td>
+                    <td><img id="jet" src="../assets/imgs/bomb-solid.png"></td>
+                    <td><a><button id="btn_ar" class="comprar">Comprar</button></a></td>
+                    
                 </tr>
                 
                 <tr>
                     <td>Avion</td>
                     <td>$ 3 metales</td>
                     <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="jet" src="../assets/imgs/airplane.png"></td>
-                    <td><a><button class="comprar">Comprar</button></a></td>
+                    <td><img id="jet" src="../assets/imgs/Airplane.png"></td>
+                    <td><a><button id="btn_av" class="comprar">Comprar</button></a></td>
                 </tr>
 
                 <tr>
                     <td>Buque</td>
                     <td>$ 3 metales</td>
                     <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="ship" src="../assets/imgs/ship.png"></i></td>
-                    <td><a><button class="comprar">Comprar</button></a></td>
+                    <td><img id="ship" src="../assets/imgs/Ship.png"></i></td>
+                    <td><a><button id="btn_bq" class="comprar">Comprar</button></a></td>
                 </tr>
 
                 <tr>
                     <td>Muralla</td>
                     <td>$ 5 cementos</td>
                     <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="chess" src="../assets/imgs/chess-rook-solid.png"></td>
-                    <td><a><button class="comprar">Comprar</button></a></td>
+                    <td><img id="chess" src="../assets/imgs/chess-rook-solid_b.png"></td>
+                    <td><a><button id="btn_m" class="comprar">Comprar</button></a></td>
                 </tr>   
+                <script src="shop.js"></script>
             </table>
 
             <div>

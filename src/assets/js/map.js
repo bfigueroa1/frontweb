@@ -32,89 +32,147 @@ boton_t.addEventListener("click", function(){
 					x = 0;
 					localStorage.setItem("muralla_2",x);
 
-					x =   parseInt(t_ls2) + parseInt(m_ls2) - parseInt(at_ls);
-					localStorage.setItem("tropas_2",x);
+					t2 =   parseInt(t_ls2) + parseInt(m_ls2) - parseInt(at_ls);
+					localStorage.setItem("tropas_2",t2);
+
+					t = parseInt(t_ls1) - parseInt(at_ls);
+					localStorage.setItem("tropas_1",t);
 
 				};
 				if (parseInt(m_ls2) == parseInt(at_ls)) {
-					x=0
+					x=0;
 					localStorage.setItem("muralla_2",x);
 
 					t = parseInt(t_ls1) - parseInt(at_ls);
 					localStorage.setItem("tropas_1",t);
 				};
 			} else {
-				if (parseInt(m_ls2) > parseInt(at_ls)) {
-					x = parseInt(m_ls2) - parseInt(at_ls);
-					localStorage.setItem("muralla_2",x);
+
+				if (parseInt(at_ls) < parseInt(t_ls2)) {
 
 					t = parseInt(t_ls1) - parseInt(at_ls);
 					localStorage.setItem("tropas_1",t);
-				};
-				if (parseInt(m_ls2) < parseInt(at_ls)) {
-					x = 0;
-					localStorage.setItem("muralla_2",x);
 
-					x =   parseInt(t_ls2) + parseInt(m_ls2) - parseInt(at_ls);
-					localStorage.setItem("tropas_2",x);
+					t2 = parseInt(t_ls2) - parseInt(t_ls1);
+					localStorage.setItem("tropas_2",t2);
 
 				};
-				if (parseInt(m_ls2) == parseInt(at_ls)) {
-					x=0
-					localStorage.setItem("muralla_2",x);
+				if (parseInt(at_ls) > parseInt(t_ls2)) {
+					t = parseInt(t_ls1) + parseInt(at_ls) - parseInt(t_ls2);
+					localStorage.setItem("tropas_1",t);
+
+					t2 = 0;
+					localStorage.setItem("tropas_2",t2);
+					//AQUI GANA EL TERRITORIO 1
+				};
+				if (parseInt(at_ls) = parseInt(t_ls2)) {
 
 					t = parseInt(t_ls1) - parseInt(at_ls);
 					localStorage.setItem("tropas_1",t);
+
+					t2 = 0;
+					localStorage.setItem("tropas_2",t2);
 				};
+
 			};
+		} else {
+			alert("No tienes suficientes tropas");
 		};
+
+	} else {
+		alert("No tienes suficientes tropas");
+	};
 	
     
 });
 
-var boton_at_av = document.getElementById("attack-airplaneBtn");
+var boton_at_av = document.getElementById("attack-airplanesBtn2");
 
 boton_at_av.addEventListener("click", function(){
-	av_ls1 = localStorage.getItem('aviones_2');
-	
+
+	av_ls1 = localStorage.getItem('aviones_1');
+	av_ls2 = localStorage.getItem('aviones_2');
+	aa_ls = localStorage.getItem('number_a');
+	t_ls2 = localStorage.getItem('tropas_2');
+
 	if (parseInt(av_ls1) > 0) {
-		x = parseInt(av_ls1,10) - 1;
-    	localStorage.setItem("aviones_2",x);
-	} else {
-		t_ls2 = localStorage.getItem('tropas_2');
-		if (parseInt(t_ls2) > 0) {
-			x = parseInt(t_ls2,10) - 5;
-			if (x < 0) {
-				x = 0
-				localStorage.setItem("tropas_2",x);
-			} else {
-				localStorage.setItem("tropas_2",x);
-			};
+		if (parseInt(av_ls2) > parseInt(aa_ls)) {
+
+			a = parseInt(av_ls1) - parseInt(aa_ls);
+			localStorage.setItem("aviones_1",a);
+	
+			a2 = parseInt(av_ls2) - parseInt(aa_ls);
+			localStorage.setItem("aviones_2",a2);
 			
 		};
+		if (parseInt(av_ls2) < parseInt(aa_ls)) {
+	
+			a = parseInt(av_ls1) - parseInt(aa_ls);
+			localStorage.setItem("aviones_1",a);
+	
+			a2 = 0
+			localStorage.setItem("aviones_2",a2);
+	
+			t2 = parseInt(t_ls2) -((parseInt(aa_ls)-parseInt(av_ls2))*5);
+			localStorage.setItem("tropas_2",t2);
+	
+	
+		};
+		if (parseInt(av_ls2) == parseInt(aa_ls)) {
+	
+			a = parseInt(av_ls1) - parseInt(aa_ls);
+			localStorage.setItem("aviones_1",a);
+	
+			a2 = 0
+			localStorage.setItem("aviones_2",a2);
+		};
 	};
+
     
 });
 
-var boton_at_b = document.getElementById("attack-shipBtn");
+var boton_at_b = document.getElementById("attack-shipsBtn2");
 
 boton_at_b.addEventListener("click", function(){
-	b_ls1 = localStorage.getItem('buques_2');
+
+	b_ls1 = localStorage.getItem('buques_1');
+	b_ls2 = localStorage.getItem('buques_2');
+	b_ls = localStorage.getItem('number_s');
+	t_ls2 = localStorage.getItem('tropas_2');
+
 	if (parseInt(b_ls1) > 0) {
-		x = parseInt(b_ls1,10) - 1;
-    	localStorage.setItem("buques_2",x);
-	} else {
-		t_ls2 = localStorage.getItem('tropas_2');
-			if (parseInt(t_ls2) > 0) {
-				x = parseInt(t_ls2,10) - 5;
-				if (x < 0) {
-					x = 0
-					localStorage.setItem("tropas_2",x);
-				} else {
-					localStorage.setItem("tropas_2",x);
-				};
-			};
+		if (parseInt(b_ls2) > parseInt(b_ls)) {
+
+			a = parseInt(b_ls1) - parseInt(b_ls);
+			localStorage.setItem("buques_1",a);
+	
+			a2 = parseInt(b_ls2) - parseInt(b_ls);
+			localStorage.setItem("buques_2",a2);
+			
+		};
+		if (parseInt(b_ls2) < parseInt(b_ls)) {
+	
+			a = parseInt(b_ls1) - parseInt(b_ls);
+			localStorage.setItem("buques_1",a);
+	
+			a2 = 0
+			localStorage.setItem("buques_2",a2);
+	
+			t2 = parseInt(t_ls2) -((parseInt(b_ls)-parseInt(b_ls2))*5);
+			localStorage.setItem("tropas_2",t2);
+	
+	
+		};
+		if (parseInt(b_ls2) == parseInt(b_ls)) {
+	
+			a = parseInt(b_ls1) - parseInt(b_ls);
+			localStorage.setItem("buques_1",a);
+	
+			a2 = 0
+			localStorage.setItem("buques_2",a2);
+		};
 	};
+
     
 });
 
@@ -225,6 +283,22 @@ $(function () {
         $('#troops-attackMenu').removeClass('modal-open');
 
 	});
+
+	//Attack botton clicked
+	$('#attack-airplanesBtn2').click(function () {
+    	// close troops attack menu if is open
+        $('#airplanes-attackMenu').removeClass('modal-open');
+
+	});
+
+	//Attack botton clicked
+	$('#attack-shipsBtn2').click(function () {
+    	// close troops attack menu if is open
+        $('#ships-attackMenu').removeClass('modal-open');
+
+	});
+
+	
 	  
 	//Attack botton clicked
 	$('#open-troops-attackMenu').click(function () {
@@ -250,10 +324,12 @@ $(function () {
 	});
 
 	//Attack botton clicked Airplanes
-	$('#attack-airplaneBtn').click(function () {
+	$('#attack-airplanesBtn').click(function () {
     	$('.modal').removeClass('modal-open');
     	$('#airplanes-attackSelection').children().remove().end();
-    	$('#airplanes-attackMenu').addClass('modal-open');
+		$('#airplanes-attackMenu').addClass('modal-open');
+		let numb = $("#airplanes-sent").val();
+		localStorage.setItem('number_a',numb);
     	for (let territory of ["vladivostok", "japon", "vietnam", "siberia", "dudinka", "medio oriente", "omsk",
     	 "aral", "china", "india", "tchita", "mongolia", "alaska", "mackenzie", "vancouver", "groenlandia", 
     	 "nueva york", "california", "ottawa", "labrador", "mexico", "chile-bolivia-peru-ecuador", 
@@ -269,7 +345,9 @@ $(function () {
   	$('#attack-shipBtn').click(function () {
     	$('.modal').removeClass('modal-open');
     	$('#ships-attackSelection').children().remove().end();
-    	$('#ships-attackMenu').addClass('modal-open');
+		$('#ships-attackMenu').addClass('modal-open');
+		let numb = $("#ships-sent").val();
+		localStorage.setItem('number_s',numb);
     	for (let territory of ["vladivostok", "japon", "vietnam", "siberia", "dudinka", "medio oriente", "omsk",
     	 "aral", "china", "india", "tchita", "mongolia", "alaska", "mackenzie", "vancouver", "groenlandia", 
     	 "nueva york", "california", "ottawa", "labrador", "mexico", "chile-bolivia-peru-ecuador", 

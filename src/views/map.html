@@ -7,7 +7,8 @@
         <link rel="shortcut icon" href="../assets/imgs/Logo Arena.png" type="image/png">
         <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-        <title>Katak | Map</title>    
+		
+		<title>Katak | Map</title>    
         <nav class="navbar">
             <a href="index loged.html" class="link_logo">
                 <img class= "logo" src="../assets/imgs/Logo Blanco.png" alt="logo">
@@ -66,7 +67,7 @@
 								<img class="war-icon" src="../assets/imgs/Troop.png">
 								<select id="troops-sent"></select>
 
-								<button class="modal-chooseBtn" id="attack-troopsBtn">Attack</button>
+								<button class="modal-chooseBtn" id="open-troops-attackMenu">Attack</button>
 								<button class="modal-chooseBtn" id="search-resourcesBtn">Search Resources</button>
 							</div>
 				            <div class="modal-flex">
@@ -89,7 +90,63 @@
 				        </div>        
 	    			</div>
 
-	  			</div>
+				</div>
+
+				<!-- Troops Attack Modal -->
+				<div class="attackMenu" id="troops-attackMenu">
+                    <div class="modal-header">
+                        <button class="modal-closeBtn">x</button>
+                        <h4>Select a territory to attack</h4>
+                        <hr class="modal-hr">
+                    </div>
+                    <div class="attackData" id="troops-attackData">
+                        <div class="modal-flex">
+
+                            <select id="troops-attackSelection"></select>
+
+                            <button class="modal-chooseBtn" id="attack-troopsBtn">Attack</button>
+                        </div>
+                    </div>
+
+				</div>
+				
+				<!-- Airplane attack Modal -->
+				<div class="attackMenu" id="airplanes-attackMenu">
+                    <div class="modal-header">
+                        <button class="modal-closeBtn">x</button>
+                        <h4>Select a territory to attack</h4>
+                        <hr class="modal-hr">
+                    </div>
+                    <div class="attackData" id="airplanes-attackData">
+                        <div class="modal-flex">
+
+                            <select id="airplanes-attackSelection"></select>
+
+                            <button class="modal-chooseBtn" id="attack-troopsBtn">Attack</button>
+                        </div>
+                    </div>
+
+                </div>
+
+				<!-- Ships attack Modal -->
+				<div class="attackMenu" id="ships-attackMenu">
+				<div class="modal-header">
+					<button class="modal-closeBtn">x</button>
+					<h4>Select a territory to attack</h4>
+					<hr class="modal-hr">
+				</div>
+				<div class="attackData" id="ships-attackData">
+					<div class="modal-flex">
+
+						<select id="ships-attackSelection"></select>
+
+						<button class="modal-chooseBtn" id="attack-troopsBtn">Attack</button>
+					</div>
+				</div>
+
+				</div>
+				  
+
       
 		    <div class="mapa">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600">

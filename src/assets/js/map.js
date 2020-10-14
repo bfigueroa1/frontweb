@@ -26,17 +26,46 @@ $(function () {
 		$(".modal-title").empty();			//egiptoClick por (nombre_territorio)Click
 		$(".modal-title").append("Egipt");           //Cambiar en esta linea el nombre del territorio
 		$('#troops-sent').children().remove().end();
-		for (let i of range(5)){         //Agregar en range(_) la cantidad de tropas del territorio  
+		$('#airplanes-sent').children().remove().end();
+		$('#ships-sent').children().remove().end();
+
+		av_ls1 = localStorage.getItem('aviones_1');
+		bq_ls1 = localStorage.getItem('buques_1');
+		t_ls1 = localStorage.getItem('tropas_1');
+
+		for (let i of range(parseInt(t_ls1))){         //Agregar en range(_) la cantidad de tropas del territorio  
 			$('#troops-sent').append(`${`<option value="${i}">${i}</option>`}`)
 		}
-		for (let i of range(5)){         //Agregar en range(_) la cantidad de aviones del territorio  
+		for (let i of range(parseInt(av_ls1))){         //Agregar en range(_) la cantidad de aviones del territorio  
 			$('#airplanes-sent').append(`${`<option value="${i}">${i}</option>`}`)
 		}
-		for (let i of range(5)){         //Agregar en range(_) la cantidad de barcos del territorio  
+		for (let i of range(parseInt(bq_ls1))){         //Agregar en range(_) la cantidad de barcos del territorio  
 			$('#ships-sent').append(`${`<option value="${i}">${i}</option>`}`)
 		}
   	});
 
+	$('#medio-orienteClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+		$(".modal-title").empty();			//medio-orienteClick por (nombre_territorio)Click
+		$(".modal-title").append("Medio Oriente");           //Cambiar en esta linea el nombre del territorio
+		$('#troops-sent').children().remove().end();
+		$('#airplanes-sent').children().remove().end();
+		$('#ships-sent').children().remove().end();
+
+		av_ls2 = localStorage.getItem('aviones_2');
+		bq_ls2 = localStorage.getItem('buques_2');
+		t_ls2= localStorage.getItem('tropas_2');
+
+		for (let i of range(parseInt(t_ls2))){         //Agregar en range(_) la cantidad de tropas del territorio  
+			$('#troops-sent').append(`${`<option value="${i}">${i}</option>`}`)
+		}
+		for (let i of range(parseInt(av_ls2))){         //Agregar en range(_) la cantidad de aviones del territorio  
+			$('#airplanes-sent').append(`${`<option value="${i}">${i}</option>`}`)
+		}
+		for (let i of range(parseInt(bq_ls2))){         //Agregar en range(_) la cantidad de barcos del territorio  
+			$('#ships-sent').append(`${`<option value="${i}">${i}</option>`}`)
+		}
+  	});
+	
   	//Attack botton clicked
   	$('#attack-troopsBtn').click(function () {
     	$('.modal').removeClass('modal-open');
@@ -985,7 +1014,7 @@ $(function () {
 
 
 //FUNCION para el SELECT con localStorage
-
+/*
 function my_Function(){
 
     av_ls1 = localStorage.getItem('aviones_1');
@@ -998,7 +1027,7 @@ function my_Function(){
     bq_1.innerHTML = 0;
     var bq_1 = document.getElementById("buques_1");
     bq_1.innerHTML = 0;
-    */
+   
     var select = document.getElementById('troops'); 
 
     for (var i = 0; i<= t_ls1; i++){
@@ -1030,7 +1059,7 @@ function my_Function(){
     }
 
 }
-
+ */
 // ATTACk elementos de localStorage del enemigo cuando es atacado
 
 var boton_t = document.getElementById("attack-troopsBtn");

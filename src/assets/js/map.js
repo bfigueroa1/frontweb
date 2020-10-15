@@ -195,6 +195,18 @@ boton_r.addEventListener("click", function(){
     localStorage.setItem("alimento_1",x);
 });
 
+// onlaed = "Function_wall()"
+function Function_wall() {
+
+	let m_ls1 = localStorage.getItem('muralla_1');
+	let m_ls2 = localStorage.getItem('muralla_2');
+
+	$(".egiptoPath").css("stroke", "darkgoldenrod");
+	$(".egiptoPath").css("stroke-width", m_ls1);
+
+	$(".medio-orientePath").css("stroke", "darkgoldenrod");
+	$(".medio-orientePath").css("stroke-width", m_ls2);
+}
 
 
 
@@ -217,7 +229,8 @@ $(function () {
 		$('#airplanes-attackMenu').draggable({handle: ".modal-header"});
 		// make modal draggable
 		$('#ships-attackMenu').draggable({handle: ".modal-header"});
-  	});
+		
+	  });
 
   	//close modal
   	$('.modal-closeBtn').click(function () {

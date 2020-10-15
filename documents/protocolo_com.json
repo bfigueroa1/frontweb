@@ -1,0 +1,69 @@
+
+#CLIENTE
+#Envio de la jugada
+{
+    "cliente":{
+        "username": "bfgueroa1",
+        "date": "10/9/2020",
+        "time": "10:10 am",
+        "id_partida": "123",
+        "ejercito": {
+            "id_ejercito": "23",
+            "nombre": "alpha team",
+            "color": "red",
+            "n_aviones": 5,
+            "n_tropas": 3,
+            "n_buques": 7,
+            "n_armas": 9,
+        },
+        "Territorios": {
+            "terr_1": "Territorio_1",
+            "terr_2": "Territorio_2",
+            "...."
+        },
+        "compra": {
+            "n_recursos_bas": 2,
+            "n_recursos_int": 2,
+            "n_recursos_rar": 2,
+            "n_aviones": 5,
+            "n_tropas": 3,
+            "n_buques": 7,
+            "n_armas": 9,
+            "id_solicitud_comp": "34"
+        },
+        "movimiento": {
+            "id_ficha": "Buque_56",
+            "id_org": "Territorio_38",
+            "id_dest": "Territorio_79",
+            "id_solicitud": "m_29"
+        }
+    }
+}
+
+#SERVIDOR
+{
+    "servidor": {
+        "solicitud": {
+            "username": "bfgueroa1",
+            "date": "10/9/2020",
+            "time": "10:10 am",
+            "id_partida": "123",
+            "id_ficha": "Buque_56",
+            "id_org": "Territorio_38",
+            "id_dest": "Territorio_79",
+            "id_solicitud": "29"
+        },
+        "territorios_validos": {
+            "id_territorio": "Territorio_1",
+            "id_territorio": "Territorio_2",
+            "...."
+        },
+        "precios": {
+            "buque": "3 metales",
+            "avion": "3 metales, 2 red",
+            "tropas": "1 metal 3 alimento"
+        }
+    }
+}
+
+

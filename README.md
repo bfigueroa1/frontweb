@@ -8,6 +8,8 @@
 | Borja Figueroa | bfigueroa1@uc.cl | [bfigueroa1](https://www.github.com/bfigueroa1) |
 | Juan Pablo Ramírez | jpramirez5@uc.cl | [jprampad](https://www.github.com/jprampad) |
 
+## (read me Tarea 3 al final :)
+
 ## Descripción de la distribución del repositorio
 En la carpeta __documents__ se puede encontrar un pdf que corresponde a las reglas del juego y sus características (entrega 1), un archivo pdf llamado __ER__ que corresponde al diagrama entidad-relación actualizado y un archivo pdf llamado __UML__ que corresponde al diagrama de clases actualizado.
 
@@ -35,3 +37,32 @@ estarán bloqueadas en el caso de que el usuario no se encuentre en una partida)
 La idea es que cuando un usuario es parte de una partida pueda ingresar al mapa para realizar sus jugadas a través de la pestaña _Game Session_. Por ahora, para ingresar a la vista del mapa se debe ingresar a _Game Session_, entrar a _Join Game Session_ y presionar el botón _Join Game_, el cual redireccionará a la ventana del mapa. En mapa, se muestran todos los usuarios con sus nombres en el color de ejército que les tocó o eligieron y la cantidad de territorios actuales que poseen. Cada territorio del mapa es del color del ejército que lo domina. Al realizar hover sobre un territorio este se pondrá en negro y más adelante la idea es que al realizar el hover se muestre bajo el mapa un menú que muestre el nombre del territorio, el usuario que lo domina y la cantidad de aviones, buques y tropas en el territorio; colocamos un menú no funcional como ejemplo (para hover con svg se debe implementar js si se quiere hacer aparecer un div). Al presionar un territorio, se direcciona al usuario hacia la pestaña de territorios, la idea es que más adelante esto lleve directamente a los recursos de este territorio o que marque los posibles territorios a atacar y el usuario pueda realizar su jugada (quizás dejar alguna de estas opciones para el doble click). Finalmente, la vista _Mapa_ hay un botón para enviar la ronda llamado _Send Move_.
 
 Pd: No se modificaron reglas ni características del juego. 
+
+### READ_ME Tarea 3
+
+## Funcionamiento de una jugada
+
+ASPECTOS IMPORTANTES: la jugada esta programado para funcionar SOLO si Egipto ataca a Medio Oriente. 
+
+1) Inicio de sesion: 
+   - Al ingresar al index de la pagina se puede acceder a la opcion de "Log In" o de "Sign Up". En el "Sign Up", se solicita la informacion de jugador para crear una cuenta, esta queda almacenada en LocalStorage. Esto te permite ingresar a la vista de "Loged". 
+   - Detecta errores y el senisble a mayusculas.
+
+2) Shop: 
+   - Al iniciar el juego el la seccion de "Territories" se puede acceder a la Shop donde puedes comprar si tienes los recursos. 
+   - SOLO se habilitaron la compra de AVIONES, BUQUES y MURALLAS. 
+   - En shop puedes acceder a ver tus recursos, se actualizan correctamente.
+
+3) Mapa:
+   - SOLO EGIPTO puede atacar a MEDIO ORIENTE, los otros territorios no estan habilitados.
+   - Se puede atacar con tropas, aviones o buques.
+   - Las murallas resistes el equivalente al ataque de una tropa.
+   - Los aviones y buques atacan el equivaente a 5 tropas.
+   - Las murallas aumentan segun se vayan mejorando.
+   - La funcion de RECOLECTAR esta habilitada y actualiza las tablas de las vistas.
+
+
+ESTA TODA LA INFORMACION DENTRO DEL LOCAL STORAGE
+
+NO ALCANZAMOS A HABILITAR TODOS LO TERRITORIOS (no es tan necesario pues mas adelante se implementara una base de datos mas amplia).
+

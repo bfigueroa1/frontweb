@@ -42,7 +42,11 @@ Pd: No se modificaron reglas ni características del juego.
 
 ## Funcionamiento de una jugada
 
-ASPECTOS IMPORTANTES: la jugada esta programado para funcionar SOLO si Egipto ataca a Medio Oriente. 
+ASPECTOS IMPORTANTES: 
+- la jugada esta programado para funcionar SOLO si Egipto ataca a Medio Oriente. 
+- ESTA TODA LA INFORMACION DENTRO DEL LOCAL STORAGE
+- NO ALCANZAMOS A HABILITAR TODOS LO TERRITORIOS (no es tan necesario pues mas adelante se implementara una base de datos mas amplia).
+- LAS MURALLAS SE ACTUALIZAN CUANDO SE RECARGA LA PAGINA.
 
 1) Inicio de sesion: 
    - Al ingresar al index de la pagina se puede acceder a la opcion de "Log In" o de "Sign Up". En el "Sign Up", se solicita la informacion de jugador para crear una cuenta, esta queda almacenada en LocalStorage. Esto te permite ingresar a la vista de "Loged". 
@@ -58,11 +62,10 @@ ASPECTOS IMPORTANTES: la jugada esta programado para funcionar SOLO si Egipto at
    - Se puede atacar con tropas, aviones o buques.
    - Las murallas resistes el equivalente al ataque de una tropa.
    - Los aviones y buques atacan el equivaente a 5 tropas.
-   - Las murallas aumentan segun se vayan mejorando.
+   - Las murallas aumentan segun se vayan mejorando, se actuliza cuando se refresca la pagina. (asumimos que no es un problema, dado que para cada turno se deberia actualizar la pagina)
    - La funcion de RECOLECTAR esta habilitada y actualiza las tablas de las vistas.
+ 
 
 
-ESTA TODA LA INFORMACION DENTRO DEL LOCAL STORAGE
 
-NO ALCANZAMOS A HABILITAR TODOS LO TERRITORIOS (no es tan necesario pues mas adelante se implementara una base de datos mas amplia).
 

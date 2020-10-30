@@ -29,6 +29,7 @@ boton_av.addEventListener("click", function(){
 
         a = parseInt(av_ls1,10) + 1;
         localStorage.setItem("aviones_1",a);
+        alert("Compraste un avion para tu territorio")
         x = parseInt(met,10) - 3;
         if (x < 0){
             x = 0
@@ -51,6 +52,7 @@ boton_bq.addEventListener("click", function(){
 
         b = parseInt(bq_ls1,10) + 1;
         localStorage.setItem("buques_1",b);
+        alert("Compraste un buque para tu territorio")
         x = parseInt(met,10) - 3;
         if (x < 0){
             x = 0
@@ -72,7 +74,7 @@ boton_m.addEventListener("click", function(){
     if (parseInt(cem) > 0) {
         m = parseInt(m_ls1,10) + 1;
         localStorage.setItem("muralla_1",m);
-
+        alert("Compraste una muralla para tu territorio")
         x = parseInt(cem,10) - 5;
         if (x < 0){
             x = 0

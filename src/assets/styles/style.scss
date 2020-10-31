@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import "navbar.scss"; // No mover esto para abajo
+@import "about.scss";
+@import "rules.scss";
+@import "contact.scss";
+@import "log_in.scss";
+@import "sign_up.scss";
+@import "player.scss";
+@import "index loged.scss";
+@import "army.scss";
+@import "territories.scss";
+@import "start_playing.scss";
+@import "shop.scss";
+@import "recursos.scss";
+@import "join_game.scss";
+@import "map.scss";
+@import "new_game.scss";
+@import "main loged.scss";
+
+// poner atencion al orden de estas lineas

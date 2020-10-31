@@ -65,6 +65,24 @@ ASPECTOS IMPORTANTES:
    - Las murallas aumentan segun se vayan mejorando, se actuliza cuando se refresca la pagina. (asumimos que no es un problema, dado que para cada turno se deberia actualizar la pagina)
    - La funcion de RECOLECTAR esta habilitada y actualiza las tablas de las vistas.
  
+### Instrucciones para uso de scss
+
+- Tener instalado node.js/npm (Si no lo tiene instalado, revise este link https://nodejs.org/en/)
+
+- Habra la consola en el directorio 
+- corre `npm install`
+- Si estas en ubuntu debes instalar `sudo apt-get install ruby-listen` y despues instalar `sudo gem install sass-listen`
+- corre `npm run style`
+- Deberias ver `Compiled src\assets\styles\style.scss to src\assets\styles\index.css.` como output en la consola
+- Estamos listos
+
+
+## Notas
+1. Cuando creas una nueva pagina, anade un id tag en el body (ejemplo: id="loginpage"/id="shoppage"/id="mappage")
+2. importar `index.css` en las futuras paginas de HTML.
+3. importa nuevos modulos scss en style.scss. (ej: `@import "join_game.scss`)
+4. Si quieres la nav logged-in en la nueva pagina ocupa el id `navloged` en nav en esa pagina  (ej: <nav class="navbar"  id="navloged"> en `terrotories.html`)
+5. No importe `navbar.scss` o `main loged.scss` en cualquier style module, SOLAMENTE estan presentes en `styles.scss`.
 
 
 

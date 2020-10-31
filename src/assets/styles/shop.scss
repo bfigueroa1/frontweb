@@ -1,0 +1,158 @@
+/* Shop CSS*/
+
+
+body#shoppage{
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;  
+}
+
+#shoppage{
+
+  dl {
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  dt {
+    background-color: rgb(224, 181, 112);
+    border-radius: 5px;
+    text-decoration: underline;
+  }
+  
+  .ejercito {
+    border-radius: 5px;
+    max-width: 800px;
+    height: 850px;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 6em;
+   
+  }
+  
+  p{
+    text-align: center;
+    letter-spacing: 1px;  
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #486255;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #DC7633;
+  }
+  
+  .comprar{
+    width: 150px;
+    background-color: rgba(0, 136, 169, 1);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+  }
+  .comprar:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .recursos{
+    width: 150px;
+    background-color: rgba(0, 136, 169, 1);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-align: center;
+  }
+  
+  .recursos:hover, 
+  .territorios:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  .territorios{
+    width: 150px;
+    background-color: rgba(0, 136, 169, 1);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    text-align: center;
+  }
+  
+  .recursosxterritorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+  }
+  
+  table.table2 {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    margin: auto;
+    margin-top: 2%; 
+  }
+  
+  
+  table.table2 th {
+    height: 100px;
+    width: 250px;
+    text-decoration: underline;
+    border-radius: 5px;
+    background-color:rgb(224, 181, 112);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  table.table2 td {
+    height: 100px;
+    width: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  
+  input[type="number"] {
+    width:1.5 rem;
+    font-size: large;
+  }
+  
+  #chess {
+    width: 60px;
+    
+  }
+  
+  #jet {
+    width: 80px;
+    
+  }
+  
+  #ship {
+    width: 80px;
+    
+  }
+}  

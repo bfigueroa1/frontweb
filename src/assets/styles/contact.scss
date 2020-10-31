@@ -1,0 +1,89 @@
+
+/* Contact Us CSS*/
+
+body#contactpage{
+    background-color: beige;
+    background-size: cover;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+}
+  
+#contactpage{
+    .container{
+        max-width: 800px;
+        height: 600px;
+        background: #fff;
+        margin: 50px auto;
+        box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+        box-sizing: border-box;
+        padding: 40px;
+        margin-top: 6em;
+    }
+      
+    p{
+        text-align: center;
+        letter-spacing: 1px;  
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: #486255;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 3.5rem;
+        color: #DC7633;
+    }
+      
+    .input,
+    .msg .area{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        border: 2px solid #e9eaea;
+        font-size: 14px;
+        border-radius: 5px;
+        outline: none;
+        transform: all 0.5s ease;
+        font-family: 'Montserrat', sans-serif;
+    }
+      
+    .login .input{
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+    }
+      
+    .login .input:last-child{
+        margin-right: 0;
+    }
+      
+    .msg .area{
+        height: 200px;
+    }
+      
+    .btn{
+        width: 250px;
+        background-color: rgba(0, 136, 169, 1);
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 0 auto;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .btn:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+    }
+      
+    .input:focus,
+    .msg .area:focus{
+        border: 2px solid #486255;
+    }
+      
+    ::-webkit-input-placeholder{
+        font-family: 'Montserrat', sans-serif;
+    }
+      
+}

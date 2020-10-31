@@ -1,0 +1,127 @@
+
+
+
+/* Navbar CSS */
+
+  .navbar#navloged {
+  z-index: 100;
+  background-color: rgb(222, 159, 59);
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  width: 100vw;
+  min-width: 1100px;
+  margin: 0 auto;
+  height: 7em;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+  
+
+  /* OPTION 3 */
+  /* move default logo position to left and hide it when window size is less than 886px */
+  /* uncomment .logo and .link_logo ^^up there and use the ones down here */
+   .logo{
+    width: 4rem;
+    height: 5rem;
+    left: 5.313em;
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+  
+  .background-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  }
+  
+  .link_logo { 
+  margin-right: 40rem;
+  display: inline-block;
+  overflow: auto;
+  }
+  
+  .texto-bienvenida {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  }
+  
+  @media screen and (max-width: 880px) {
+    .logo{
+        display: none;
+     }
+     .link_logo{
+         display: none;
+     }
+  } 
+  
+  .navbar_items{
+   list-style: none;
+   display: inline-block;
+   position: fixed;
+   right: 10.875em;
+   top: 2.5em;
+   white-space: nowrap;
+  
+  }
+  
+  .navbar_item{
+   font-family: "Montserrat", sans-serif;
+   padding: 0px 20px;
+   font-weight: 500;
+   font-size: 1em;
+   color: #edf0f1;
+   text-decoration: none;
+   display: inline-block;
+   overflow: hidden;
+  }
+  
+  .navbar_link,
+  .navbar_link:link,
+  .navbar_link:visited{
+   transition: all 0.3s ease 0s;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   font-size: 1em;
+   color: #edf0f1;
+   text-decoration: none;
+   cursor: pointer;
+   display: inline-block;
+  }
+  
+  .navbar_link:hover{
+   color: black;
+   transform: scale(1.2);
+  } 
+  
+  .log_out {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  position: fixed;
+  right: 3.625em;
+  top: 2em;
+  overflow: hidden;
+  }
+  
+  .log_out:hover{
+   background-color: rgba(0, 136, 169, 0.8);
+  }
+
+}  
+  
+  
+  
+
+
+
+/* End of Navabar CSS*/

@@ -1,0 +1,212 @@
+
+/* Sidebar CSS */
+
+#rulespage.body_rules{
+   background-color: #f3f5f9;
+   overflow-x: hidden;
+}
+
+#rulespage{
+    
+   .wrapper{
+      display: flex;
+      position: relative;
+   }
+    
+   .wrapper .sidebar{
+      width: 200px;
+      height: 100%;
+      background: rgb(222, 159, 59);
+      padding: 30px 0px;
+      position: fixed;
+      overflow: scroll;
+   }
+    
+   .wrapper .sidebar h2{
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+   }
+    
+   .wrapper .sidebar ul li{
+      padding: 15px;
+      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      border-top: 1px solid rgba(255,255,255,0.05);
+   }    
+    
+   .wrapper .sidebar ul li a{
+      color: #fff;
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+   }
+    
+   .wrapper .sidebar ul li a .fas{
+      width: 95px;
+   }
+    
+   .wrapper .sidebar ul li:hover{
+      background-color: #DC7633;
+   }
+   
+   
+   .wrapper .sidebar ul li:hover a{
+       color: #bdb8d7;
+   }
+   
+   .wrapper .main_content{
+      width: 100%;
+      margin-left: 200px;
+   }
+   
+   .main_content{
+      overflow-x: scroll;
+   }
+   
+   .wrapper .main_content .header{
+      padding: 20px;
+      background: #fff;
+      color: #717171;
+      border-bottom: 1px solid #e0e4e8;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 2rem;
+   }
+   
+   .wrapper .main_content .info{
+      margin: 20px;
+      color: #717171;
+      line-height: 25px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+   }
+   
+   /* End of Sidebar CSS */
+   
+   /* Tha General Rules */
+   
+   .texto_generalrules{
+       padding: 1rem;
+    }
+    
+    .texto_generalrules strong{
+       color: black;
+    }
+   
+   .tabla_territorios{
+      width: 60em;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .tabla_territorios th{ 
+      border: 1px solid black;
+   }
+   .tabla_territorios td{ 
+      border: 1px solid black;
+      padding: 1rem;
+   }
+   
+   .tabla_recursos{
+      width: 50rem;
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+   .tabla_recursos th{
+      border: 1px solid black;
+   }
+   
+   .tabla_recursos td{
+      border: 1px solid black;
+      padding: 1rem;
+   }
+   
+   .tabla_recursos2{
+       width: 20rem;
+       border-collapse: collapse;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .tabla_recursos2 th{
+       border: 1px solid black;
+    }
+    
+    .tabla_recursos2 td{
+       border: 1px solid black;
+       padding: 1rem;
+    }
+   
+    .tabla_recursos3{
+       width: 20rem;
+       border-collapse: collapse;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .tabla_recursos3 th{
+       border: 1px solid black;
+    }
+    
+    .tabla_recursos3 td{
+       border: 1px solid black;
+       padding: 1rem;
+    }
+   
+    .tabla_recursos4{
+       width: 20rem;
+       border-collapse: collapse;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .tabla_recursos4 th{
+       border: 1px solid black;
+    }
+    
+    .tabla_recursos4 td{
+       border: 1px solid black;
+       padding: 1rem;
+    }
+   
+    .tabla_recursos5{
+       width: 50rem;
+       border-collapse: collapse;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .tabla_recursos5 th{
+       border: 1px solid black;
+    }
+    
+    .tabla_recursos5 td{
+       border: 1px solid black;
+       padding: 1rem;
+    }
+    
+    .lista_spec{
+        padding: 1rem;
+        margin-left: 2rem;
+    }
+    
+    .lista_spec strong{
+        color: black;
+    }
+   
+    .list_objectives{
+       padding: 1rem;
+       margin-left: 1rem;
+    }
+}

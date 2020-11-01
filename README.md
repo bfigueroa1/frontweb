@@ -83,7 +83,7 @@ ASPECTOS IMPORTANTES:
 3. Importa nuevos modulos scss en style.scss. (ej: `@import "join_game.scss`)
 4. Si quieres la nav logged-in en la nueva pagina ocupa el id `navloged` en nav en esa pagina  (ej: <nav class="navbar"  id="navloged"> en `terrotories.html`)
 5. No importe `navbar.scss` o `main loged.scss` en cualquier style module, SOLAMENTE estan presentes en `styles.scss`.
-
+6. `loadhtml="VALUE"` = `moduleList.VALUE` y moduleList.VALUE = html para el componente VALUE (Revisar el ejemplo de nav y navloged en module.js)
 
 
 

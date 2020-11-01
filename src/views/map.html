@@ -9,26 +9,7 @@
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 		
 		<title>Katak | Map</title>    
-        <nav class="navbar"  id="navloged">
-            <a href="index loged.html" class="link_logo">
-                <img class= "logo" src="../assets/imgs/Logo Blanco.png" alt="logo">
-            </a>
-                <ul class="navbar_items">
-                    <li class="navbar_item">
-                        <a href="player.html" class="navbar_link">Player</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="army.html" class="navbar_link">Army</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="territories.html" class="navbar_link">Territories</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="start_playing.html" class="navbar_link">Game Session</a>
-                    </li>
-                </ul>
-            <a href="../../index.html"><button class="log_out">Logout</button></a>
-        </nav>
+        <nav loadhtml="navloged" class="navbar"></nav>
     </head>
     <body id="mappage" onload="Function_wall()">
     	<div class="container">
@@ -940,5 +921,6 @@
 			
 		</div>
 		<script src="../assets/js/map.js"></script>
+		<script src="../assets/js/module.js"></script>
     </body>
 </html>

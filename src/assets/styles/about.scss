@@ -6,7 +6,8 @@ body#aboutpage{
   background-size: cover;
   height: auto;
   font-family: "Montserrat", sans-serif;  
-  margin: 0; //No mover
+  margin: 0; //don't remove this
+}
 
 #aboutpage{
   body{
@@ -14,7 +15,7 @@ body#aboutpage{
     background-size: cover;
     height: auto;
     font-family: "Montserrat", sans-serif;  
-    margin: 0; //No mover
+    margin: 0; //don't remove this
   }
   
   .container{
@@ -77,5 +78,4 @@ body#aboutpage{
     font-size: 1rem;
     margin-top: 1em;
   }
-}
 }

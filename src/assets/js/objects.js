@@ -3,7 +3,7 @@ function Army(name, color, objective) {
   this.name = name;
   this.color = color;
   this.objective = objective;
-  this.territories = [];
+  //this.territories = [];
   this.resources = {
     metal : 0,
     cement : 0,

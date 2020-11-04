@@ -1536,24 +1536,24 @@ body#mappage {
 #mappage .espana-francia-italia:hover path, #mappage .colombia-venezuela:hover path, #mappage .islandia:hover path, #mappage .nueva-guinea:hover path {
   fill: #060606;
 }
-#mappage .vladivostok path, #mappage .chile-bolivia-peru-ecuador path, #mappage .el-congo path, #mappage .africa-del-sur path, #mappage .egipto path,
-#mappage .japon path, #mappage .nueva-york path, #mappage .colombia-venezuela path {
+#mappage .vladivostokPath, #mappage .chile-bolivia-peru-ecuadorPath, #mappage .el-congoPath, #mappage .africa-del-surPath, #mappage .egiptoPath,
+#mappage .japonPath, #mappage .nueva-yorkPath, #mappage .colombia-venezuelaPath {
   fill: #ACA71E;
 }
-#mappage .vietnam path, #mappage .alaska path, #mappage .moscu path, #mappage .suecia path, #mappage .sudan path, #mappage .brasil path, #mappage .labrador path,
-#mappage .vancouver path, #mappage .espana-francia-italia path {
+#mappage .vietnamPath, #mappage .alaskaPath, #mappage .moscuPath, #mappage .sueciaPath, #mappage .sudanPath, #mappage .brasilPath, #mappage .labradorPath,
+#mappage .vancouverPath, #mappage .espana-francia-italiaPath {
   fill: #AB1A17;
 }
-#mappage .borneo path, #mappage .australia path, #mappage .sumatra path, #mappage .dudinka path, #mappage .mexico path, #mappage .groenlandia path,
-#mappage .madagascar path, #mappage .india path, #mappage .islandia path {
+#mappage .borneoPath, #mappage .australiaPath, #mappage .sumatraPath, #mappage .dudinkaPath, #mappage .mexicoPath, #mappage .groenlandiaPath,
+#mappage .madagascarPath, #mappage .indiaPath, #mappage .islandiaPath {
   fill: #AD4E8C;
 }
-#mappage .argelia-nigeria path, #mappage .china path, #mappage .tchita path, #mappage .inglaterra path, #mappage .omsk path, #mappage .california path,
-#mappage .ottawa path, #mappage .nueva-guinea path {
+#mappage .argelia-nigeriaPath, #mappage .chinaPath, #mappage .tchitaPath, #mappage .inglaterraPath, #mappage .omskPath, #mappage .californiaPath,
+#mappage .ottawaPath, #mappage .nueva-guineaPath {
   fill: #26378C;
 }
-#mappage .mongolia path, #mappage .siberia path, #mappage .aral path, #mappage .medio-oriente path, #mappage .mackenzie path,
-#mappage .argentina-paraguay-uruguay path, #mappage .polonia-yugoeslavia path, #mappage .alemania path {
+#mappage .mongoliaPath, #mappage .siberiaPath, #mappage .aralPath, #mappage .medio-orientePath, #mappage .mackenziePath,
+#mappage .argentina-paraguay-uruguayPath, #mappage .polonia-yugoeslaviaPath, #mappage .alemaniaPath {
   fill: #46AC35;
 }
 #mappage .territory-box {

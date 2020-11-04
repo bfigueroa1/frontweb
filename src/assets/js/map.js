@@ -195,7 +195,7 @@ boton_r.addEventListener("click", function(){
     localStorage.setItem("alimento_1",x);
 });
 
-// onlaed = "Function_wall()"
+/* onlaed = "Function_wall()"
 function start_map() {
 	load_map();
 	Function_wall();
@@ -211,6 +211,7 @@ function Function_wall() {
 	$(".medio-orientePath").css("stroke", "darkgoldenrod");
 	$(".medio-orientePath").css("stroke-width", m_ls2);
 }
+*/
 
 function load_map() {
 	let vladivostok = JSON.parse(localStorage.getItem('vladivostok'));
@@ -297,6 +298,49 @@ function load_map() {
 	$('.argelia-nigeriaPath').css('fill', argelia_nigeria.army.color);
 	$('.madagascarPath').css('fill', madagascar.army.color);
 	$('.egiptoPath').css('fill', egipto.army.color);
+	// Show Walls
+	$('.vladivostokPath').css('stroke-width', vladivostok.wall);
+	$('.japonPath').css('stroke-width', japon.wall);
+	$('.vietnamPath').css('stroke-width', vietnam.wall);
+	$('.siberiaPath').css('stroke-width', siberia.wall);
+	$('.dudinkaPath').css('stroke-width', dudinka.wall);
+	$('.medio-orientePath').css('stroke-width', medio_oriente.wall);
+	$('.omskPath').css('stroke-width', omsk.wall);
+	$('.aralPath').css('stroke-width', aral.wall);
+	$('.chinaPath').css('stroke-width', china.wall);
+	$('.indiaPath').css('stroke-width', india.wall);
+	$('.tchitaPath').css('stroke-width', tchita.wall);
+	$('.mongoliaPath').css('stroke-width', mongolia.wall);
+	$('.alaskaPath').css('stroke-width', alaska.wall);
+	$('.mackenziePath').css('stroke-width', mackenzie.wall);
+	$('.vancouverPath').css('stroke-width', vancouver.wall);
+	$('.groenlandiaPath').css('stroke-width', groenlandia.wall);
+	$('.nueva-yorkPath').css('stroke-width', nueva_york.wall);
+	$('.californiaPath').css('stroke-width', california.wall);
+	$('.ottawaPath').css('stroke-width', ottawa.wall);
+	$('.labradorPath').css('stroke-width', labrador.wall);
+	$('.mexicoPath').css('stroke-width', mexico.wall);
+	$('.chile-bolivia-peru-ecuadorPath').css('stroke-width', chile_bolivia_peru_ecuador.wall);
+	$('.argentina-paraguay-uruguayPath').css('stroke-width', argentina_paraguay_uruguay.wall);
+	$('.brasilPath').css('stroke-width', brasil.wall);
+	$('.colombia-venezuelaPath').css('stroke-width', colombia_venezuela.wall);
+	$('.nueva-guineaPath').css('stroke-width', nueva_guinea.wall);
+	$('.borneoPath').css('stroke-width', borneo.wall);
+	$('.sumatraPath').css('stroke-width', sumatra.wall);
+	$('.australiaPath').css('stroke-width', australia.wall);
+	$('.inglaterraPath').css('stroke-width', inglaterra.wall);
+	$('.moscuPath').css('stroke-width', moscu.wall);
+	$('.sueciaPath').css('stroke-width', suecia.wall);
+	$('.islandiaPath').css('stroke-width', islandia.wall);
+	$('.alemaniaPath').css('stroke-width', alemania.wall);
+	$('.espana-francia-italiaPath').css('stroke-width', espana_francia_italia.wall);
+	$('.polonia-yugoeslaviaPath').css('stroke-width', polonia_yugoeslavia.wall);
+	$('.sudanPath').css('stroke-width', sudan.wall);
+	$('.el-congoPath').css('stroke-width', el_congo.wall);
+	$('.africa-del-surPath').css('stroke-width', africa_del_sur.wall);
+	$('.argelia-nigeriaPath').css('stroke-width', argelia_nigeria.wall);
+	$('.madagascarPath').css('stroke-width', madagascar.wall);
+	$('.egiptoPath').css('stroke-width', egipto.wall);
 }
 
 
@@ -907,10 +951,10 @@ $(function () {
 		$("#troops-territory").append(`Troops: ${mongolia.troops}`);
 		// change airplanes number
 		$("#airplanes-territory").empty();
-		$("#airplanes-territory").append(`Airplanes: ${siberia.airplanes}`);
+		$("#airplanes-territory").append(`Airplanes: ${mongolia.airplanes}`);
 		// change ships number
 		$("#ships-territory").empty();
-		$("#ships-territory").append(`Ships: ${siberia.ships}`);
+		$("#ships-territory").append(`Ships: ${mongolia.ships}`);
     	return false;
   	});
 
@@ -1742,7 +1786,11 @@ $(function () {
 		$("#ships-territory").empty();
 		$("#ships-territory").append(`Ships: ${chile_bolivia_peru_ecuador.ships}`);
     	return false;
-  	});
+	});
+	
+	$('#send_moveBtn').click(function () {
+		load_map();
+	  });
 });
 
 

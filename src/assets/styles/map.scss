@@ -198,30 +198,31 @@ body#mappage{
   polonia-yugoeslavia, sudan, el-congo, africa-del-sur, argelia-nigeria, madagascar, egipto */
   
   .vladivostokPath, .chile-bolivia-peru-ecuadorPath, .el-congoPath, .africa-del-surPath, .egiptoPath,
-  .japonPath, .nueva-yorkPath, .colombia-venezuelaPath {
-    fill: #ACA71E;
-  }
-  
-  .vietnamPath, .alaskaPath, .moscuPath, .sueciaPath, .sudanPath, .brasilPath, .labradorPath, 
-  .vancouverPath, .espana-francia-italiaPath {
-    fill: #AB1A17;
-  }
-  
+  .japonPath, .nueva-yorkPath, .colombia-venezuelaPath, .vietnamPath, .alaskaPath, .moscuPath, 
+  .sueciaPath, .sudanPath, .brasilPath, .labradorPath, .vancouverPath, .espana-francia-italiaPath, 
   .borneoPath, .australiaPath, .sumatraPath, .dudinkaPath, .mexicoPath, .groenlandiaPath, 
-  .madagascarPath, .indiaPath, .islandiaPath {
-    fill: #AD4E8C;
+  .madagascarPath, .indiaPath, .islandiaPath, .argelia-nigeriaPath, .chinaPath, .tchitaPath, 
+  .inglaterraPath, .omskPath, .californiaPath, .ottawaPath, .nueva-guineaPath, .mongoliaPath, 
+  .siberiaPath, .aralPath, .medio-orientePath, .mackenziePath, .argentina-paraguay-uruguayPath, 
+  .polonia-yugoeslaviaPath, .alemaniaPath {
+    fill: black;
+    stroke: darkgoldenrod;
   }
   
-  .argelia-nigeriaPath, .chinaPath, .tchitaPath, .inglaterraPath, .omskPath, .californiaPath, 
-  .ottawaPath, .nueva-guineaPath {
-    fill: #26378C;
+  .vladivostokPath:hover, .chile-bolivia-peru-ecuadorPath:hover, .el-congoPath:hover, 
+  .africa-del-surPath:hover, .egiptoPath:hover, .japonPath:hover, .nueva-yorkPath:hover, 
+  .colombia-venezuelaPath:hover, .vietnamPath:hover, .alaskaPath:hover, .moscuPath:hover, 
+  .sueciaPath:hover, .sudanPath:hover, .brasilPath:hover, .labradorPath:hover, .vancouverPath:hover, 
+  .espana-francia-italiaPath:hover, .borneoPath:hover, .australiaPath:hover, .sumatraPath:hover, 
+  .dudinkaPath:hover, .mexicoPath:hover, .groenlandiaPath:hover, .madagascarPath:hover, .indiaPath:hover, 
+  .islandiaPath:hover, .argelia-nigeriaPath:hover, .chinaPath:hover, .tchitaPath:hover, 
+  .inglaterraPath:hover, .omskPath:hover, .californiaPath:hover, .ottawaPath:hover, 
+  .nueva-guineaPath:hover, .mongoliaPath:hover, .siberiaPath:hover, .aralPath:hover, 
+  .medio-orientePath:hover, .mackenziePath:hover, .argentina-paraguay-uruguayPath:hover,
+  .polonia-yugoeslaviaPath:hover, .alemaniaPath:hover {
+    fill: #060606;
   }
-  
-  .mongoliaPath, .siberiaPath, .aralPath, .medio-orientePath, .mackenziePath, 
-  .argentina-paraguay-uruguayPath, .polonia-yugoeslaviaPath, .alemaniaPath {
-    fill: #46AC35;
-  }
-  
+
   
   /* Hover Menu */
   .territory-box{

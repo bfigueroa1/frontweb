@@ -1537,24 +1537,29 @@ body#mappage {
   fill: #060606;
 }
 #mappage .vladivostokPath, #mappage .chile-bolivia-peru-ecuadorPath, #mappage .el-congoPath, #mappage .africa-del-surPath, #mappage .egiptoPath,
-#mappage .japonPath, #mappage .nueva-yorkPath, #mappage .colombia-venezuelaPath {
-  fill: #ACA71E;
-}
-#mappage .vietnamPath, #mappage .alaskaPath, #mappage .moscuPath, #mappage .sueciaPath, #mappage .sudanPath, #mappage .brasilPath, #mappage .labradorPath,
-#mappage .vancouverPath, #mappage .espana-francia-italiaPath {
-  fill: #AB1A17;
-}
+#mappage .japonPath, #mappage .nueva-yorkPath, #mappage .colombia-venezuelaPath, #mappage .vietnamPath, #mappage .alaskaPath, #mappage .moscuPath,
+#mappage .sueciaPath, #mappage .sudanPath, #mappage .brasilPath, #mappage .labradorPath, #mappage .vancouverPath, #mappage .espana-francia-italiaPath,
 #mappage .borneoPath, #mappage .australiaPath, #mappage .sumatraPath, #mappage .dudinkaPath, #mappage .mexicoPath, #mappage .groenlandiaPath,
-#mappage .madagascarPath, #mappage .indiaPath, #mappage .islandiaPath {
-  fill: #AD4E8C;
+#mappage .madagascarPath, #mappage .indiaPath, #mappage .islandiaPath, #mappage .argelia-nigeriaPath, #mappage .chinaPath, #mappage .tchitaPath,
+#mappage .inglaterraPath, #mappage .omskPath, #mappage .californiaPath, #mappage .ottawaPath, #mappage .nueva-guineaPath, #mappage .mongoliaPath,
+#mappage .siberiaPath, #mappage .aralPath, #mappage .medio-orientePath, #mappage .mackenziePath, #mappage .argentina-paraguay-uruguayPath,
+#mappage .polonia-yugoeslaviaPath, #mappage .alemaniaPath {
+  fill: black;
+  stroke: darkgoldenrod;
+  stroke-width: 0px;
 }
-#mappage .argelia-nigeriaPath, #mappage .chinaPath, #mappage .tchitaPath, #mappage .inglaterraPath, #mappage .omskPath, #mappage .californiaPath,
-#mappage .ottawaPath, #mappage .nueva-guineaPath {
-  fill: #26378C;
-}
-#mappage .mongoliaPath, #mappage .siberiaPath, #mappage .aralPath, #mappage .medio-orientePath, #mappage .mackenziePath,
-#mappage .argentina-paraguay-uruguayPath, #mappage .polonia-yugoeslaviaPath, #mappage .alemaniaPath {
-  fill: #46AC35;
+#mappage .vladivostokPath:hover, #mappage .chile-bolivia-peru-ecuadorPath:hover, #mappage .el-congoPath:hover,
+#mappage .africa-del-surPath:hover, #mappage .egiptoPath:hover, #mappage .japonPath:hover, #mappage .nueva-yorkPath:hover,
+#mappage .colombia-venezuelaPath:hover, #mappage .vietnamPath:hover, #mappage .alaskaPath:hover, #mappage .moscuPath:hover,
+#mappage .sueciaPath:hover, #mappage .sudanPath:hover, #mappage .brasilPath:hover, #mappage .labradorPath:hover, #mappage .vancouverPath:hover,
+#mappage .espana-francia-italiaPath:hover, #mappage .borneoPath:hover, #mappage .australiaPath:hover, #mappage .sumatraPath:hover,
+#mappage .dudinkaPath:hover, #mappage .mexicoPath:hover, #mappage .groenlandiaPath:hover, #mappage .madagascarPath:hover, #mappage .indiaPath:hover,
+#mappage .islandiaPath:hover, #mappage .argelia-nigeriaPath:hover, #mappage .chinaPath:hover, #mappage .tchitaPath:hover,
+#mappage .inglaterraPath:hover, #mappage .omskPath:hover, #mappage .californiaPath:hover, #mappage .ottawaPath:hover,
+#mappage .nueva-guineaPath:hover, #mappage .mongoliaPath:hover, #mappage .siberiaPath:hover, #mappage .aralPath:hover,
+#mappage .medio-orientePath:hover, #mappage .mackenziePath:hover, #mappage .argentina-paraguay-uruguayPath:hover,
+#mappage .polonia-yugoeslaviaPath:hover, #mappage .alemaniaPath:hover {
+  fill: #060606;
 }
 #mappage .territory-box {
   display: -ms-flexbox;

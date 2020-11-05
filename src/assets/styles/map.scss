@@ -207,6 +207,7 @@ body#mappage{
   .polonia-yugoeslaviaPath, .alemaniaPath {
     fill: black;
     stroke: darkgoldenrod;
+    stroke-width: 0px; 
   }
   
   .vladivostokPath:hover, .chile-bolivia-peru-ecuadorPath:hover, .el-congoPath:hover, 

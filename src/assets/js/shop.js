@@ -20,7 +20,7 @@ localStorage.setItem("alimento_2",50)
 */
 let australia = {
     army: {
-        name: 'uname1',
+        name: 'Username4',
         color: '#26378C',
         resources: {
             metal : 3,
@@ -40,12 +40,12 @@ let australia = {
     troops: 10,
     airplanes: 3,
     ships: 2,
-    wall: 4 
+    wall: 3 
 };
 let egipto = {
     army: {
         name: 'Username1',
-        color: 'ACA71E',
+        color: '#ACA71E',
         resources: {
             metal : 6,
             cement : 12,
@@ -64,12 +64,12 @@ let egipto = {
     troops: 18,
     airplanes: 12,
     ships: 0,
-    wall: 6 
+    wall: 0 
 };
 let medio_oriente = {
     army: {
-        name: 'Username5',
-        color: '#46AC35'
+        name: 'Username3',
+        color: '#AD4E8C'
     },
     troops: 12,
     airplanes: 0,
@@ -92,13 +92,13 @@ let medio_oriente = {
 };
 let mackenzie = {
     army: {
-        name: 'Username5',
-        color: '#46AC35'
+        name: 'Username2',
+        color: '#AB1A17'
     },
     troops: 5,
     airplanes: 4,
     ships: 1,
-    wall: 12,
+    wall: 8,
     resources: {
         metal : 15,
         cement : 12,
@@ -114,44 +114,44 @@ let mackenzie = {
         workforce: 0
       } 
 };
-let vladivostok = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let japon = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let vietnam = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let siberia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let dudinka = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let omsk = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let aral = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let china = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let india = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let tchita = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let mongolia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let alaska = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let vancouver = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let groenlandia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let nueva_york = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let california = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let ottawa = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let labrador = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let mexico = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let chile_bolivia_peru_ecuador = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let argentina_paraguay_uruguay = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let brasil = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let colombia_venezuela = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let nueva_guinea = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let borneo = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let sumatra = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let inglaterra = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let moscu = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let suecia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let islandia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let alemania = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let espana_francia_italia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let polonia_yugoeslavia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let sudan = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let el_congo = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let africa_del_sur = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let argelia_nigeria = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
-let madagascar = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 12, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let vladivostok = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let japon = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let vietnam = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let siberia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let dudinka = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let omsk = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let aral = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let china = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let india = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let tchita = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let mongolia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let alaska = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let vancouver = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let groenlandia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let nueva_york = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let california = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let ottawa = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let labrador = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let mexico = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let chile_bolivia_peru_ecuador = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let argentina_paraguay_uruguay = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let brasil = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let colombia_venezuela = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let nueva_guinea = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let borneo = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let sumatra = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let inglaterra = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let moscu = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let suecia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let islandia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let alemania = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let espana_francia_italia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let polonia_yugoeslavia = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let sudan = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let el_congo = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let africa_del_sur = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let argelia_nigeria = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
+let madagascar = {army: {name: 'Username5', color: '#46AC35'}, troops: 5, airplanes: 4, ships: 1, wall: 6, resources: {metal : 15, cement : 12, food : 0, oil : 0, network : 0, lithium : 0, nuclear : 3, tribes : 6, tecnology : 1, niobium : 1, virus : 0, workforce: 0}};
 
 localStorage.setItem('vladivostok', JSON.stringify(vladivostok));
 localStorage.setItem('japon', JSON.stringify(japon));

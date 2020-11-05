@@ -8,8 +8,6 @@
 | Borja Figueroa | bfigueroa1@uc.cl | [bfigueroa1](https://www.github.com/bfigueroa1) |
 | Juan Pablo Ramírez | jpramirez5@uc.cl | [jprampad](https://www.github.com/jprampad) |
 
-## (read me Tarea 3 al final :)
-
 ## Descripción de la distribución del repositorio
 En la carpeta __documents__ se puede encontrar un pdf que corresponde a las reglas del juego y sus características (entrega 1), un archivo pdf llamado __ER__ que corresponde al diagrama entidad-relación actualizado y un archivo pdf llamado __UML__ que corresponde al diagrama de clases actualizado.
 
@@ -19,10 +17,20 @@ También en el repositorio se encuentra una carpeta llamada __app__ donde están
 Durante el semestre trabajaremos en la implementación de un juego que sigue una base de tipo 1: Dominio de territorios y recursos. El juego consiste en un mapa del mundo, donde los jugadores poseeran territorios en los cuales recolectarán recursos, juntaran tropas y construiran armas, vehículos y murallas. Para ganar el juego, cada jugador intentará cumplir un objetivo distinto mediante la conquista de territorios enemigos. Se podrá jugar de 2 a 5 jugadores.
 
 ## Tecnologías empleadas
-Se ha empleado css y html. Para el mapa se utilizó svg (en forma de coordenadas dentro del html) para que tome forma y que cada territorio se pueda manipular como un elemento por separado.
+Se ha empleado css, html, js y jsquery. Para el mapa se utilizó svg (en forma de coordenadas dentro del html) para que tome forma y que cada territorio se pueda manipular como un elemento por separado.
 
 ## ¿Cómo ejecutar la aplicación?
 Para ejecutar la aplicación se debe correr el archivo __index.html__ de la carpeta __app__.
+
+## Instrucciones para uso de scss
+
+- Tener instalado node.js/npm (Si no lo tiene instalado, revise este link https://nodejs.org/en/)
+- Habra la consola en el directorio 
+- Corre `npm install`
+- Si estas en ubuntu debes instalar `sudo apt-get install ruby-listen` y despues instalar `sudo gem install sass-listen`
+- Corre `npm run style`
+- Deberias ver `Compiled src\assets\styles\style.scss to src\assets\styles\index.css.` como output en la consola
+- Estamos listos
 
 ## Otros
 El recorrido básico que está implementado por ahora en la app es el siguiente:
@@ -64,18 +72,9 @@ ASPECTOS IMPORTANTES:
    - Los aviones y buques atacan el equivaente a 5 tropas.
    - Las murallas aumentan segun se vayan mejorando, se actuliza cuando se refresca la pagina. (asumimos que no es un problema, dado que para cada turno se deberia actualizar la pagina)
    - La funcion de RECOLECTAR esta habilitada y actualiza las tablas de las vistas.
- 
-## Instrucciones para uso de scss
 
-- Tener instalado node.js/npm (Si no lo tiene instalado, revise este link https://nodejs.org/en/)
-
-- Habra la consola en el directorio 
-- Corre `npm install`
-- Si estas en ubuntu debes instalar `sudo apt-get install ruby-listen` y despues instalar `sudo gem install sass-listen`
-- Corre `npm run style`
-- Deberias ver `Compiled src\assets\styles\style.scss to src\assets\styles\index.css.` como output en la consola
-- Estamos listos
-
+### READ_ME Tarea 4
+   Los datos JSON enviados al cliente están en la vista de la tienda, para que se actualice el local storage hay que dirigirse a la tienda y para ver los cambios en el mapa se debe regresar a la vista mapa (Game Session) y presionar el botón __Send Move__. El mapa en un inicio aparece en negro asumiendo que no hay datos.
 
 # Notas
 1. Cuando creas una nueva pagina, anade un id tag en el body (ejemplo: id="loginpage"/id="shoppage"/id="mappage")

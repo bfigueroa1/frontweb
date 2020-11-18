@@ -2582,5 +2582,13 @@ $(function () {
 	
 	$('#send_moveBtn').click(function () {
 		load_map();
-	  });
+		let jugada = localStorage.getItem("jugada");
+    	$.ajax({
+           url: 't1603.php',
+           data: {jugada: jugada},
+           type: 'POST' 
+    	}).done(function(resp) {
+        	alert(resp);
+    	});
+	});
 });

@@ -2582,13 +2582,23 @@ $(function () {
 	
 	$('#send_moveBtn').click(function () {
 		load_map();
-		let jugada = localStorage.getItem("jugada");
-    	$.ajax({
-           url: 't1603.php',
-           data: {jugada: jugada},
-           type: 'POST' 
-    	}).done(function(resp) {
-        	alert(resp);
-    	});
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
+		let options = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(jugada)
+		};
+		fetch('/api', options);
 	});
 });
+/*
+$.ajax({
+	url: 't1603.php',
+	data: {jugada: jugada},
+	type: 'POST' 
+ }).done(function(resp) {
+	 alert(resp);
+ });
+ */

@@ -18,6 +18,12 @@ localStorage.setItem("metal_2",50)
 localStorage.setItem("cemento_2",50)
 localStorage.setItem("alimento_2",50)
 */
+let jugada = {
+    troop_attack = [],
+    airplane_attack = [],
+    ship_attack = [],
+    search_resources = []
+};
 let user1 = {name: 'Bronko', territories: 8};
 let user2 = {name: 'Juanpita2000', territories: 8};
 let user3 = {name: 'Juanpaneitor 1313 uwu', territories: 8};

@@ -407,6 +407,19 @@ function send_troops(){
 
 // ATTACK elementos de localStorage del enemigo cuando es atacado
 
+$('#attack-troopsBtn').click(function () {
+	send_troops();
+	let attacked_territory = $("#troops-attackSelection").val();
+	let jugada = JSON.parse(localStorage.getItem('jugada'));
+	let attack = {
+		attack_territory: $('.modal-title').text(), 
+		attacked_territory: attacked_territory,  
+		troops: localStorage.getItem('number_t')
+	};
+	jugada.troop_attack.push(attack);
+	localStorage.setItem('jugada', JSON.stringify(jugada));
+  });
+
 var boton_t = document.getElementById("attack-troopsBtn");
 boton_t.addEventListener("click", send_troops);
 

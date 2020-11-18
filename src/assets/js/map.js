@@ -409,19 +409,19 @@ function send_troops(){
 
 $('#attack-troopsBtn').click(function () {
 	send_troops();
-	let attacked_territory = $("#troops-attackSelection").val();
-	let jugada = JSON.parse(localStorage.getItem('jugada'));
-	let attack = {
-		attack_territory: $('.modal-title').text(), 
-		attacked_territory: attacked_territory,  
-		troops: localStorage.getItem('number_t')
-	};
-	jugada.troop_attack.push(attack);
-	localStorage.setItem('jugada', JSON.stringify(jugada));
+	at_ls = localStorage.getItem('number_t');
+	if (at_ls !== 'null'){
+		let attacked_territory = $("#troops-attackSelection").val();
+		let jugada = JSON.parse(localStorage.getItem('jugada'));
+		let attack = {
+			attack_territory: $('.modal-title').text(), 
+			attacked_territory: attacked_territory,  
+			troops: localStorage.getItem('number_t')
+		};
+		jugada.troop_attack.push(attack);
+		localStorage.setItem('jugada', JSON.stringify(jugada));
+	}
   });
-
-var boton_t = document.getElementById("attack-troopsBtn");
-boton_t.addEventListener("click", send_troops);
 
 var boton_at_av = document.getElementById("attack-airplanesBtn2");
 
@@ -643,7 +643,16 @@ boton_at_av.addEventListener("click", function(){
 			let egipto = JSON.parse(localStorage.getItem('egipto'));
 			egipto.airplanes -= aa_ls;
 			localStorage.setItem('egipto', JSON.stringify(egipto));
-		}
+			}
+		let attacked_territory = $("#airplanes-attackSelection").val();
+		let jugada = JSON.parse(localStorage.getItem('jugada'));
+		let attack = {
+			attack_territory: $('.modal-title').text(), 
+			attacked_territory: attacked_territory,  
+			troops: aa_ls
+		};
+		jugada.airplane_attack.push(attack);
+		localStorage.setItem('jugada', JSON.stringify(jugada));
 	}
     
 });
@@ -869,6 +878,15 @@ boton_at_b.addEventListener("click", function(){
 			egipto.ships -= b_ls;
 			localStorage.setItem('egipto', JSON.stringify(egipto));
 		}
+		let attacked_territory = $("#ships-attackSelection").val();
+		let jugada = JSON.parse(localStorage.getItem('jugada'));
+		let attack = {
+			attack_territory: $('.modal-title').text(), 
+			attacked_territory: attacked_territory,  
+			troops: b_ls
+		};
+		jugada.ship_attack.push(attack);
+		localStorage.setItem('jugada', JSON.stringify(jugada));
 	}
 });
 
@@ -1291,6 +1309,15 @@ $(function () {
 		let numb = $("#troops-sent").val();
 		localStorage.setItem('number_t', numb);
 		send_troops();
+		if (numb !== null) {
+			let jugada = JSON.parse(localStorage.getItem('jugada'));
+			let collect = {
+				territory: $('.modal-title').text(), 
+				troops: numb
+			};
+			jugada.collect_resources.push(collect);
+			localStorage.setItem('jugada', JSON.stringify(jugada));
+		}
 	});
 
 	//Attack botton clicked

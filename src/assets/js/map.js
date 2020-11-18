@@ -878,6 +878,7 @@ boton_at_b.addEventListener("click", function(){
 			egipto.ships -= b_ls;
 			localStorage.setItem('egipto', JSON.stringify(egipto));
 		}
+    
 		let attacked_territory = $("#ships-attackSelection").val();
 		let jugada = JSON.parse(localStorage.getItem('jugada'));
 		let attack = {

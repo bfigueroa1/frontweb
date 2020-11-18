@@ -18,6 +18,12 @@ localStorage.setItem("metal_2",50)
 localStorage.setItem("cemento_2",50)
 localStorage.setItem("alimento_2",50)
 */
+let jugada = {
+    troop_attack: [],
+    airplane_attack: [],
+    ship_attack: [],
+    collect_resources: []
+};
 let user1 = {name: 'Bronko', territories: 8};
 let user2 = {name: 'Juanpita2000', territories: 8};
 let user3 = {name: 'Juanpaneitor 1313 uwu', territories: 8};
@@ -205,6 +211,7 @@ localStorage.setItem('user2', JSON.stringify(user2));
 localStorage.setItem('user3', JSON.stringify(user3));
 localStorage.setItem('user4', JSON.stringify(user4));
 localStorage.setItem('user5', JSON.stringify(user5));
+localStorage.setItem('jugada', JSON.stringify(jugada));
 
 var boton_av = document.getElementById("btn_av");
 

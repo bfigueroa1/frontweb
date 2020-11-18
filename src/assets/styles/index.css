@@ -1400,6 +1400,21 @@ body#mappage {
   mexico, chile-bolivia-peru-ecuador, argentina-paraguay-uruguay, brasil, colombia-venezuela, nueva-guinea, 
   borneo, sumatra, australia, inglaterra, moscu, suecia, islandia, alemania, espana-francia-italia,
   polonia-yugoeslavia, sudan, el-congo, africa-del-sur, argelia-nigeria, madagascar, egipto */
+  /*
+  .vladivostokPath:hover, .chile-bolivia-peru-ecuadorPath:hover, .el-congoPath:hover, 
+  .africa-del-surPath:hover, .egiptoPath:hover, .japonPath:hover, .nueva-yorkPath:hover, 
+  .colombia-venezuelaPath:hover, .vietnamPath:hover, .alaskaPath:hover, .moscuPath:hover, 
+  .sueciaPath:hover, .sudanPath:hover, .brasilPath:hover, .labradorPath:hover, .vancouverPath:hover, 
+  .espana-francia-italiaPath:hover, .borneoPath:hover, .australiaPath:hover, .sumatraPath:hover, 
+  .dudinkaPath:hover, .mexicoPath:hover, .groenlandiaPath:hover, .madagascarPath:hover, .indiaPath:hover, 
+  .islandiaPath:hover, .argelia-nigeriaPath:hover, .chinaPath:hover, .tchitaPath:hover, 
+  .inglaterraPath:hover, .omskPath:hover, .californiaPath:hover, .ottawaPath:hover, 
+  .nueva-guineaPath:hover, .mongoliaPath:hover, .siberiaPath:hover, .aralPath:hover, 
+  .medio-orientePath:hover, .mackenziePath:hover, .argentina-paraguay-uruguayPath:hover,
+  .polonia-yugoeslaviaPath:hover, .alemaniaPath:hover {
+    fill: #060606;
+  }
+  */
   /* Hover Menu */
   /* Modal */
   /* Troops Attack Modal */
@@ -1471,19 +1486,19 @@ body#mappage {
   overflow: hidden;
   text-align: center;
 }
-#mappage .uname1 {
+#mappage #uname1 {
   color: #ACA71E;
 }
-#mappage .uname2 {
+#mappage #uname2 {
   color: #AB1A17;
 }
-#mappage .uname3 {
+#mappage #uname3 {
   color: #AD4E8C;
 }
-#mappage .uname4 {
+#mappage #uname4 {
   color: #26378C;
 }
-#mappage .uname5 {
+#mappage #uname5 {
   color: #46AC35;
 }
 #mappage .gcode {
@@ -1534,7 +1549,7 @@ body#mappage {
 #mappage .ottawa:hover path, #mappage .mongolia:hover path, #mappage .siberia:hover path, #mappage .aral:hover path, #mappage .medio-oriente:hover path,
 #mappage .mackenzie:hover path, #mappage .argentina-paraguay-uruguay:hover path, #mappage .polonia-yugoeslavia:hover path, #mappage .alemania:hover path,
 #mappage .espana-francia-italia:hover path, #mappage .colombia-venezuela:hover path, #mappage .islandia:hover path, #mappage .nueva-guinea:hover path {
-  fill: #060606;
+  fill: #060606 !important;
 }
 #mappage .vladivostokPath, #mappage .chile-bolivia-peru-ecuadorPath, #mappage .el-congoPath, #mappage .africa-del-surPath, #mappage .egiptoPath,
 #mappage .japonPath, #mappage .nueva-yorkPath, #mappage .colombia-venezuelaPath, #mappage .vietnamPath, #mappage .alaskaPath, #mappage .moscuPath,
@@ -1547,19 +1562,6 @@ body#mappage {
   fill: black;
   stroke: darkgoldenrod;
   stroke-width: 0px;
-}
-#mappage .vladivostokPath:hover, #mappage .chile-bolivia-peru-ecuadorPath:hover, #mappage .el-congoPath:hover,
-#mappage .africa-del-surPath:hover, #mappage .egiptoPath:hover, #mappage .japonPath:hover, #mappage .nueva-yorkPath:hover,
-#mappage .colombia-venezuelaPath:hover, #mappage .vietnamPath:hover, #mappage .alaskaPath:hover, #mappage .moscuPath:hover,
-#mappage .sueciaPath:hover, #mappage .sudanPath:hover, #mappage .brasilPath:hover, #mappage .labradorPath:hover, #mappage .vancouverPath:hover,
-#mappage .espana-francia-italiaPath:hover, #mappage .borneoPath:hover, #mappage .australiaPath:hover, #mappage .sumatraPath:hover,
-#mappage .dudinkaPath:hover, #mappage .mexicoPath:hover, #mappage .groenlandiaPath:hover, #mappage .madagascarPath:hover, #mappage .indiaPath:hover,
-#mappage .islandiaPath:hover, #mappage .argelia-nigeriaPath:hover, #mappage .chinaPath:hover, #mappage .tchitaPath:hover,
-#mappage .inglaterraPath:hover, #mappage .omskPath:hover, #mappage .californiaPath:hover, #mappage .ottawaPath:hover,
-#mappage .nueva-guineaPath:hover, #mappage .mongoliaPath:hover, #mappage .siberiaPath:hover, #mappage .aralPath:hover,
-#mappage .medio-orientePath:hover, #mappage .mackenziePath:hover, #mappage .argentina-paraguay-uruguayPath:hover,
-#mappage .polonia-yugoeslaviaPath:hover, #mappage .alemaniaPath:hover {
-  fill: #060606;
 }
 #mappage .territory-box {
   display: -ms-flexbox;

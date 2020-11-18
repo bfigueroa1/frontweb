@@ -85,23 +85,23 @@ body#mappage{
     text-align: center;
   }
   
-  .uname1{
+  #uname1{
     color: #ACA71E;
   }
   
-  .uname2{
+  #uname2{
     color: #AB1A17;
   }
   
-  .uname3{
+  #uname3{
     color: #AD4E8C;
   }
   
-  .uname4{
+  #uname4{
     color: #26378C;
   }
   
-  .uname5{
+  #uname5{
     color: #46AC35;
   }
   
@@ -163,8 +163,9 @@ body#mappage{
   .ottawa:hover path, .mongolia:hover path, .siberia:hover path, .aral:hover path, .medio-oriente:hover path,
   .mackenzie:hover path, .argentina-paraguay-uruguay:hover path, .polonia-yugoeslavia:hover path, .alemania:hover path,
   .espana-francia-italia:hover path, .colombia-venezuela:hover path, .islandia:hover path, .nueva-guinea:hover path {
-      fill: #060606;
+      fill: #060606 !important;
   }
+  
   
   
   /*.asia{
@@ -210,6 +211,7 @@ body#mappage{
     stroke-width: 0px; 
   }
   
+  /*
   .vladivostokPath:hover, .chile-bolivia-peru-ecuadorPath:hover, .el-congoPath:hover, 
   .africa-del-surPath:hover, .egiptoPath:hover, .japonPath:hover, .nueva-yorkPath:hover, 
   .colombia-venezuelaPath:hover, .vietnamPath:hover, .alaskaPath:hover, .moscuPath:hover, 
@@ -223,7 +225,7 @@ body#mappage{
   .polonia-yugoeslaviaPath:hover, .alemaniaPath:hover {
     fill: #060606;
   }
-
+  */
   
   /* Hover Menu */
   .territory-box{

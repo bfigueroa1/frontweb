@@ -18,6 +18,11 @@ localStorage.setItem("metal_2",50)
 localStorage.setItem("cemento_2",50)
 localStorage.setItem("alimento_2",50)
 */
+let user1 = {name: 'Bronko', territories: 8};
+let user2 = {name: 'Juanpita2000', territories: 8};
+let user3 = {name: 'Juanpaneitor 1313 uwu', territories: 8};
+let user4 = {name: 'Shaggy', territories: 9};
+let user5 = {name: 'JUANPAbaSurita', territories: 9};
 let australia = {
     army: {
         name: 'Username4',
@@ -195,6 +200,11 @@ localStorage.setItem('africa-del-sur', JSON.stringify(africa_del_sur));
 localStorage.setItem('argelia-nigeria', JSON.stringify(argelia_nigeria));
 localStorage.setItem('madagascar', JSON.stringify(madagascar));
 localStorage.setItem('egipto', JSON.stringify(egipto));
+localStorage.setItem('user1', JSON.stringify(user1));
+localStorage.setItem('user2', JSON.stringify(user2));
+localStorage.setItem('user3', JSON.stringify(user3));
+localStorage.setItem('user4', JSON.stringify(user4));
+localStorage.setItem('user5', JSON.stringify(user5));
 
 var boton_av = document.getElementById("btn_av");
 

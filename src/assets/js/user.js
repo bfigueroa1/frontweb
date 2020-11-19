@@ -46,17 +46,47 @@ var store = (e) => {
             }else{
                 userList.push(newUser);
                 localStorage.setItem('users', JSON.stringify(userList));
+
+                (async () => {
+                    const rawResponse = await fetch('http://localhost:3000/players/new', {
+                      method: 'POST',
+                      headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify(newUser)
+                    });
+                    const content = await rawResponse.json();
+                    console.log(content);
+                  })();
+
                 alert('Your account has been created');
                 //se crea un usuario en userlist
             }
         }else{
             userList = [newUser];
             localStorage.setItem('users', JSON.stringify(userList));
+
+            (async () => {
+                const rawResponse = await fetch('http://localhost:3000/players/new', {
+                  method: 'POST',
+                  headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(newUser)
+                });
+                const content = await rawResponse.json();
+                console.log(content);
+              })();
+
             alert('Your account has been created');
             //Se crea un usuario junto a la userlist
         }
     }
 }
+
+
 
 
 function check(){
@@ -72,6 +102,24 @@ function check(){
             if(user.password !== userPw){
                 alert('Wrong password');
             }else{
+                
+                (async () => {
+                    const rawResponse = await fetch('http://localhost:3000/auth/login', {
+                      method: 'POST',
+                      headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify(user)
+                    })
+                    .then(res => res.json())
+                    .then(res => {console.log(res)});
+                      const content = await rawResponse.json();
+                      console.log(content);
+                    })();
+                
+
+
                 //login success
                 alert('Login success');
                 window.location = './index loged.html';

@@ -55,7 +55,13 @@ var store = (e) => {
                         'Content-Type': 'application/json'
                       },
                       body: JSON.stringify(newUser)
-                    });
+                    })
+                    /*.then(res => res.json())
+                    .then( res => {
+                        console.log( res );
+                        let inMemoryToken = res.token;
+                        localStorage.setItem('user', JSON.stringify(res));
+*/
                     const content = await rawResponse.json();
                     console.log(content);
                   })();
@@ -116,7 +122,7 @@ function check(){
                     .then(res => {console.log(res)});
                       const content = await rawResponse.json();
                       console.log(content);
-                    })();
+                    })();          
                 
 
 

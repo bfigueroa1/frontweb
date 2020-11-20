@@ -2579,89 +2579,174 @@ $(function () {
 		$("#ships-territory").append(`Ships: ${chile_bolivia_peru_ecuador.ships}`);
     	return false;
 	});
+
+
+
+	async function fetch_move_t ()	{
+
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
+		let id_territories = {'Vladivostok': 1, 'Japon': 2, 'Vietnam': 3, 'Siberia': 4, 'Dudinka': 5, 
+		'Medio Oriente': 6, 'Omsk': 7, 'Aral': 8, 'China': 9, 'India': 10, 'Tchita': 11, 'Mongolia': 12, 
+		'Alaska': 13, 'Mackenzie': 14, 'Vancouver': 15, 'Groenlandia': 16, 'Nueva York': 17, 'California': 18, 
+		'Ottawa': 19, 'Labrador': 20, 'Mexico': 21, 'Chile, Bolivia, Peru y Ecuador': 22, 
+		'Argentina, Paraguay y Uruguay': 23, 'Brasil': 24, 'Colombia y Venezuela': 25, 'Nueva Guinea': 26, 
+		'Borneo': 27, 'Sumatra': 28, 'Australia': 29, 'Inglaterra': 30, 'Moscu': 31, 'Suecia': 32, 'Islandia': 33, 
+		'Alemania': 34, 'España, Francia e Italia': 35, 'Polonia y Yugoeslavia': 36, 'Sudan': 37, 'El Congo': 38, 
+		'Africa del Sur': 39, 'Argelia y Nigeria': 40, 'Madagascar': 41, 'Egipto': 42};
+		let ataque = jugada.troop_attack.shift();
+		localStorage.setItem('jugada', JSON.stringify(jugada));
+		console.log(ataque);
+		let id_terr_ataca = id_territories[ataque.attack_territory];
+		let query = {
+			"territory_attacked": ataque.attacked_territory,
+			"troops": ataque.troops};
+		let ruta = `http://localhost:3000/territories/attack_t/${id_terr_ataca}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+
+		.then(function(){
+			let jugada = JSON.parse(localStorage.getItem("jugada"));
+			if (jugada.troop_attack.length !== 0) {
+				fetch_move_t()
+			}
+		})
+	}
+
+	async function fetch_move_a ()	{
+
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
+		let id_territories = {'Vladivostok': 1, 'Japon': 2, 'Vietnam': 3, 'Siberia': 4, 'Dudinka': 5, 
+		'Medio Oriente': 6, 'Omsk': 7, 'Aral': 8, 'China': 9, 'India': 10, 'Tchita': 11, 'Mongolia': 12, 
+		'Alaska': 13, 'Mackenzie': 14, 'Vancouver': 15, 'Groenlandia': 16, 'Nueva York': 17, 'California': 18, 
+		'Ottawa': 19, 'Labrador': 20, 'Mexico': 21, 'Chile, Bolivia, Peru y Ecuador': 22, 
+		'Argentina, Paraguay y Uruguay': 23, 'Brasil': 24, 'Colombia y Venezuela': 25, 'Nueva Guinea': 26, 
+		'Borneo': 27, 'Sumatra': 28, 'Australia': 29, 'Inglaterra': 30, 'Moscu': 31, 'Suecia': 32, 'Islandia': 33, 
+		'Alemania': 34, 'España, Francia e Italia': 35, 'Polonia y Yugoeslavia': 36, 'Sudan': 37, 'El Congo': 38, 
+		'Africa del Sur': 39, 'Argelia y Nigeria': 40, 'Madagascar': 41, 'Egipto': 42};
+		let ataque = jugada.airplane_attack.shift();
+		localStorage.setItem('jugada', JSON.stringify(jugada));
+		console.log(ataque);
+		let id_terr_ataca = id_territories[ataque.attack_territory];
+		let query = {
+			"territory_attacked": id_territories[ataque.attacked_territory],
+			"airplanes": ataque.troops};
+		let ruta = `http://localhost:3000/territories/attack_a/${id_terr_ataca}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+
+		.then(function(){
+			let jugada = JSON.parse(localStorage.getItem("jugada"));
+			if (jugada.airplane_attack.length !== 0) {
+				fetch_move_a()
+			}
+		})
+	}
+
+	async function fetch_move_s ()	{
+
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
+		let id_territories = {'Vladivostok': 1, 'Japon': 2, 'Vietnam': 3, 'Siberia': 4, 'Dudinka': 5, 
+		'Medio Oriente': 6, 'Omsk': 7, 'Aral': 8, 'China': 9, 'India': 10, 'Tchita': 11, 'Mongolia': 12, 
+		'Alaska': 13, 'Mackenzie': 14, 'Vancouver': 15, 'Groenlandia': 16, 'Nueva York': 17, 'California': 18, 
+		'Ottawa': 19, 'Labrador': 20, 'Mexico': 21, 'Chile, Bolivia, Peru y Ecuador': 22, 
+		'Argentina, Paraguay y Uruguay': 23, 'Brasil': 24, 'Colombia y Venezuela': 25, 'Nueva Guinea': 26, 
+		'Borneo': 27, 'Sumatra': 28, 'Australia': 29, 'Inglaterra': 30, 'Moscu': 31, 'Suecia': 32, 'Islandia': 33, 
+		'Alemania': 34, 'España, Francia e Italia': 35, 'Polonia y Yugoeslavia': 36, 'Sudan': 37, 'El Congo': 38, 
+		'Africa del Sur': 39, 'Argelia y Nigeria': 40, 'Madagascar': 41, 'Egipto': 42};
+		let ataque = jugada.ship_attack.shift();
+		localStorage.setItem('jugada', JSON.stringify(jugada));
+		console.log(ataque);
+		let id_terr_ataca = id_territories[ataque.attack_territory];
+		let query = {
+			"territory_attacked": id_territories[ataque.attacked_territory],
+			"ships": ataque.troops};
+		let ruta = `http://localhost:3000/territories/attack_s/${id_terr_ataca}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+
+		.then(function(){
+			let jugada = JSON.parse(localStorage.getItem("jugada"));
+			if (jugada.ship_attack.length !== 0) {
+				fetch_move_s()
+			}
+		})
+	}
+
+	async function fetch_colect ()	{
+
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
+		let id_territories = {'Vladivostok': 1, 'Japon': 2, 'Vietnam': 3, 'Siberia': 4, 'Dudinka': 5, 
+		'Medio Oriente': 6, 'Omsk': 7, 'Aral': 8, 'China': 9, 'India': 10, 'Tchita': 11, 'Mongolia': 12, 
+		'Alaska': 13, 'Mackenzie': 14, 'Vancouver': 15, 'Groenlandia': 16, 'Nueva York': 17, 'California': 18, 
+		'Ottawa': 19, 'Labrador': 20, 'Mexico': 21, 'Chile, Bolivia, Peru y Ecuador': 22, 
+		'Argentina, Paraguay y Uruguay': 23, 'Brasil': 24, 'Colombia y Venezuela': 25, 'Nueva Guinea': 26, 
+		'Borneo': 27, 'Sumatra': 28, 'Australia': 29, 'Inglaterra': 30, 'Moscu': 31, 'Suecia': 32, 'Islandia': 33, 
+		'Alemania': 34, 'España, Francia e Italia': 35, 'Polonia y Yugoeslavia': 36, 'Sudan': 37, 'El Congo': 38, 
+		'Africa del Sur': 39, 'Argelia y Nigeria': 40, 'Madagascar': 41, 'Egipto': 42};
+		let collect = jugada.collect_resources.shift();
+		localStorage.setItem('jugada', JSON.stringify(jugada));
+		let id_terr_colecta = id_territories[collect.territory];
+		let query = {
+			"troops": collect.troops};
+		let ruta = `http://localhost:3000/territories/colect/${id_terr_colecta}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+		.then(function(){
+			let jugada = JSON.parse(localStorage.getItem("jugada"));
+			if (jugada.collect_resources.length !== 0) {
+				fetch_colect()
+			}
+		})
+	}
+
 	
 	$('#send_moveBtn').click(async function () {
 		load_map();
-
-		let id_territories = {'Vladivostok': 1, 'Japon': 2, 'Vietnam': 3, 'Siberia': 4, 'Dudinka': 5, 'Medio Oriente': 6, 'Omsk': 7, 'Aral': 8, 'China': 9, 'India': 10, 'Tchita': 11, 'Mongolia': 12, 'Alaska': 13, 'Mackenzie': 14, 'Vancouver': 15, 'Groenlandia': 16, 'Nueva York': 17, 'California': 18, 'Ottawa': 19, 'Labrador': 20, 'Mexico': 21, 'Chile, Bolivia, Peru y Ecuador': 22, 'Argentina, Paraguay y Uruguay': 23, 'Brasil': 24, 'Colombia y Venezuela': 25, 'Nueva Guinea': 26, 'Borneo': 27, 'Sumatra': 28, 'Australia': 29, 'Inglaterra': 30, 'Moscu': 31, 'Suecia': 32, 'Islandia': 33, 'Alemania': 34, 'España, Francia e Italia': 35, 'Polonia y Yugoeslavia': 36, 'Sudan': 37, 'El Congo': 38, 'Africa del Sur': 39, 'Argelia y Nigeria': 40, 'Madagascar': 41, 'Egipto': 42}
-
 		let jugada = JSON.parse(localStorage.getItem("jugada"));
 
-		for (let accion in jugada.troop_attack) {
-			let ataque = jugada.troop_attack[accion];
-			
-			console.log(ataque.attacked_territory);
-
-;			let id_terr_ataca = id_territories[ataque.attack_territory];
-			console.log(id_terr_ataca);
-
-			let query = {
-				"territory_attacked": ataque.attacked_territory,
-				"troops": ataque.troops};
-			const rawResponse = await fetch(`http://localhost:3000/territories/attack_t/${id_terr_ataca}`,
-			{
-				method: 'PATCH',
-				headers: {
-					'Accept': 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(query)
-				});
-				const content = await rawResponse.json();
-				console.log(content);
-				}
-		
-		for (let accion in jugada.airplane_attack) {
-			let ataque = jugada.airplane_attack[accion];
-			
-			console.log(ataque.attacked_territory);
-
-			let id_terr_ataca = id_territories[ataque.attack_territory];
-			
-			console.log(id_territories[ataque.attacked_territory]);
-
-			let query = {
-				"territory_attacked": id_territories[ataque.attacked_territory],
-				"airplanes": ataque.troops};
-			const rawResponse = await fetch(`http://localhost:3000/territories/attack_a/${id_terr_ataca}`,
-			{
-				method: 'PATCH',
-				headers: {
-					'Accept': 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(query)
-				});
-				const content = await rawResponse.json();
-				console.log(content);
-				}
-		
-		for (let accion in jugada.ship_attack) {
-			let ataque = jugada.ship_attack[accion];
-			
-			console.log(ataque.attacked_territory);
-
-			let id_terr_ataca = id_territories[ataque.attack_territory];
-			
-			console.log(id_territories[ataque.attacked_territory]);
-
-			let query = {
-				"territory_attacked": id_territories[ataque.attacked_territory],
-				"ships": ataque.troops};
-			const rawResponse = await fetch(`http://localhost:3000/territories/attack_s/${id_terr_ataca}`,
-			{
-				method: 'PATCH',
-				headers: {
-					'Accept': 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(query)
-				});
-				const content = await rawResponse.json();
-				console.log(content);
-				}
-	
+		if (jugada.troop_attack.length !== 0) {
+			await fetch_move_t();
+		}
+		if (jugada.airplane_attack.length !== 0) {
+			await fetch_move_a();
+		}
+		if (jugada.ship_attack.length !== 0) {
+			await fetch_move_s();
+		}
+		if (jugada.collect_resources.length !== 0) {
+			await fetch_colect();
+		}
 	});
+
+	
 });
 /*
 $.ajax({

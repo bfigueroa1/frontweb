@@ -85,4 +85,17 @@ ASPECTOS IMPORTANTES:
 6. `loadhtml="VALUE"` = `moduleList.VALUE` y `moduleList.VALUE = html` para el componente `VALUE` (Revisar el ejemplo de nav y navloged en `module.js`)
 
 
+### READ_ME Tarea 5
+
+1. Al hacer Sign Up y Log In en el frontend, la informacion se almacena en el backend de forma LOCAL.
+2. Al crearse el Player, la clave queda encriptada.
+3. Al iniciar sesion, se genera un token que queda almacenado en la base de datos. Y se actualiza con cada inicio de sesion. 
+4. Algunas de las rutas requieren de autentificacion de dicho token.
+5. Los ataques de tropas, aviones y barcos, de cualquier territorio, quedan almacenados en la base de datos.
+6. La entrega esta incompleta pero quedo la base relativamente preparada para la proxima entrega.
+
+Esperamos la reunion.
+
+
+
 

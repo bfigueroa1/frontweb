@@ -1140,7 +1140,7 @@ body#shoppage {
   align-items: baseline;
 }
 #shoppage .flexx-1 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0.5rem;
 }
 #shoppage .flexx-2 div,
@@ -1174,7 +1174,7 @@ body#recursospage {
 #recursospage .ejercito {
   border-radius: 5px;
   max-width: 800px;
-  height: 1100px;
+  height: 800px;
   background: #fff;
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
@@ -1186,7 +1186,6 @@ body#recursospage {
   text-align: center;
   letter-spacing: 1px;
   font-size: 45px;
-  margin-bottom: 20px;
   color: #486255;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -1231,35 +1230,59 @@ body#recursospage {
   align-items: center;
   padding: 0.5em;
 }
-#recursospage table.table2 {
-  border-collapse: separate;
-  border-spacing: 10px 10px;
-  margin: auto;
-  margin-top: 2%;
+#recursospage .flex-boxxx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#recursospage table.table2 th {
-  height: 100px;
-  width: 250px;
-  text-decoration: underline;
-  border-radius: 5px;
-  background-color: #e0b570;
-  font-family: "Montserrat", sans-serif;
+#recursospage .flexxx-1,
+#recursospage .flexxx-2,
+#recursospage .flexxx-3,
+#recursospage .flexxx-4,
+#recursospage .flexxx-5,
+#recursospage .flexxx-6 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 2rem;
+}
+#recursospage .flexxx-2 h1 {
+  padding: 0px 4rem;
+  margin-bottom: 2rem;
+}
+#recursospage .flexxx-3 h1 {
+  padding: 0px 3rem;
+  margin-right: 5rem;
+  margin-left: 2rem;
+}
+#recursospage .flexxx-4 h1,
+#recursospage .flexxx-5 h1 {
+  padding: 0px 3rem;
+  margin-right: 4.5rem;
+}
+#recursospage .items {
+  margin: 1rem;
+  padding: 0px 20px;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
+  color: #f5b461;
   text-decoration: none;
-}
-#recursospage table.table2 td {
-  height: 100px;
-  width: 100px;
+  display: inline-block;
+  overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#recursospage .items:hover {
+  color: black;
+  transform: scale(1.2);
 }
 #recursospage #chess {
   width: 60px;
 }
 #recursospage #jet {
   width: 80px;
+  margin-right: 9rem;
+  margin-left: 1rem;
 }
 #recursospage #ship {
   width: 80px;

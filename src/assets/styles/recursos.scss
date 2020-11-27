@@ -13,7 +13,7 @@ body#recursospage{
     .ejercito {
       border-radius: 5px;
       max-width: 800px;
-      height: 1100px;
+      height: 800px;
       background: #fff;
       margin: 50px auto;
       box-shadow: 0 0 20px rgba(72,98,85, 0.6);
@@ -27,7 +27,6 @@ body#recursospage{
       text-align: center;
       letter-spacing: 1px;  
       font-size: 45px;
-      margin-bottom: 20px;
       color: #486255;
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
@@ -76,41 +75,74 @@ body#recursospage{
       align-items: center;
       padding: 0.5em;
     }
-    
-    table.table2 {
-      border-collapse: separate;
-      border-spacing: 10px 10px;
-      margin: auto;
-      margin-top: 2%; 
+
+    .flex-boxxx{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
     }
     
+    .flexxx-1,
+    .flexxx-2,
+    .flexxx-3,
+    .flexxx-4,
+    .flexxx-5,
+    .flexxx-6{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-bottom: 2rem;
+    }
+
+    .flexxx-2{
+      h1{
+        padding: 0px 4rem;
+        margin-bottom: 2rem;
+      }
+    }
     
-    table.table2 th {
-      height: 100px;
-      width: 250px;
-      text-decoration: underline;
-      border-radius: 5px;
-      background-color:rgb(224, 181, 112);
-      font-family: "Montserrat", sans-serif;
+    .flexxx-3{
+      h1{
+        padding: 0px 3rem;
+        margin-right: 5rem;
+        margin-left: 2rem;
+      }
+    }
+
+
+    .flexxx-4,
+    .flexxx-5{
+      h1{
+        padding: 0px 3rem;
+        margin-right: 4.5rem;
+      }
+    }
+    
+    .items{
+      margin: 1rem;
+      padding: 0px 20px;
       font-weight: 500;
-      font-size: 1.5rem;
+      font-size: 2.3rem;
+      color: #f5b461;
       text-decoration: none;
-    }
-    
-    table.table2 td {
-      height: 100px;
-      width: 100px;
+      display: inline-block;
+      overflow: hidden;
       font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 1.5rem;
+      margin-bottom: 2rem;
     }
-    
+    .items:hover {
+      color: black;
+      transform: scale(1.2);
+    }
+  
     #chess {
       width: 60px;
     }
     
     #jet {
       width: 80px;
+      margin-right: 9rem;
+      margin-left: 1rem;
     }
     
     #ship {

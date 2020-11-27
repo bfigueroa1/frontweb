@@ -13,55 +13,43 @@
     <body id="shoppage">
         <div class="ejercito">
             <p>SHOP</p>
-            <table class="table2">
-                <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Logo</th>
-                    <th>Comprar</th>
-                </tr>
-                
-                <tr>
-                    <td>Arma</td>
-                    <td id="buy">$ Recursos raros</td>
-                    <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="jet" src="../assets/imgs/bomb-solid.png"></td>
-                    <td><a><button id="btn_ar" class="comprar">Comprar</button></a></td>
-                    
-                </tr>
-                
-                <tr>
-                    <td>Avion</td>
-                    <td>$ 3 metales</td>
-                    <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="jet" src="../assets/imgs/Airplane.png"></td>
-                    <td><a><button id="btn_av" class="comprar">Comprar</button></a></td>
-                </tr>
+            <div class="flex-boxx">
+                <div class="flexx-1">
+                    <p>Producto</p>
+                    <p>Precio</p>
+                    <p>Cantidad</p>
+                    <p>Logo</p>
+                    <p>Comprar</p>
+                </div>            
 
-                <tr>
-                    <td>Buque</td>
-                    <td>$ 3 metales</td>
-                    <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="ship" src="../assets/imgs/Ship.png"></i></td>
-                    <td><a><button id="btn_bq" class="comprar">Comprar</button></a></td>
-                </tr>
+                <div class="flexx-2">
+                    <div>Avion</div>
+                    <div>$ 3 metales</div>
+                    <div><input type="number" id="cantidad" value="0" min="0" max="5"></div>
+                    <div><img id="jet" src="../assets/imgs/Airplane.png"></div>
+                    <div><a><button id="btn_av" class="comprar">Comprar</button></a></div>
+                </div>
 
-                <tr>
-                    <td>Muralla</td>
-                    <td>$ 5 cementos</td>
-                    <td><input type="number" id="cantidad" value="0" min="0" max="5"></td>
-                    <td><img id="chess" src="../assets/imgs/chess-rook-solid_b.png"></td>
-                    <td><a><button id="btn_m" class="comprar">Comprar</button></a></td>
-                </tr>   
-                <script src="../assets/js/shop.js"></script>
-            </table>
+                <div class="flexx-3">
+                    <div>Buque</div>
+                    <div>$ 3 metales</div>
+                    <div><input type="number" id="cantidad" value="0" min="0" max="5"></div>
+                    <div><img id="ship" src="../assets/imgs/Ship.png"></i></div>
+                    <div><a><button id="btn_bq" class="comprar">Comprar</button></a></div>
+                </div>
 
-            <div>
-                <div class="recursosxterritorios"><a href="recursos.html"><button class="recursos">Ver recursos</button></a></div>
-                <div class="recursosxterritorios"><a href="territories.html"><button class="territorios">Volver a terrorios</button></a></div>
-            </div>
-        </div>        
+                <div class="flexx-4">
+                    <div>Muralla</div>
+                    <div>$ 5 cementos</div>
+                    <div><input type="number" id="cantidad" value="0" min="0" max="5"></div>
+                    <div><img id="chess" src="../assets/imgs/chess-rook-solid_b.png"></div>
+                    <div><a><button id="btn_m" class="comprar">Comprar</button></a></div>
+                </div>
+                <div class="flexx-5">
+                    <div class="recursosxterritorios"><a href="recursos.html"><button class="recursos">Ver recursos</button></a></div>
+                    <div class="recursosxterritorios"><a href="territories.html"><button class="territorios">Volver a terrorios</button></a></div>
+                </div>  
+                <script src="../assets/js/shop.js"></script>       
         <script src="../assets/js/module.js"></script>
     </body>
 </html>

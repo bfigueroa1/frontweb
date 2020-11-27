@@ -1055,28 +1055,16 @@ body#shoppage {
   font-family: "Montserrat", sans-serif;
 }
 
-#shoppage dl {
-  padding: 20px;
-  border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-}
-#shoppage dt {
-  background-color: #e0b570;
-  border-radius: 5px;
-  text-decoration: underline;
-}
 #shoppage .ejercito {
-  border-radius: 5px;
-  max-width: 800px;
-  height: 850px;
+  border-radius: 0.313rem;
+  max-width: 50rem;
+  height: 45rem;
   background: #fff;
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 #shoppage p {
   text-align: center;
@@ -1137,35 +1125,29 @@ body#shoppage {
   border: none;
   text-align: center;
 }
-#shoppage .recursosxterritorios {
+#shoppage .flex-boxx {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5em;
 }
-#shoppage table.table2 {
-  border-collapse: separate;
-  border-spacing: 10px 10px;
-  margin: auto;
-  margin-top: 2%;
+#shoppage .flexx-1,
+#shoppage .flexx-2,
+#shoppage .flexx-3,
+#shoppage .flexx-4,
+#shoppage .flexx-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
-#shoppage table.table2 th {
-  height: 100px;
-  width: 250px;
-  text-decoration: underline;
-  border-radius: 5px;
-  background-color: #e0b570;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.3rem;
-  text-decoration: none;
+#shoppage .flexx-1 p {
+  font-size: 2rem;
+  margin: 0.5rem;
 }
-#shoppage table.table2 td {
-  height: 100px;
-  width: 100px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.3rem;
+#shoppage .flexx-2 div,
+#shoppage .flexx-3 div,
+#shoppage .flexx-4 div,
+#shoppage .flexx-5 div {
+  margin: 1.5rem;
 }
 #shoppage input[type=number] {
   width: 1.5 rem;
@@ -1175,7 +1157,7 @@ body#shoppage {
   width: 60px;
 }
 #shoppage #jet {
-  width: 80px;
+  width: 90px;
 }
 #shoppage #ship {
   width: 80px;

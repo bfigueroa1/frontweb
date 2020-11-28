@@ -1,3 +1,5 @@
+const { json } = require("sequelize/types");
+
 //Generate range function: https://dev.to/ycmjason/how-to-create-range-in-javascript-539i
 function range(end) {
     var ans = [];
@@ -2727,9 +2729,23 @@ $(function () {
 		})
 	}
 
+	async function fetch_getRound() {
+		let ruta = `http://localhost:3000/map`;
+		let options = {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			}			
+		};
+		let rawResponse = await fetch(ruta,options)
+		console.log(rawResponse);
+		return rawResponse;
+	}
+
 	
 	$('#send_moveBtn').click(async function () {
-		load_map();
+		$('#send_moveBtn').addClass('hide');
 		let jugada = JSON.parse(localStorage.getItem("jugada"));
 
 		if (jugada.troop_attack.length !== 0) {
@@ -2744,6 +2760,20 @@ $(function () {
 		if (jugada.collect_resources.length !== 0) {
 			await fetch_colect();
 		}
+	});
+
+	$('#update_map').click(async function () {
+		actual_round = await fetch_getRound();
+		let round = JSON.parse(localStorage.getItem('round'));
+		if (Math.floor(parseFloat(round.game_n)) < actual_round){
+			alert('You already sent your move this round')
+		}
+		else {
+			load_map();
+			$('#send_moveBtn').removeClass('hide');
+			parseFloat(round.game_n) += 0.2;
+			localStorage.setItem(JSON.stringify(round));	
+		} 
 	});
 
 	

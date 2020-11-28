@@ -109,6 +109,18 @@ body#mappage{
       padding: 1rem;
       width: 118px;
   }
+
+  .flex-box-b{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+  }
+
+  #send_moveBtn.hide {
+    opacity: 0;
+    pointer-events: none;
+    cursor: none;
+  }
   
   .btn{
       width: 250px;

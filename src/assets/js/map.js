@@ -2708,7 +2708,7 @@ $(function () {
 		localStorage.setItem('jugada', JSON.stringify(jugada));
 		let id_terr_colecta = id_territories[collect.territory];
 		let query = {
-			"troops": collect.troops};
+			"colectors": collect.troops};
 		let ruta = `http://localhost:3000/territories/colect/${id_terr_colecta}`;
 		let options = {
 			method: 'PATCH',

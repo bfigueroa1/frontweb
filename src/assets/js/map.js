@@ -2832,8 +2832,18 @@ $(function () {
 		);
 	}
 
-	
-
+	async function fetch_map() { //CONSEGUIR USUARIO ACTUAL
+		const rawResponse = await fetch('http://localhost:3000/territories/map', {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res});
+		//console.log(rawResponse);
+		return rawResponse;
+	}
 
 
 	$('#update_map').click(async function () {
@@ -2853,7 +2863,11 @@ $(function () {
 			alert("Already up to date");
 		}
 		else{
-			alert("Your move has been received");
+			alert("The map has been updated");
+			let map_data = await fetch_map();
+			for (territory in map_data) {
+				localStorage.setItem(territory, map_data[territory])
+			}
 			load_map();
 			$('#send_moveBtn').removeClass('hide');
 			await fetch_act_rounds_t();

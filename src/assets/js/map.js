@@ -1,4 +1,4 @@
-const { json } = require("sequelize/types");
+//const { json } = require("sequelize/types");
 
 //Generate range function: https://dev.to/ycmjason/how-to-create-range-in-javascript-539i
 function range(end) {
@@ -2729,21 +2729,6 @@ $(function () {
 		})
 	}
 
-	async function fetch_getRound() {
-		let ruta = `http://localhost:3000/map`;
-		let options = {
-			method: 'GET',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json'
-			}			
-		};
-		let rawResponse = await fetch(ruta,options)
-		console.log(rawResponse);
-		return rawResponse;
-	}
-
-	
 	$('#send_moveBtn').click(async function () {
 		$('#send_moveBtn').addClass('hide');
 		let jugada = JSON.parse(localStorage.getItem("jugada"));
@@ -2762,19 +2747,143 @@ $(function () {
 		}
 	});
 
+
+	async function fetch_getGame() {  //CONSEGUIR GAME ID de DB
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		const rawResponse = await fetch(`http://localhost:3000/games/${current_user.game}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res.id}); 
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	async function fetch_getAllPlayers() {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		const rawResponse = await fetch(`http://localhost:3000/games/${current_user.game}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return [res.player1,res.player2,res.player3,res.player4,res.player5]}); 
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	async function fetch_getPlayed(id) { //CONSEGUIR USUARIO ACTUAL
+	
+		const rawResponse = await fetch(`http://localhost:3000/rounds/played/${id}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res});
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	
+
+	async function fetch_act_rounds_t ()	{ //ACTUALIZAR VARIABLE PLAYED POR TRUE
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		let query = {
+			"played": true};
+		let ruta = `http://localhost:3000/rounds/played/${current_user.player}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+		.then(function(){
+				alert("Se actualizo el mapa")	
+			}
+		);
+	}
+
+	async function fetch_act_rounds_f (id)	{ //ACTUALIZAR VARIABLE PLAYED POR FALSE
+		
+		let query = {
+			"played": false};
+		let ruta = `http://localhost:3000/rounds/played/${id}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+		.then(function(){
+				null
+			}
+		);
+	}
+
+	
+
+
+
 	$('#update_map').click(async function () {
-		actual_round = await fetch_getRound();
-		let round = JSON.parse(localStorage.getItem('round'));
-		if (Math.floor(parseFloat(round.game_n)) < actual_round){
-			alert('You already sent your move this round')
+
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+
+		//let game = await fetch_getGame();
+		let play = await fetch_getPlayed(current_user.player);
+		let players = await fetch_getAllPlayers();
+		
+		//console.log(play);
+		//console.log(game);
+		//console.log(current_user.player);
+		console.log(players);
+		
+		if (play == true) {
+			alert("Already up to date");
 		}
-		else {
+		else{
+			alert("Your move has been received");
 			load_map();
 			$('#send_moveBtn').removeClass('hide');
-			parseFloat(round.game_n) += 0.2;
-			localStorage.setItem(JSON.stringify(round));	
-		} 
-	});
+			await fetch_act_rounds_t();
+			let x;
+			let termino = false;
+
+			for (x of players) {
+
+				console.log(x);
+				let players_moved = await fetch_getPlayed(x);
+				console.log(players_moved);
+
+				if (players_moved == false) {
+					termino = false
+					break;
+					}
+				termino = true;
+			}	
+			if (termino == true){
+				let x;
+				for (x of players) {
+					await fetch_act_rounds_f(x);
+				}
+			}else{
+				alert("Debe esperar a que todo jueguen");
+			}
+			
+			}
+
+    });
 
 	
 });

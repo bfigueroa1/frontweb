@@ -1,5 +1,5 @@
-/*localStorage.clear();
-
+localStorage.clear();
+/*
 localStorage.setItem("aviones_1",0);
 localStorage.setItem("buques_1",0);
 localStorage.setItem("muralla_1",0);

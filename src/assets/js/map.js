@@ -2832,8 +2832,21 @@ $(function () {
 		);
 	}
 
-	async function fetch_map() { //CONSEGUIR USUARIO ACTUAL
-		const rawResponse = await fetch('http://localhost:3000/territories/map', {
+	async function fetch_map() { //CONSEGUIR MAP 
+		const rawResponse = await fetch('http://localhost:3000/maps/territories', {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res});
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	async function fetch_username(a) { //CONSEGUIR USERNAME 
+		const rawResponse = await fetch(`http://localhost:3000/players/username/${a}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -2850,49 +2863,50 @@ $(function () {
 
 		let current_user = JSON.parse(localStorage.getItem("current_user"));
 
-		//let game = await fetch_getGame();
+		//let game = await fetch_getGame(); //ESTA SERVIRA PARA CUANDO TENGAN VARIAS PARTIDAS
 		let play = await fetch_getPlayed(current_user.player);
 		let players = await fetch_getAllPlayers();
-		
-		//console.log(play);
-		//console.log(game);
-		//console.log(current_user.player);
-		console.log(players);
 		
 		if (play == true) {
 			alert("Already up to date");
 		}
 		else{
 			alert("The map has been updated");
+
 			let map_data = await fetch_map();
 			for (territory in map_data) {
-				localStorage.setItem(territory, map_data[territory])
+				//console.log(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-').replace(' ', '-').replace(',-', '-').replace('l ', 'l-'));
+				localStorage.setItem(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-')
+				.replace(' ', '-').replace(',-', '-').replace('l ', 'l-').replace('ñ', 'n'), JSON.stringify(map_data[territory]));
 			}
 			load_map();
 			$('#send_moveBtn').removeClass('hide');
 			await fetch_act_rounds_t();
+
 			let x;
-			let termino = false;
-
+			let termino = false
 			for (x of players) {
-
-				console.log(x);
+				//console.log(x);
 				let players_moved = await fetch_getPlayed(x);
-				console.log(players_moved);
-
 				if (players_moved == false) {
 					termino = false
 					break;
 					}
 				termino = true;
-			}	
+				}
+
+			let b;
+			for (b of players) {
+				console.log(b);
+				await fetch_username(b);
+			}
+			
+			
 			if (termino == true){
 				let x;
 				for (x of players) {
 					await fetch_act_rounds_f(x);
 				}
-			}else{
-				alert("Debe esperar a que todo jueguen");
 			}
 			
 			}

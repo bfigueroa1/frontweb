@@ -1,3 +1,5 @@
+//const { json } = require("sequelize/types");
+
 //Generate range function: https://dev.to/ycmjason/how-to-create-range-in-javascript-539i
 function range(end) {
     var ans = [];
@@ -2708,7 +2710,7 @@ $(function () {
 		localStorage.setItem('jugada', JSON.stringify(jugada));
 		let id_terr_colecta = id_territories[collect.territory];
 		let query = {
-			"troops": collect.troops};
+			"colectors": collect.troops};
 		let ruta = `http://localhost:3000/territories/colect/${id_terr_colecta}`;
 		let options = {
 			method: 'PATCH',
@@ -2727,9 +2729,8 @@ $(function () {
 		})
 	}
 
-	
 	$('#send_moveBtn').click(async function () {
-		load_map();
+		$('#send_moveBtn').addClass('hide');
 		let jugada = JSON.parse(localStorage.getItem("jugada"));
 
 		if (jugada.troop_attack.length !== 0) {
@@ -2745,6 +2746,172 @@ $(function () {
 			await fetch_colect();
 		}
 	});
+
+
+	async function fetch_getGame() {  //CONSEGUIR GAME ID de DB
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		const rawResponse = await fetch(`http://localhost:3000/games/${current_user.game}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res.id}); 
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	async function fetch_getAllPlayers() {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		const rawResponse = await fetch(`http://localhost:3000/games/${current_user.game}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return [res.player1,res.player2,res.player3,res.player4,res.player5]}); 
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	async function fetch_getPlayed(id) { //CONSEGUIR USUARIO ACTUAL
+	
+		const rawResponse = await fetch(`http://localhost:3000/rounds/played/${id}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res});
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	
+
+	async function fetch_act_rounds_t ()	{ //ACTUALIZAR VARIABLE PLAYED POR TRUE
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		let query = {
+			"played": true};
+		let ruta = `http://localhost:3000/rounds/played/${current_user.player}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+		.then(function(){
+				alert("Se actualizo el mapa")	
+			}
+		);
+	}
+
+	async function fetch_act_rounds_f (id)	{ //ACTUALIZAR VARIABLE PLAYED POR FALSE
+		
+		let query = {
+			"played": false};
+		let ruta = `http://localhost:3000/rounds/played/${id}`;
+		let options = {
+			method: 'PATCH',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(query)
+			};
+		let rawResponse = await fetch(ruta,options)
+		.then(function(){
+				null
+			}
+		);
+	}
+
+	async function fetch_map() { //CONSEGUIR MAP 
+		const rawResponse = await fetch('http://localhost:3000/maps/territories', {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res});
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+	async function fetch_username(a) { //CONSEGUIR USERNAME 
+		const rawResponse = await fetch(`http://localhost:3000/players/username/${a}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res});
+		//console.log(rawResponse);
+		return rawResponse;
+	}
+
+
+	$('#update_map').click(async function () {
+
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+
+		//let game = await fetch_getGame(); //ESTA SERVIRA PARA CUANDO TENGAN VARIAS PARTIDAS
+		let play = await fetch_getPlayed(current_user.player);
+		let players = await fetch_getAllPlayers();
+		
+		if (play == true) {
+			alert("Already up to date");
+		}
+		else{
+			alert("The map has been updated");
+
+			let map_data = await fetch_map();
+			for (territory in map_data) {
+				//console.log(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-').replace(' ', '-').replace(',-', '-').replace('l ', 'l-'));
+				localStorage.setItem(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-')
+				.replace(' ', '-').replace(',-', '-').replace('l ', 'l-').replace('ñ', 'n'), JSON.stringify(map_data[territory]));
+			}
+			load_map();
+			$('#send_moveBtn').removeClass('hide');
+			await fetch_act_rounds_t();
+
+			let x;
+			let termino = false
+			for (x of players) {
+				//console.log(x);
+				let players_moved = await fetch_getPlayed(x);
+				if (players_moved == false) {
+					termino = false
+					break;
+					}
+				termino = true;
+				}
+
+			let b;
+			for (b of players) {
+				console.log(b);
+				await fetch_username(b);
+			}
+			
+			
+			if (termino == true){
+				let x;
+				for (x of players) {
+					await fetch_act_rounds_f(x);
+				}
+			}
+			
+			}
+
+    });
 
 	
 });

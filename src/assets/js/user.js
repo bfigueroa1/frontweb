@@ -130,6 +130,7 @@ function check(){
                 alert('Login success');
                 window.location = './index loged.html';
                 //Pa que el usuario tenga cosas
+                /*
                 localStorage.setItem("aviones_1",0);
                 localStorage.setItem("buques_1",0);
                 localStorage.setItem("muralla_1",0);
@@ -146,7 +147,7 @@ function check(){
 
                 localStorage.setItem("metal_2",50)
                 localStorage.setItem("cemento_2",50)
-                localStorage.setItem("alimento_2",50)
+                localStorage.setItem("alimento_2",50)*/
                 //
             }
         }

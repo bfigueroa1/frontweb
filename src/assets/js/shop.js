@@ -1,5 +1,5 @@
-/*localStorage.clear();
-
+localStorage.clear();
+/*
 localStorage.setItem("aviones_1",0);
 localStorage.setItem("buques_1",0);
 localStorage.setItem("muralla_1",0);
@@ -29,6 +29,11 @@ let user2 = {name: 'Juanpita2000', territories: 8};
 let user3 = {name: 'Juanpaneitor 1313 uwu', territories: 8};
 let user4 = {name: 'Shaggy', territories: 9};
 let user5 = {name: 'JUANPAbaSurita', territories: 9};
+
+
+let current_user = {player: 1, game:1, token: ''};
+localStorage.setItem('current_user', JSON.stringify(current_user));
+
 let australia = {
     army: {
         name: 'Username4',

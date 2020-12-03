@@ -1,0 +1,190 @@
+
+/* Contact Us CSS*/
+
+
+body#recursosrarospage{
+    background-color: beige;
+    background-size: cover;
+    height: auto;
+    font-family: "Montserrat", sans-serif;  
+  }
+  
+  #recursosrarospage{
+      .ejercito {
+        border-radius: 5px;
+        max-width: 800px;
+        height: 920px;
+        background: #fff;
+        margin: 50px auto;
+        box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+        box-sizing: border-box;
+        padding: 40px;
+        margin-top: 6em;
+      
+      }
+      
+      p{
+        text-align: center;
+        letter-spacing: 1px;  
+        font-size: 45px;
+        color: #486255;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 3.5rem;
+        color: #DC7633;
+      }
+      
+      .shop{
+        width: 150px;
+        background-color: rgba(0, 136, 169, 1);
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 0 auto;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        text-align: center;
+      }
+      
+      .shop:hover,
+      .territorios:hover{
+        background-color: rgba(0, 136, 169, 0.8);
+      }
+      
+      .territorios{
+        width: 150px;
+        background-color: rgba(0, 136, 169, 1);
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 0 auto;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        text-align: center;
+      }
+      
+      .shopxterritorios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+      }
+  
+      .flex-boxxx{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+      
+      .flexxx-1,
+      .flexxx-2,
+      .flexxx-3,
+      .flexxx-4,
+      .flexxx-5,
+      .flexxx-6,
+      .flexxx-7{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 2rem;
+      }
+  
+      .flexxx-2{
+        h1{
+          padding: 0px 4rem;
+          margin-bottom: 2rem;
+        }
+      }
+      
+      .flexxx-3{
+        h1{
+          padding: 0px 2.5rem;
+          margin-right: 5rem;
+          margin-left: 2rem;
+        }
+      }
+  
+  
+      .flexxx-4,
+      .flexxx-6{
+        h1{
+          padding: 0px 3.5rem;
+          margin-right: 4.5rem;
+        }
+      }
+
+      .flexxx-5{
+        .tech{
+          padding: 0px 3rem;
+          margin-right: 3rem;
+        }
+        .n_tech{
+            padding: 0px 7rem;
+            margin-right: 3rem;
+        }
+      }
+      
+      .items{
+        margin: 1rem;
+        padding: 0px 20px;
+        font-weight: 500;
+        font-size: 2.3rem;
+        color: #f5b461;
+        text-decoration: none;
+        display: inline-block;
+        overflow: hidden;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 2rem;
+      }
+      .items:hover {
+        color: black;
+        transform: scale(1.2);
+      }
+    
+      #comp {
+        width: 80px;
+        height: 80px;
+        margin-right: 6rem;
+        margin-left: 1rem;
+      }
+      
+      #jet {
+        width: 80px;
+        height: 80px;
+        margin-right: 9rem;
+        margin-left: 1rem;
+      }
+      
+      #ship {
+        width: 80px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

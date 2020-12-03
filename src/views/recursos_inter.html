@@ -8,7 +8,7 @@
         <title>Katak | Recursos</title>
         <nav loadhtml="navloged" class="navbar"></nav>
     </head>
-    <body id="recursosinterpage">
+    <body id="recursosinterpage" onload='load_resources()'>
 
         <div class="ejercito">
             <p>Recursos</p>
@@ -26,27 +26,27 @@
                     <div class="flexxx-3">
                         <h1>Petróleo</h1>
                         <img id="petroleo" src="../assets/imgs/gas-pump-solid.png" alt="hammer">
-                        <h1>9</h1>
+                        <h1 id='PetroleoShow'>9</h1>
                     </div>
                     <div class="flexxx-4">
                         <h1>Red</h1>
                         <img id="jet" src="../assets/imgs/wifi-solid.png" alt="hammer">
-                        <h1>5</h1>
+                        <h1 id='RedShow'>5</h1>
                     </div>
                     <div class="flexxx-5">
                         <h1>Litio</h1>
                         <img id="jet" src="../assets/imgs/layer-group-solid.svg" alt="hammer">
-                        <h1>4</h1>
+                        <h1 id='LitioShow'>4</h1>
                     </div>
                     <div class="flexxx-6">
                         <h1>Tribu</h1>
                         <img id="jet" src="../assets/imgs/child-solid.svg" alt="hammer">
-                        <h1>7</h1>
+                        <h1 id='TribuShow'>7</h1>
                     </div>
                     <div class="flexxx-7">
                         <h1 class="xd">Energía Nuclear</h1>
                         <img id="nuclear" src="../assets/imgs/atom-solid.svg" alt="hammer">
-                        <h1 class="xdxd">7</h1>
+                        <h1 class="xdxd" id='NuclearShow'>7</h1>
                     </div>
                     <div class="flexxx-8">
                         <div class="shopxterritorios"><a href="shop.html"><button class="shop">Volver a Shop</button></a></div>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
         </div> 
-        <script src = "../assets/js/recursos.js"></script>
         <script src="../assets/js/module.js"></script>
+        <script src = "../assets/js/recursos_inter.js"></script>
     </body>
 </html>

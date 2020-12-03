@@ -31,7 +31,25 @@ let user4 = {name: 'Shaggy', territories: 9};
 let user5 = {name: 'JUANPAbaSurita', territories: 9};
 
 
-let current_user = {player: 1, game:1, token: ''};
+let current_user = {
+    player: 1, 
+    game:1, 
+    token: '',
+    resources: {
+        metal : 3,
+        cement : 2,
+        food : 5,
+        oil : 1,
+        network : 2,
+        lithium : 2,
+        nuclear : 0,
+        tribes : 0,
+        tecnology : 1,
+        niobium : 0,
+        virus : 0,
+        workforce: 1
+      }
+};
 localStorage.setItem('current_user', JSON.stringify(current_user));
 
 let australia = {

@@ -1,4 +1,4 @@
-
+ 
 m_1 = localStorage.getItem('metal_1');
 c_1 = localStorage.getItem('cemento_1');
 a_1 = localStorage.getItem('alimento_1');

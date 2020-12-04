@@ -773,8 +773,14 @@ body#territoriespage {
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
-  padding: 40px;
+  padding: 30px;
   margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#territoriespage .flex2 {
+  flex-direction: column;
 }
 #territoriespage p {
   text-align: center;
@@ -828,33 +834,12 @@ body#territoriespage {
 }
 #territoriespage #chess {
   width: 40px;
-  color: #fff;
 }
 #territoriespage #jet {
   width: 80px;
-  color: #fff;
 }
 #territoriespage #ship {
   width: 80px;
-  color: #fff;
-}
-#territoriespage #slider {
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  width: 80%;
-  min-width: 600px;
-  text-align: center;
-  justify-content: center;
-}
-#territoriespage #slides {
-  padding: 10px;
-  border: 3px solid #ccc;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  border-radius: 5px;
 }
 
 /* Sign Up CSS*/

@@ -37,6 +37,11 @@ moduleList.nav = `
     <a href="log_in.html"><button class="log_in">Login</button></a>
     <a href="sign_up.html"><button class="sign_up">Sign Up</button></a>
 `
+let game_session = JSON.parse(localStorage.getItem('game_session'));
+let link = "start_playing.html";
+if (game_session != 0) {
+    link = "map.html"    
+};
 moduleList.navloged = `
     <nav class="navbar"  id="navloged">
         <a href="index loged.html" class="link_logo">
@@ -53,7 +58,7 @@ moduleList.navloged = `
                 <a href="territories.html" class="navbar_link">Territories</a>
             </li>
             <li class="navbar_item">
-                <a href="start_playing.html" class="navbar_link">Game Session</a>
+                <a href=${link} class="navbar_link">Game Session</a>
             </li>
         </ul>
         <a href="../../index.html"><button class="log_out">Logout</button></a>

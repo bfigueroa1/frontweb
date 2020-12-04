@@ -18,6 +18,7 @@ localStorage.setItem("metal_2",50)
 localStorage.setItem("cemento_2",50)
 localStorage.setItem("alimento_2",50)
 */
+localStorage.setItem('game_session', JSON.stringify(0));
 let jugada = {
     troop_attack: [],
     airplane_attack: [],

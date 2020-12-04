@@ -10,20 +10,21 @@
     </head>
     <body id="joingamepage">
         <div class="container">
-            <p>Join Existing Game Session</p>
+            <p>Join Existing Game</p>
             
             <div class="flex-box">
                 <div class="flex-1">
                     <label for="gcode" class="gcode">Enter Code:</label>
-                    <input type="text" placeholder="Joining Session Code" class="input">
+                    <input id="session_code" type="text" placeholder="Joining Session Code" class="input">
                 </div>
                 <div class="flex-2">
                     <a href="map.html">
-                        <div type="submit" id="btn_join_game" class="btn">Join Game</div>
+                        <button id="btn_join_game" class="btn">Join Game</button>
                     </a>           
                 </div>  
           </div>
         </div>        
+        <script src="../assets/js/join_game.js"></script>
         <script src="../assets/js/module.js"></script>
     </body>
 </html>

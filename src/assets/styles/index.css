@@ -768,19 +768,37 @@ body#territoriespage {
   border-radius: 5px;
   min-width: 600px;
   max-width: 800px;
-  height: 900px;
+  height: 600px;
   background: #fff;
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 30px;
   margin-top: 6em;
+}
+#territoriespage .flexbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  width: 730px;
+  height: 400px;
 }
 #territoriespage .flex2 {
-  flex-direction: column;
+  width: 1000px;
+  text-align: center;
+  padding: 1px;
+}
+#territoriespage .flex1,
+#territoriespage .flex3 {
+  flex-direction: row;
+  cursor: pointer;
+}
+#territoriespage .flex21 div {
+  font-size: 1rem;
+  flex-direction: row;
+}
+#territoriespage .flex4 {
+  text-align: center;
 }
 #territoriespage p {
   text-align: center;
@@ -808,29 +826,6 @@ body#territoriespage {
 }
 #territoriespage .shop:hover {
   background-color: rgba(0, 136, 169, 0.8);
-}
-#territoriespage .table2 {
-  border-collapse: separate;
-  border-spacing: 10px 10px;
-  height: 100px;
-}
-#territoriespage .table2 th {
-  height: 100px;
-  width: 100px;
-  text-decoration: underline;
-  border-radius: 5px;
-  background-color: #de9f3b;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-}
-#territoriespage .table2 td {
-  height: 100px;
-  min-width: 150px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
 }
 #territoriespage #chess {
   width: 40px;

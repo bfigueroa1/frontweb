@@ -14,16 +14,88 @@ body#territoriespage{
        border-radius: 5px;
        min-width: 600px;
        max-width: 800px;
-       height: 900px;
+       height: 600px;
        background: #fff;
        margin: 50px auto;
        box-shadow: 0 0 20px rgba(72,98,85, 0.6);
        box-sizing: border-box;
-       padding: 40px;
+       padding: 30px;
        margin-top: 6em;
-    
+       }
+
+       .flexbox{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         width: 730px;
+         height: 400px;
        }
     
+      
+
+       .flex2{
+         width: 1000px;
+         text-align: center;
+         padding: 1px;
+
+         display: flex;
+         flex-direction: column;
+         align-items: baseline;
+         padding-left: 7.7rem;
+       }
+
+      .tinfo{
+         &-box{
+            background-color: beige;
+            padding: 2rem;
+            width: 361px;
+            border: 2px solid #abab8c;
+            border-radius: 9px;
+            margin-bottom: 1rem;
+         }
+         &-row{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 2.8rem;
+            &-text{
+               // margin-right: 6rem;
+            }
+         }
+         &-img{
+            width: 80px;
+            padding-right: 0.7rem;
+         }
+      }
+
+
+      .flex1,
+      .flex3{
+         flex-direction: row;
+         cursor: pointer;
+      }
+
+      
+
+      .flex21{
+         div{
+            // font-size: 1rem;
+            flex-direction: row;
+         }
+         font-size: 1.3rem;
+      }
+      .flex22{
+         font-size: 1.3rem;
+         margin-bottom: 1.5rem;
+      }
+      .flex23{
+      }
+      .flex4{
+         text-align: center;
+      }
+
+
     p{
        text-align: center;
        letter-spacing: 1px;  
@@ -53,63 +125,18 @@ body#territoriespage{
        background-color: rgba(0, 136, 169, 0.8);
     }
     
-    .table2 {
-      border-collapse: separate;
-      border-spacing: 10px 10px;
-      height: 100px;
-    }
-    
-    .table2 th {
-      height: 100px;
-      width: 100px;
-      text-decoration: underline;
-      border-radius: 5px;
-      background-color:rgb(222, 159, 59);
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 1rem;
-      text-decoration: none;
-    }
-    
-    .table2 td {
-      height: 100px;
-      min-width: 150px;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 1rem;
-    }
     
     #chess {
        width: 40px;
-       color: #fff;
     }
     
     #jet {
        width: 80px;
-       color: #fff;
     }
     
     #ship {
        width: 80px;
-       color: #fff;
     }
     
-    #slider {
-       margin: 0 auto;
-       margin-top: 2%;
-       margin-bottom: 2%;
-       width: 80%;
-       min-width: 600px;
-       text-align: center;
-       justify-content: center;
-    }
-    #slides {
-       padding: 10px;
-       border: 3px solid #ccc;
-       background: #fff;
-       position: relative;
-       z-index: 1;
-       width: 100%;
-       border-radius: 5px;
-    } 
+    
  }

@@ -1616,8 +1616,8 @@ $(function () {
     		$('#troops-attackSelection').append(`${`<option value="26">Nueva Guinea</option>`}`)
 		}
 		else if ($(".modal-title").text() == "Argentina, Paraguay y Uruguay"){
-    		$('#troops-attackSelection').append(`${`<option value="chile-bolivia-peru-ecuador">Chile, Bolivia, Peru y Ecuador</option>`}`)
-    		$('#troops-attackSelection').append(`${`<option value="brasil">Brasil</option>`}`)
+    		$('#troops-attackSelection').append(`${`<option value="22">Chile, Bolivia, Peru y Ecuador</option>`}`)
+    		$('#troops-attackSelection').append(`${`<option value="24">Brasil</option>`}`)
 		}
 		else if ($('.modal-title').text() == 'Brasil'){
 			$('#troops-attackSelection').append(`${`<option value='22'>Chile, Bolivia, Peru y Ecuador</option>`}`)
@@ -3116,6 +3116,30 @@ $(function () {
 		return rawResponse;
 	}
 
+	async function fetch_get_resources(id_army) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		const rawResponse = await fetch(`http://localhost:3000/armies/get_resources/${id_army}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res}); 
+		return rawResponse;
+	}
+
+	async function fetch_total_territories(player_name) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		const rawResponse = await fetch(`http://localhost:3000/armies/get_total_territories/${player_name}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res}); 
+		return rawResponse;
+	}
+
 	
 
 	$('#send_moveBtn').click(async function () {		
@@ -3157,7 +3181,7 @@ $(function () {
 
 		let jugada = JSON.parse(localStorage.getItem("jugada"));
 		let current_user = JSON.parse(localStorage.getItem("current_user"));
-
+		let winner = ''
 		let names = await fetch_territory_names(current_user.player);
 
 
@@ -3169,21 +3193,47 @@ $(function () {
 			alert("Already up to date");
 		}
 		else{
-
-			//QUE NO PUEDA JUGAR TERRITORIOS QUE NO SON SUYOS	
-		
 			let map_data = await fetch_map();
 			for (territory in map_data) {
 				//console.log(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-').replace(' ', '-').replace(',-', '-').replace('l ', 'l-'));
 				localStorage.setItem(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-')
 				.replace(' ', '-').replace(',-', '-').replace('l ', 'l-').replace('ñ', 'n'), JSON.stringify(map_data[territory]));
 			}
+
+			let user1 = JSON.parse(localStorage.getItem('user1'));
+			let user2 = JSON.parse(localStorage.getItem('user2'));
+			let user3 = JSON.parse(localStorage.getItem('user3'));
+			let user4 = JSON.parse(localStorage.getItem('user4'));
+			let user5 = JSON.parse(localStorage.getItem('user5'));
+
+			for (user of [user1, user2, user3, user4, user5]) {
+				let terr_n = await fetch_total_territories(user.name);
+				user.territories = terr_n;
+				if (terr_n > 11) {
+					winner = user;
+				}
+			}
+
+			if (winner != '') {
+				localStorage.setItem('winner', JSON.stringify(winner))
+				window.location = 'game_ended.html'
+			}
+
+			localStorage.setItem('user1', JSON.stringify(user1));
+			localStorage.setItem('user2', JSON.stringify(user2));
+			localStorage.setItem('user3', JSON.stringify(user3));
+			localStorage.setItem('user4', JSON.stringify(user4));
+			localStorage.setItem('user5', JSON.stringify(user5));
+
 			load_map();
+
 			$('#send_moveBtn').removeClass('hide');
 			
 			alert("The map has been updated");
 
-
+			//console.log()
+			current_user.resources = await fetch_get_resources(current_user.army);
+			localStorage.setItem('current_user', JSON.stringify(current_user));
 
 			number = await fetch_territory_number(current_user.army)
 
@@ -3204,12 +3254,6 @@ $(function () {
 					}
 				termino = true;
 				}
-
-			let b;
-			for (b of players) {
-				console.log(b);
-				await fetch_username(b);
-			}
 			
 			
 			if (termino == true){

@@ -16,7 +16,6 @@ function includeHTML() {
         }
     }
 }
-
 const moduleList = {};
 
 moduleList.nav = `

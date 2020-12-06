@@ -110,7 +110,7 @@ function check(){
             }else{
                 
                 (async () => {
-                    const rawResponse = await fetch('http://localhost:3000/auth/login', {
+                    const content = await fetch('http://localhost:3000/auth/login', {
                       method: 'POST',
                       headers: {
                         'Accept': 'application/json',
@@ -119,36 +119,25 @@ function check(){
                       body: JSON.stringify(user)
                     })
                     .then(res => res.json())
-                    .then(res => {console.log(res)});
-                      const content = await rawResponse.json();
-                      console.log(content);
+                    .then(res => {return res});
+                      let current_user = {
+                        player: content.player.player_id,
+                        username: content.player.username, 
+                        game: 0,
+                        army: 0,
+                        token: content.player.token,
+                        resources: {}
+                    };
+                    localStorage.setItem('current_user', JSON.stringify(current_user));
                     })();          
                 
 
 
                 //login success
                 alert('Login success');
+                localStorage.setItem('game_session', JSON.stringify(0));
+
                 window.location = './index loged.html';
-                //Pa que el usuario tenga cosas
-                /*
-                localStorage.setItem("aviones_1",0);
-                localStorage.setItem("buques_1",0);
-                localStorage.setItem("muralla_1",0);
-                localStorage.setItem("tropas_1",10);
-
-                localStorage.setItem("metal_1",10)
-                localStorage.setItem("cemento_1",10)
-                localStorage.setItem("alimento_1",10)
-
-                localStorage.setItem("aviones_2",5);
-                localStorage.setItem("buques_2",5);
-                localStorage.setItem("muralla_2",2);
-                localStorage.setItem("tropas_2",5);
-
-                localStorage.setItem("metal_2",50)
-                localStorage.setItem("cemento_2",50)
-                localStorage.setItem("alimento_2",50)*/
-                //
             }
         }
     }else{

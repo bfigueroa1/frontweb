@@ -9,7 +9,6 @@ function range(end) {
     return ans;
 }
 
-
 /* onlaed = "Function_wall()"
 function start_map() {
 	load_map();
@@ -164,25 +163,32 @@ function load_map() {
 	let user5 = JSON.parse(localStorage.getItem('user5'));
 	$("#uname1").empty();
 	$("#uname1").append(user1.name);
+	$("#uname1").css('color', user1.color);
 	$("#territoriesu1").empty();
 	$("#territoriesu1").append(`Territories: ${user1.territories}`);
 	$("#uname2").empty();
 	$("#uname2").append(user2.name);
+	$("#uname2").css('color', user2.color);
 	$("#territoriesu2").empty();
 	$("#territoriesu2").append(`Territories: ${user2.territories}`);
 	$("#uname3").empty();
 	$("#uname3").append(user3.name);
+	$("#uname3").css('color', user3.color);
 	$("#territoriesu3").empty();
 	$("#territoriesu3").append(`Territories: ${user3.territories}`);
 	$("#uname4").empty();
 	$("#uname4").append(user4.name);
+	$("#uname4").css('color', user4.color);
 	$("#territoriesu4").empty();
 	$("#territoriesu4").append(`Territories: ${user4.territories}`);
 	$("#uname5").empty();
 	$("#uname5").append(user5.name);
+	$("#uname5").css('color', user5.color);
 	$("#territoriesu5").empty();
 	$("#territoriesu5").append(`Territories: ${user5.territories}`);
 }
+
+window.onload = load_map();
 
 
 function send_troops(){
@@ -300,14 +306,14 @@ function send_troops(){
 			localStorage.setItem('mexico', JSON.stringify(mexico));
 			}
 			else if ($('.modal-title').text() == 'Chile, Bolivia, Peru y Ecuador'){
-			let chile,_bolivia,_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
-			chile,_bolivia,_peru_ecuador.troops -= at_ls;
-			localStorage.setItem('chile,-bolivia,-peru-ecuador', JSON.stringify(chile,_bolivia,_peru_ecuador));
+			let chile_bolivia_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
+			chile_bolivia_peru_ecuador.troops -= at_ls;
+			localStorage.setItem('chile-bolivia-peru-ecuador', JSON.stringify(chile_bolivia_peru_ecuador));
 			}
 			else if ($('.modal-title').text() == 'Argentina, Paraguay y Uruguay'){
-			let argentina,_paraguauruguay = JSON.parse(localStorage.getItem('argentina-paraguauruguay'));
-			argentina,_paraguauruguay.troops -= at_ls;
-			localStorage.setItem('argentina,-paraguauruguay', JSON.stringify(argentina,_paraguauruguay));
+			let argentina_paraguay_uruguay = JSON.parse(localStorage.getItem('argentina-paraguay-uruguay'));
+			argentina_paraguay_uruguay.troops -= at_ls;
+			localStorage.setItem('argentina-paraguay-uruguay', JSON.stringify(argentina_paraguay_uruguay));
 			}
 			else if ($('.modal-title').text() == 'Brasil'){
 			let brasil = JSON.parse(localStorage.getItem('brasil'));
@@ -365,9 +371,9 @@ function send_troops(){
 			localStorage.setItem('alemania', JSON.stringify(alemania));
 			}
 			else if ($('.modal-title').text() == 'España, francia e Italia'){
-			let españa,_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
-			españa,_francia_italia.troops -= at_ls;
-			localStorage.setItem('españa,-francia-italia', JSON.stringify(españa,_francia_italia));
+			let espana_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
+			espana_francia_italia.troops -= at_ls;
+			localStorage.setItem('espana-francia-italia', JSON.stringify(espana_francia_italia));
 			}
 			else if ($('.modal-title').text() == 'Polonia y Yugoeslavia'){
 			let polonia_yugoeslavia = JSON.parse(localStorage.getItem('polonia-yugoeslavia'));
@@ -422,6 +428,8 @@ $('#attack-troopsBtn').click(function () {
 		};
 		jugada.troop_attack.push(attack);
 		localStorage.setItem('jugada', JSON.stringify(jugada));
+
+		
 	}
   });
 
@@ -542,14 +550,14 @@ boton_at_av.addEventListener("click", function(){
 			localStorage.setItem('mexico', JSON.stringify(mexico));
 			}
 			else if ($('.modal-title').text() == 'Chile, Bolivia, Peru y Ecuador'){
-			let chile,_bolivia,_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
-			chile,_bolivia,_peru_ecuador.airplanes -= aa_ls;
-			localStorage.setItem('chile,-bolivia,-peru-ecuador', JSON.stringify(chile,_bolivia,_peru_ecuador));
+			let chile_bolivia_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
+			chile_bolivia_peru_ecuador.airplanes -= aa_ls;
+			localStorage.setItem('chile-bolivia-peru-ecuador', JSON.stringify(chile_bolivia_peru_ecuador));
 			}
 			else if ($('.modal-title').text() == 'Argentina, Paraguay y Uruguay'){
-			let argentina,_paraguauruguay = JSON.parse(localStorage.getItem('argentina-paraguauruguay'));
-			argentina,_paraguauruguay.airplanes -= aa_ls;
-			localStorage.setItem('argentina,-paraguauruguay', JSON.stringify(argentina,_paraguauruguay));
+			let argentina_paraguay_uruguay = JSON.parse(localStorage.getItem('argentina-paraguay-uruguay'));
+			argentina_paraguay_uruguay.airplanes -= aa_ls;
+			localStorage.setItem('argentina-paraguay-uruguay', JSON.stringify(argentina_paraguay_uruguay));
 			}
 			else if ($('.modal-title').text() == 'Brasil'){
 			let brasil = JSON.parse(localStorage.getItem('brasil'));
@@ -607,9 +615,9 @@ boton_at_av.addEventListener("click", function(){
 			localStorage.setItem('alemania', JSON.stringify(alemania));
 			}
 			else if ($('.modal-title').text() == 'España, francia e Italia'){
-			let españa,_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
-			españa,_francia_italia.airplanes -= aa_ls;
-			localStorage.setItem('españa,-francia-italia', JSON.stringify(españa,_francia_italia));
+			let espana_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
+			espana_francia_italia.airplanes -= aa_ls;
+			localStorage.setItem('espana-francia-italia', JSON.stringify(espana_francia_italia));
 			}
 			else if ($('.modal-title').text() == 'Polonia y Yugoeslavia'){
 			let polonia_yugoeslavia = JSON.parse(localStorage.getItem('polonia-yugoeslavia'));
@@ -776,14 +784,14 @@ boton_at_b.addEventListener("click", function(){
 			localStorage.setItem('mexico', JSON.stringify(mexico));
 			}
 			else if ($('.modal-title').text() == 'Chile, Bolivia, Peru y Ecuador'){
-			let chile,_bolivia,_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
-			chile,_bolivia,_peru_ecuador.ships -= b_ls;
-			localStorage.setItem('chile,-bolivia,-peru-ecuador', JSON.stringify(chile,_bolivia,_peru_ecuador));
+			let chile_bolivia_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
+			chile_bolivia_peru_ecuador.ships -= b_ls;
+			localStorage.setItem('chile-bolivia-peru-ecuador', JSON.stringify(chile_bolivia_peru_ecuador));
 			}
 			else if ($('.modal-title').text() == 'Argentina, Paraguay y Uruguay'){
-			let argentina,_paraguauruguay = JSON.parse(localStorage.getItem('argentina-paraguauruguay'));
-			argentina,_paraguauruguay.ships -= b_ls;
-			localStorage.setItem('argentina,-paraguauruguay', JSON.stringify(argentina,_paraguauruguay));
+			let argentina_paraguay_uruguay = JSON.parse(localStorage.getItem('argentina-paraguay-uruguay'));
+			argentina_paraguay_uruguay.ships -= b_ls;
+			localStorage.setItem('argentina-paraguay-uruguay', JSON.stringify(argentina_paraguay_uruguay));
 			}
 			else if ($('.modal-title').text() == 'Brasil'){
 			let brasil = JSON.parse(localStorage.getItem('brasil'));
@@ -841,9 +849,9 @@ boton_at_b.addEventListener("click", function(){
 			localStorage.setItem('alemania', JSON.stringify(alemania));
 			}
 			else if ($('.modal-title').text() == 'España, francia e Italia'){
-			let españa,_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
-			españa,_francia_italia.ships -= b_ls;
-			localStorage.setItem('españa,-francia-italia', JSON.stringify(españa,_francia_italia));
+			let espana_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
+			espana_francia_italia.ships -= b_ls;
+			localStorage.setItem('espana,-francia-italia', JSON.stringify(espana_francia_italia));
 			}
 			else if ($('.modal-title').text() == 'Polonia y Yugoeslavia'){
 			let polonia_yugoeslavia = JSON.parse(localStorage.getItem('polonia-yugoeslavia'));
@@ -897,24 +905,28 @@ boton_at_b.addEventListener("click", function(){
 // Jquery functionality
 $(function () {
 	// open modal when a territory is clicked
-	$('.modal-openBtn').click(function () {
-		$('.modal').addClass('modal-open');
-		// close troops attack menu if is open
-		$('#troops-attackMenu').removeClass('modal-open');
-		// close troops attack menu if is open
-		$('#airplanes-attackMenu').removeClass('modal-open');
-		// close troops attack menu if is open
-        $('#ships-attackMenu').removeClass('modal-open');
-		// make modal draggable
-		$('.modal').draggable({handle: ".modal-header"});
-		// make modal draggable
-		$('#troops-attackMenu').draggable({handle: ".modal-header"});
-		// make modal draggable
-		$('#airplanes-attackMenu').draggable({handle: ".modal-header"});
-		// make modal draggable
-		$('#ships-attackMenu').draggable({handle: ".modal-header"});
-		
-	  });
+	function open_modal() {
+		if ($(".modal-title").text() == 'Make Your Move') {
+			null;
+		}
+		else {
+			$('.modal').addClass('modal-open');
+			// close troops attack menu if is open
+			$('#troops-attackMenu').removeClass('modal-open');
+			// close troops attack menu if is open
+			$('#airplanes-attackMenu').removeClass('modal-open');
+			// close troops attack menu if is open
+			$('#ships-attackMenu').removeClass('modal-open');
+			// make modal draggable
+			$('.modal').draggable({handle: ".modal-header"});
+			// make modal draggable
+			$('#troops-attackMenu').draggable({handle: ".modal-header"});
+			// make modal draggable
+			$('#airplanes-attackMenu').draggable({handle: ".modal-header"});
+			// make modal draggable
+			$('#ships-attackMenu').draggable({handle: ".modal-header"});
+		}
+	  };
 
   	//close modal
   	$('.modal-closeBtn').click(function () {
@@ -934,7 +946,7 @@ $(function () {
 		$('#troops-sent').children().remove().end();
 		$('#airplanes-sent').children().remove().end();
 		$('#ships-sent').children().remove().end();
-		for (let i of range(parseInt(t_ls))){         //Agregar en range(_) la cantidad de tropas del territorio  
+		for (let i of range(parseInt(t_ls)-1)){         //Agregar en range(_) la cantidad de tropas del territorio  
 			$('#troops-sent').append(`${`<option value="${i}">${i}</option>`}`)
 		}
 		for (let i of range(parseInt(av_ls))){         //Agregar en range(_) la cantidad de aviones del territorio  
@@ -945,341 +957,594 @@ $(function () {
 		}	
   	};
 
-  	$('#egiptoClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let egipto = JSON.parse(localStorage.getItem('egipto'));
-		let av_ls = egipto.airplanes;
-		let bq_ls = egipto.ships;
-		let t_ls = egipto.troops;
-		change_modal('Egipto', av_ls, bq_ls, t_ls);
-  	});
-
-	$('#medio-orienteClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let medio_oriente = JSON.parse(localStorage.getItem('medio-oriente'));
-		let av_ls = medio_oriente.airplanes;
-		let bq_ls = medio_oriente.ships;
-		let t_ls= medio_oriente.troops;
-		change_modal('Medio Oriente', av_ls, bq_ls, t_ls);
-	});
-
-	$('#australiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let australia = JSON.parse(localStorage.getItem('australia'));
-		let av_ls = australia.airplanes;
-		let bq_ls = australia.ships;
-		let t_ls= australia.troops;
-		change_modal('Australia', av_ls, bq_ls, t_ls)
-	});
-	
-	$('#sumatraClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let sumatra = JSON.parse(localStorage.getItem('sumatra'));
-		let av_ls = sumatra.airplanes;
-		let bq_ls = sumatra.ships;
-		let t_ls= sumatra.troops;
-		change_modal('Sumatra', av_ls, bq_ls, t_ls)
-	});
-
-	$('#borneoClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let borneo = JSON.parse(localStorage.getItem('borneo'));
-		let av_ls = borneo.airplanes;
-		let bq_ls = borneo.ships;
-		let t_ls= borneo.troops;
-		change_modal('Borneo', av_ls, bq_ls, t_ls)
-  	});
-	  
-	  $('#nueva-guineaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let nueva_guinea = JSON.parse(localStorage.getItem('nueva-guinea'));
-		let av_ls = nueva_guinea.airplanes;
-		let bq_ls = nueva_guinea.ships;
-		let t_ls= nueva_guinea.troops;
-		change_modal('Nueva Guinea', av_ls, bq_ls, t_ls)
-  	});
-	  
-	  $('#vietnamClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let vietnam = JSON.parse(localStorage.getItem('vietnam'));
-		let av_ls = vietnam.airplanes;
-		let bq_ls = vietnam.ships;
-		let t_ls= vietnam.troops;
-		change_modal('Vietnam', av_ls, bq_ls, t_ls)
-  	});
-	
-	$('#chinaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let china = JSON.parse(localStorage.getItem('china'));
-		let av_ls = china.airplanes;
-		let bq_ls = china.ships;
-		let t_ls= china.troops;
-		change_modal('China', av_ls, bq_ls, t_ls)
-  	});
-	
-	  $('#japonClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let japon = JSON.parse(localStorage.getItem('japon'));
-		let av_ls = japon.airplanes;
-		let bq_ls = japon.ships;
-		let t_ls= japon.troops;
-		change_modal('Japon', av_ls, bq_ls, t_ls)
-  	});
-
-	  $('#vladivostokClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+  	$('#vladivostokClick').click(function () {
 		let vladivostok = JSON.parse(localStorage.getItem('vladivostok'));
-		let av_ls = vladivostok.airplanes;
-		let bq_ls = vladivostok.ships;
-		let t_ls= vladivostok.troops;
-		change_modal('Vladivostok', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#siberiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (vladivostok.army.name == current_user.username) {
+			let av_ls = vladivostok.airplanes;
+			let bq_ls = vladivostok.ships;
+			let t_ls = vladivostok.troops;
+			change_modal('Vladivostok', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#japonClick').click(function () {
+		let japon = JSON.parse(localStorage.getItem('japon'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (japon.army.name == current_user.username) {
+			let av_ls = japon.airplanes;
+			let bq_ls = japon.ships;
+			let t_ls = japon.troops;
+			change_modal('Japon', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#vietnamClick').click(function () {
+		let vietnam = JSON.parse(localStorage.getItem('vietnam'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (vietnam.army.name == current_user.username) {
+			let av_ls = vietnam.airplanes;
+			let bq_ls = vietnam.ships;
+			let t_ls = vietnam.troops;
+			change_modal('Vietnam', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#siberiaClick').click(function () {
 		let siberia = JSON.parse(localStorage.getItem('siberia'));
-		let av_ls = siberia.airplanes;
-		let bq_ls = siberia.ships;
-		let t_ls= siberia.troops;
-		change_modal('Siberia', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#tchitaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let tchita = JSON.parse(localStorage.getItem('tchita'));
-		let av_ls = tchita.airplanes;
-		let bq_ls = tchita.ships;
-		let t_ls= tchita.troops;
-		change_modal('Tchita', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#mongoliaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let mongolia = JSON.parse(localStorage.getItem('mongolia'));
-		let av_ls = mongolia.airplanes;
-		let bq_ls = mongolia.ships;
-		let t_ls= mongolia.troops;
-		change_modal('Mongolia', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#indiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let india = JSON.parse(localStorage.getItem('india'));
-		let av_ls = india.airplanes;
-		let bq_ls = india.ships;
-		let t_ls= india.troops;
-		change_modal('India', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#aralClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let aral = JSON.parse(localStorage.getItem('aral'));
-		let av_ls = aral.airplanes;
-		let bq_ls = aral.ships;
-		let t_ls= aral.troops;
-		change_modal('Aral', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#omskClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let omsk = JSON.parse(localStorage.getItem('omsk'));
-		let av_ls = omsk.airplanes;
-		let bq_ls = omsk.ships;
-		let t_ls= omsk.troops;
-		change_modal('Omsk', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#dudinkaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (siberia.army.name == current_user.username) {
+			let av_ls = siberia.airplanes;
+			let bq_ls = siberia.ships;
+			let t_ls = siberia.troops;
+			change_modal('Siberia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#dudinkaClick').click(function () {
 		let dudinka = JSON.parse(localStorage.getItem('dudinka'));
-		let av_ls = dudinka.airplanes;
-		let bq_ls = dudinka.ships;
-		let t_ls= dudinka.troops;
-		change_modal('Dudinka', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#africa-del-surClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let africa_del_sur = JSON.parse(localStorage.getItem('africa-del-sur'));
-		let av_ls = africa_del_sur.airplanes;
-		let bq_ls = africa_del_sur.ships;
-		let t_ls= africa_del_sur.troops;
-		change_modal('Africa del Sur', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#madagascarClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let madagascar = JSON.parse(localStorage.getItem('madagascar'));
-		let av_ls = madagascar.airplanes;
-		let bq_ls = madagascar.ships;
-		let t_ls= madagascar.troops;
-		change_modal('Madagascar', av_ls, bq_ls, t_ls)
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (dudinka.army.name == current_user.username) {
+			let av_ls = dudinka.airplanes;
+			let bq_ls = dudinka.ships;
+			let t_ls = dudinka.troops;
+			change_modal('Dudinka', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
 	});
-
-	$('#el-congoClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let el_congo = JSON.parse(localStorage.getItem('el-congo'));
-		let av_ls = el_congo.airplanes;
-		let bq_ls = el_congo.ships;
-		let t_ls= el_congo.troops;
-		change_modal('El Congo', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#sudanClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let sudan = JSON.parse(localStorage.getItem('sudan'));
-		let av_ls = sudan.airplanes;
-		let bq_ls = sudan.ships;
-		let t_ls= sudan.troops;
-		change_modal('Sudan', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#argelia-nigeriaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let argelia_nigeria = JSON.parse(localStorage.getItem('argelia-nigeria'));
-		let av_ls = argelia_nigeria.airplanes;
-		let bq_ls = argelia_nigeria.ships;
-		let t_ls= argelia_nigeria.troops;
-		change_modal('Argelia y Nigeria', av_ls, bq_ls, t_ls)
+	$('#medio-orienteClick').click(function () {
+		let medio_oriente = JSON.parse(localStorage.getItem('medio-oriente'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (medio_oriente.army.name == current_user.username) {
+			let av_ls = medio_oriente.airplanes;
+			let bq_ls = medio_oriente.ships;
+			let t_ls = medio_oriente.troops;
+			change_modal('Medio Oriente', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
 	});
-	
-	$('#moscuClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let moscu = JSON.parse(localStorage.getItem('moscu'));
-		let av_ls = moscu.airplanes;
-		let bq_ls = moscu.ships;
-		let t_ls= moscu.troops;
-		change_modal('Moscu', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#sueciaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let suecia = JSON.parse(localStorage.getItem('suecia'));
-		let av_ls = suecia.airplanes;
-		let bq_ls = suecia.ships;
-		let t_ls= suecia.troops;
-		change_modal('Suecia', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#polonia-yugoeslaviaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let polonia_yugoeslavia = JSON.parse(localStorage.getItem('polonia-yugoeslavia'));
-		let av_ls = polonia_yugoeslavia.airplanes;
-		let bq_ls = polonia_yugoeslavia.ships;
-		let t_ls= polonia_yugoeslavia.troops;
-		change_modal('Polonia y Yugoeslavia', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#alemaniaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let alemania = JSON.parse(localStorage.getItem('alemania'));
-		let av_ls = alemania.airplanes;
-		let bq_ls = alemania.ships;
-		let t_ls= alemania.troops;
-		change_modal('Alemania', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#espana-francia-italiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let espana_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
-		let av_ls = espana_francia_italia.airplanes;
-		let bq_ls = espana_francia_italia.ships;
-		let t_ls= espana_francia_italia.troops;
-		change_modal('España, Francia e Italia', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#inglaterraClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let inglaterra = JSON.parse(localStorage.getItem('inglaterra'));
-		let av_ls = inglaterra.airplanes;
-		let bq_ls = inglaterra.ships;
-		let t_ls= inglaterra.troops;
-		change_modal('Inglaterra', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#islandiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let islandia = JSON.parse(localStorage.getItem('islandia'));
-		let av_ls = islandia.airplanes;
-		let bq_ls = islandia.ships;
-		let t_ls= islandia.troops;
-		change_modal('Islandia', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#chile-bolivia-peru-ecuadorClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let chile_bolivia_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
-		let av_ls = chile_bolivia_peru_ecuador.airplanes;
-		let bq_ls = chile_bolivia_peru_ecuador.ships;
-		let t_ls= chile_bolivia_peru_ecuador.troops;
-		change_modal('Chile, Bolivia, Peru y Ecuador', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#argentina-paraguay-uruguayClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let argentina_paraguay_uruguay = JSON.parse(localStorage.getItem('argentina-paraguay-uruguay'));
-		let av_ls = argentina_paraguay_uruguay.airplanes;
-		let bq_ls = argentina_paraguay_uruguay.ships;
-		let t_ls= argentina_paraguay_uruguay.troops;
-		change_modal('Argentina, Paraguay y Uruguay', av_ls, bq_ls, t_ls)
-  	});
-
-	  $('#brasilClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let brasil = JSON.parse(localStorage.getItem('brasil'));
-		let av_ls = brasil.airplanes;
-		let bq_ls = brasil.ships;
-		let t_ls= brasil.troops;
-		change_modal('Brasil', av_ls, bq_ls, t_ls)
-  	});
-
-	  $('#colombia-venezuelaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let colombia_venezuela = JSON.parse(localStorage.getItem('colombia-venezuela'));
-		let av_ls = colombia_venezuela.airplanes;
-		let bq_ls = colombia_venezuela.ships;
-		let t_ls= colombia_venezuela.troops;
-		change_modal('Colombia y Venezuela', av_ls, bq_ls, t_ls)
-  	});
-	
-	$('#mexicoClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let mexico = JSON.parse(localStorage.getItem('mexico'));
-		let av_ls = mexico.airplanes;
-		let bq_ls = mexico.ships;
-		let t_ls= mexico.troops;
-		change_modal('Mexico', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#nueva-yorkClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let nueva_york = JSON.parse(localStorage.getItem('nueva-york'));
-		let av_ls = nueva_york.airplanes;
-		let bq_ls = nueva_york.ships;
-		let t_ls= nueva_york.troops;
-		change_modal('Nueva York', av_ls, bq_ls, t_ls)
-  	});
-
-	$('#californiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let california = JSON.parse(localStorage.getItem('california'));
-		let av_ls = california.airplanes;
-		let bq_ls = california.ships;
-		let t_ls= california.troops;
-		change_modal('California', av_ls, bq_ls, t_ls)
-  	});
-	  
-	$('#vancouverClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let vancouver = JSON.parse(localStorage.getItem('vancouver'));
-		let av_ls = vancouver.airplanes;
-		let bq_ls = vancouver.ships;
-		let t_ls= vancouver.troops;
-		change_modal('Vancouver', av_ls, bq_ls, t_ls)
-  	});
-	  
-	$('#ottawaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let ottawa = JSON.parse(localStorage.getItem('ottawa'));
-		let av_ls = ottawa.airplanes;
-		let bq_ls = ottawa.ships;
-		let t_ls= ottawa.troops;
-		change_modal('Ottawa', av_ls, bq_ls, t_ls)
-  	});
-	  
-	$('#labradorClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
-		let labrador = JSON.parse(localStorage.getItem('labrador'));
-		let av_ls = labrador.airplanes;
-		let bq_ls = labrador.ships;
-		let t_ls= labrador.troops;
-		change_modal('Labrador', av_ls, bq_ls, t_ls)
-  	});
-	
-	$('#alaskaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+	$('#omskClick').click(function () {
+		let omsk = JSON.parse(localStorage.getItem('omsk'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (omsk.army.name == current_user.username) {
+			let av_ls = omsk.airplanes;
+			let bq_ls = omsk.ships;
+			let t_ls = omsk.troops;
+			change_modal('Omsk', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#aralClick').click(function () {
+		let aral = JSON.parse(localStorage.getItem('aral'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (aral.army.name == current_user.username) {
+			let av_ls = aral.airplanes;
+			let bq_ls = aral.ships;
+			let t_ls = aral.troops;
+			change_modal('Aral', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#chinaClick').click(function () {
+		let china = JSON.parse(localStorage.getItem('china'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (china.army.name == current_user.username) {
+			let av_ls = china.airplanes;
+			let bq_ls = china.ships;
+			let t_ls = china.troops;
+			change_modal('China', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#indiaClick').click(function () {
+		let india = JSON.parse(localStorage.getItem('india'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (india.army.name == current_user.username) {
+			let av_ls = india.airplanes;
+			let bq_ls = india.ships;
+			let t_ls = india.troops;
+			change_modal('India', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#tchitaClick').click(function () {
+		let tchita = JSON.parse(localStorage.getItem('tchita'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (tchita.army.name == current_user.username) {
+			let av_ls = tchita.airplanes;
+			let bq_ls = tchita.ships;
+			let t_ls = tchita.troops;
+			change_modal('Tchita', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#mongoliaClick').click(function () {
+		let mongolia = JSON.parse(localStorage.getItem('mongolia'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (mongolia.army.name == current_user.username) {
+			let av_ls = mongolia.airplanes;
+			let bq_ls = mongolia.ships;
+			let t_ls = mongolia.troops;
+			change_modal('Mongolia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#alaskaClick').click(function () {
 		let alaska = JSON.parse(localStorage.getItem('alaska'));
-		let av_ls = alaska.airplanes;
-		let bq_ls = alaska.ships;
-		let t_ls= alaska.troops;
-		change_modal('Alaska', av_ls, bq_ls, t_ls)
-  	});
-	  
-	$('#mackenzieClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (alaska.army.name == current_user.username) {
+			let av_ls = alaska.airplanes;
+			let bq_ls = alaska.ships;
+			let t_ls = alaska.troops;
+			change_modal('Alaska', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#mackenzieClick').click(function () {
 		let mackenzie = JSON.parse(localStorage.getItem('mackenzie'));
-		let av_ls = mackenzie.airplanes;
-		let bq_ls = mackenzie.ships;
-		let t_ls= mackenzie.troops;
-		change_modal('Mackenzie', av_ls, bq_ls, t_ls)
-  	});
-	  
-	$('#groenlandiaClick').click(function () {   //Para agregar otro territorio copiar toda la función y cambiar
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (mackenzie.army.name == current_user.username) {
+			let av_ls = mackenzie.airplanes;
+			let bq_ls = mackenzie.ships;
+			let t_ls = mackenzie.troops;
+			change_modal('Mackenzie', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#vancouverClick').click(function () {
+		let vancouver = JSON.parse(localStorage.getItem('vancouver'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (vancouver.army.name == current_user.username) {
+			let av_ls = vancouver.airplanes;
+			let bq_ls = vancouver.ships;
+			let t_ls = vancouver.troops;
+			change_modal('Vancouver', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#groenlandiaClick').click(function () {
 		let groenlandia = JSON.parse(localStorage.getItem('groenlandia'));
-		let av_ls = groenlandia.airplanes;
-		let bq_ls = groenlandia.ships;
-		let t_ls= groenlandia.troops;
-		change_modal('Groenlandia', av_ls, bq_ls, t_ls)
-  	});
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (groenlandia.army.name == current_user.username) {
+			let av_ls = groenlandia.airplanes;
+			let bq_ls = groenlandia.ships;
+			let t_ls = groenlandia.troops;
+			change_modal('Groenlandia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#nueva-yorkClick').click(function () {
+		let nueva_york = JSON.parse(localStorage.getItem('nueva-york'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (nueva_york.army.name == current_user.username) {
+			let av_ls = nueva_york.airplanes;
+			let bq_ls = nueva_york.ships;
+			let t_ls = nueva_york.troops;
+			change_modal('Nueva York', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#californiaClick').click(function () {
+		let california = JSON.parse(localStorage.getItem('california'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (california.army.name == current_user.username) {
+			let av_ls = california.airplanes;
+			let bq_ls = california.ships;
+			let t_ls = california.troops;
+			change_modal('California', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#ottawaClick').click(function () {
+		let ottawa = JSON.parse(localStorage.getItem('ottawa'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (ottawa.army.name == current_user.username) {
+			let av_ls = ottawa.airplanes;
+			let bq_ls = ottawa.ships;
+			let t_ls = ottawa.troops;
+			change_modal('Ottawa', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#labradorClick').click(function () {
+		let labrador = JSON.parse(localStorage.getItem('labrador'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (labrador.army.name == current_user.username) {
+			let av_ls = labrador.airplanes;
+			let bq_ls = labrador.ships;
+			let t_ls = labrador.troops;
+			change_modal('Labrador', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#mexicoClick').click(function () {
+		let mexico = JSON.parse(localStorage.getItem('mexico'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (mexico.army.name == current_user.username) {
+			let av_ls = mexico.airplanes;
+			let bq_ls = mexico.ships;
+			let t_ls = mexico.troops;
+			change_modal('Mexico', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#chile-bolivia-peru-ecuadorClick').click(function () {
+		let chile_bolivia_peru_ecuador = JSON.parse(localStorage.getItem('chile-bolivia-peru-ecuador'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (chile_bolivia_peru_ecuador.army.name == current_user.username) {
+			let av_ls = chile_bolivia_peru_ecuador.airplanes;
+			let bq_ls = chile_bolivia_peru_ecuador.ships;
+			let t_ls = chile_bolivia_peru_ecuador.troops;
+			change_modal('Chile, Bolivia, Peru y Ecuador', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#argentina-paraguay-uruguayClick').click(function () {
+		let argentina_paraguay_uruguay = JSON.parse(localStorage.getItem('argentina-paraguay-uruguay'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (argentina_paraguay_uruguay.army.name == current_user.username) {
+			let av_ls = argentina_paraguay_uruguay.airplanes;
+			let bq_ls = argentina_paraguay_uruguay.ships;
+			let t_ls = argentina_paraguay_uruguay.troops;
+			change_modal('Argentina, Paraguay y Uruguay', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#brasilClick').click(function () {
+		let brasil = JSON.parse(localStorage.getItem('brasil'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (brasil.army.name == current_user.username) {
+			let av_ls = brasil.airplanes;
+			let bq_ls = brasil.ships;
+			let t_ls = brasil.troops;
+			change_modal('Brasil', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#colombia-venezuelaClick').click(function () {
+		let colombia_venezuela = JSON.parse(localStorage.getItem('colombia-venezuela'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (colombia_venezuela.army.name == current_user.username) {
+			let av_ls = colombia_venezuela.airplanes;
+			let bq_ls = colombia_venezuela.ships;
+			let t_ls = colombia_venezuela.troops;
+			change_modal('Colombia y Venezuela', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#nueva-guineaClick').click(function () {
+		let nueva_guinea = JSON.parse(localStorage.getItem('nueva-guinea'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (nueva_guinea.army.name == current_user.username) {
+			let av_ls = nueva_guinea.airplanes;
+			let bq_ls = nueva_guinea.ships;
+			let t_ls = nueva_guinea.troops;
+			change_modal('Nueva Guinea', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#borneoClick').click(function () {
+		let borneo = JSON.parse(localStorage.getItem('borneo'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (borneo.army.name == current_user.username) {
+			let av_ls = borneo.airplanes;
+			let bq_ls = borneo.ships;
+			let t_ls = borneo.troops;
+			change_modal('Borneo', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#sumatraClick').click(function () {
+		let sumatra = JSON.parse(localStorage.getItem('sumatra'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (sumatra.army.name == current_user.username) {
+			let av_ls = sumatra.airplanes;
+			let bq_ls = sumatra.ships;
+			let t_ls = sumatra.troops;
+			change_modal('Sumatra', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#australiaClick').click(function () {
+		let australia = JSON.parse(localStorage.getItem('australia'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (australia.army.name == current_user.username) {
+			let av_ls = australia.airplanes;
+			let bq_ls = australia.ships;
+			let t_ls = australia.troops;
+			change_modal('Australia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#inglaterraClick').click(function () {
+		let inglaterra = JSON.parse(localStorage.getItem('inglaterra'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (inglaterra.army.name == current_user.username) {
+			let av_ls = inglaterra.airplanes;
+			let bq_ls = inglaterra.ships;
+			let t_ls = inglaterra.troops;
+			change_modal('Inglaterra', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#moscuClick').click(function () {
+		let moscu = JSON.parse(localStorage.getItem('moscu'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (moscu.army.name == current_user.username) {
+			let av_ls = moscu.airplanes;
+			let bq_ls = moscu.ships;
+			let t_ls = moscu.troops;
+			change_modal('Moscu', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#sueciaClick').click(function () {
+		let suecia = JSON.parse(localStorage.getItem('suecia'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (suecia.army.name == current_user.username) {
+			let av_ls = suecia.airplanes;
+			let bq_ls = suecia.ships;
+			let t_ls = suecia.troops;
+			change_modal('Suecia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#islandiaClick').click(function () {
+		let islandia = JSON.parse(localStorage.getItem('islandia'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (islandia.army.name == current_user.username) {
+			let av_ls = islandia.airplanes;
+			let bq_ls = islandia.ships;
+			let t_ls = islandia.troops;
+			change_modal('Islandia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#alemaniaClick').click(function () {
+		let alemania = JSON.parse(localStorage.getItem('alemania'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (alemania.army.name == current_user.username) {
+			let av_ls = alemania.airplanes;
+			let bq_ls = alemania.ships;
+			let t_ls = alemania.troops;
+			change_modal('Alemania', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#espana-francia-italiaClick').click(function () {
+		let espana_francia_italia = JSON.parse(localStorage.getItem('espana-francia-italia'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (espana_francia_italia.army.name == current_user.username) {
+			let av_ls = espana_francia_italia.airplanes;
+			let bq_ls = espana_francia_italia.ships;
+			let t_ls = espana_francia_italia.troops;
+			change_modal('España, Francia e Italia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#polonia-yugoeslaviaClick').click(function () {
+		let polonia_yugoeslavia = JSON.parse(localStorage.getItem('polonia-yugoeslavia'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (polonia_yugoeslavia.army.name == current_user.username) {
+			let av_ls = polonia_yugoeslavia.airplanes;
+			let bq_ls = polonia_yugoeslavia.ships;
+			let t_ls = polonia_yugoeslavia.troops;
+			change_modal('Polonia y Yugoeslavia', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#sudanClick').click(function () {
+		let sudan = JSON.parse(localStorage.getItem('sudan'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (sudan.army.name == current_user.username) {
+			let av_ls = sudan.airplanes;
+			let bq_ls = sudan.ships;
+			let t_ls = sudan.troops;
+			change_modal('Sudan', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#el-congoClick').click(function () {
+		let el_congo = JSON.parse(localStorage.getItem('el-congo'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (el_congo.army.name == current_user.username) {
+			let av_ls = el_congo.airplanes;
+			let bq_ls = el_congo.ships;
+			let t_ls = el_congo.troops;
+			change_modal('El Congo', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#africa-del-surClick').click(function () {
+		let africa_del_sur = JSON.parse(localStorage.getItem('africa-del-sur'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (africa_del_sur.army.name == current_user.username) {
+			let av_ls = africa_del_sur.airplanes;
+			let bq_ls = africa_del_sur.ships;
+			let t_ls = africa_del_sur.troops;
+			change_modal('Africa del Sur', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#argelia-nigeriaClick').click(function () {
+		let argelia_nigeria = JSON.parse(localStorage.getItem('argelia-nigeria'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (argelia_nigeria.army.name == current_user.username) {
+			let av_ls = argelia_nigeria.airplanes;
+			let bq_ls = argelia_nigeria.ships;
+			let t_ls = argelia_nigeria.troops;
+			change_modal('Argelia y Nigeria', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#madagascarClick').click(function () {
+		let madagascar = JSON.parse(localStorage.getItem('madagascar'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (madagascar.army.name == current_user.username) {
+			let av_ls = madagascar.airplanes;
+			let bq_ls = madagascar.ships;
+			let t_ls = madagascar.troops;
+			change_modal('Madagascar', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
+	$('#egiptoClick').click(function () {
+		let egipto = JSON.parse(localStorage.getItem('egipto'));
+		let current_user = JSON.parse(localStorage.getItem('current_user'));
+		if (egipto.army.name == current_user.username) {
+			let av_ls = egipto.airplanes;
+			let bq_ls = egipto.ships;
+			let t_ls = egipto.troops;
+			change_modal('Egipto', av_ls, bq_ls, t_ls);
+		}
+		else {
+			change_modal('Make Your Move', 0, 0, 0);
+		}
+		open_modal();
+	});
 	  
 	  
 	  
@@ -2671,7 +2936,6 @@ $(function () {
 		'Africa del Sur': 39, 'Argelia y Nigeria': 40, 'Madagascar': 41, 'Egipto': 42};
 		let ataque = jugada.ship_attack.shift();
 		localStorage.setItem('jugada', JSON.stringify(jugada));
-		console.log(ataque);
 		let id_terr_ataca = id_territories[ataque.attack_territory];
 		let query = {
 			"territory_attacked": id_territories[ataque.attacked_territory],
@@ -2728,24 +2992,6 @@ $(function () {
 			}
 		})
 	}
-
-	$('#send_moveBtn').click(async function () {
-		$('#send_moveBtn').addClass('hide');
-		let jugada = JSON.parse(localStorage.getItem("jugada"));
-
-		if (jugada.troop_attack.length !== 0) {
-			await fetch_move_t();
-		}
-		if (jugada.airplane_attack.length !== 0) {
-			await fetch_move_a();
-		}
-		if (jugada.ship_attack.length !== 0) {
-			await fetch_move_s();
-		}
-		if (jugada.collect_resources.length !== 0) {
-			await fetch_colect();
-		}
-	});
 
 
 	async function fetch_getGame() {  //CONSEGUIR GAME ID de DB
@@ -2807,7 +3053,7 @@ $(function () {
 			};
 		let rawResponse = await fetch(ruta,options)
 		.then(function(){
-				alert("Se actualizo el mapa")	
+				alert("Move Sent")	
 			}
 		);
 	}
@@ -2845,23 +3091,75 @@ $(function () {
 		return rawResponse;
 	}
 
-	async function fetch_username(a) { //CONSEGUIR USERNAME 
-		const rawResponse = await fetch(`http://localhost:3000/players/username/${a}`, {
+
+	async function fetch_territory_names(id_army) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		const rawResponse = await fetch(`http://localhost:3000/territories/name/${id_army}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
 				'Content-Type': 'application/json'
 		}})
 		.then(res => res.json())
-		.then(res => {return res});
-		//console.log(rawResponse);
+		.then(res => {return res}); 
 		return rawResponse;
 	}
 
+	async function fetch_territory_number(id_army) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		const rawResponse = await fetch(`http://localhost:3000/territories/number/${id_army}`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+		.then(res => res.json())
+		.then(res => {return res}); 
+		return rawResponse;
+	}
+
+	
+
+	$('#send_moveBtn').click(async function () {		
+		let current_user = JSON.parse(localStorage.getItem("current_user"));
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
+		let play = await fetch_getPlayed(current_user.player);
+		if (play == true) {
+			alert("Move already sent");
+			$('#send_moveBtn').addClass('hide');
+			jugada = {
+				troop_attack: [],
+				airplane_attack: [],
+				ship_attack: [],
+				collect_resources: []
+			};
+			localStorage.setItem('jugada', JSON.stringify(jugada));
+		}
+		else {
+			$('#send_moveBtn').addClass('hide');
+			await fetch_act_rounds_t();
+			if (jugada.troop_attack.length !== 0) {
+				await fetch_move_t();
+			}
+			if (jugada.airplane_attack.length !== 0) {
+				await fetch_move_a();
+			}
+			if (jugada.ship_attack.length !== 0) {
+				await fetch_move_s();
+			}
+			if (jugada.collect_resources.length !== 0) {
+				await fetch_colect();
+			}
+		}
+	});
+
+	
 
 	$('#update_map').click(async function () {
 
+		let jugada = JSON.parse(localStorage.getItem("jugada"));
 		let current_user = JSON.parse(localStorage.getItem("current_user"));
+
+		let names = await fetch_territory_names(current_user.player);
+
 
 		//let game = await fetch_getGame(); //ESTA SERVIRA PARA CUANDO TENGAN VARIAS PARTIDAS
 		let play = await fetch_getPlayed(current_user.player);
@@ -2871,8 +3169,9 @@ $(function () {
 			alert("Already up to date");
 		}
 		else{
-			alert("The map has been updated");
 
+			//QUE NO PUEDA JUGAR TERRITORIOS QUE NO SON SUYOS	
+		
 			let map_data = await fetch_map();
 			for (territory in map_data) {
 				//console.log(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-').replace(' ', '-').replace(',-', '-').replace('l ', 'l-'));
@@ -2881,8 +3180,19 @@ $(function () {
 			}
 			load_map();
 			$('#send_moveBtn').removeClass('hide');
-			await fetch_act_rounds_t();
+			
+			alert("The map has been updated");
 
+
+
+			number = await fetch_territory_number(current_user.army)
+
+			console.log(number);
+
+			if (number == 15){
+				alert("YOU WON!");
+			}
+			
 			let x;
 			let termino = false
 			for (x of players) {
@@ -2909,11 +3219,16 @@ $(function () {
 				}
 			}
 			
-			}
+		}
 
-    });
+	});
 
-	
+
+
+
+
+
+
 });
 /*
 $.ajax({

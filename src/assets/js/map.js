@@ -3140,6 +3140,14 @@ $(function () {
 		return rawResponse;
 	}
 
+	async function fetch_next_round() {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
+		await fetch(`http://localhost:3000/troops/next_round`, {
+			method: 'GET',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+		}})
+	}
 	
 
 	$('#send_moveBtn').click(async function () {		
@@ -3193,6 +3201,7 @@ $(function () {
 			alert("Already up to date");
 		}
 		else{
+			await fetch_next_round();
 			let map_data = await fetch_map();
 			for (territory in map_data) {
 				//console.log(territory.toLowerCase().replace(', ', '-').replace(' y ', '-').replace(' e ', '-').replace(' ', '-').replace(',-', '-').replace('l ', 'l-'));

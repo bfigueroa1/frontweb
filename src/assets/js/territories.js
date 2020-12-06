@@ -65,6 +65,8 @@ left.addEventListener("click", function(){
     tropas.innerHTML = `Tropas: ${terr.troops}`;
     aviones.innerHTML = `Aviones: ${terr.airplanes}`;
     buques.innerHTML = `Buques: ${terr.ships}`;
+
+    localStorage.setItem('territory_shop', new_name);
 })
 
 right.addEventListener("click", function(){
@@ -81,4 +83,6 @@ right.addEventListener("click", function(){
     tropas.innerHTML = `Tropas: ${terr.troops}`;
     aviones.innerHTML = `Aviones: ${terr.airplanes}`;
     buques.innerHTML = `Buques: ${terr.ships}`;
+
+    localStorage.setItem('territory_shop', new_name);
 })

@@ -53,6 +53,9 @@ let terr_cont = {'Vladivostok': 'Asia', 'Japon': 'Asia', 'Vietnam': 'Asia', 'Sib
 
 left.addEventListener("click", function(){
     let new_name = next_left[nombre.innerHTML.substr(8,)];
+    if(new_name == undefined){
+        new_name = 'Vladivostok'
+    }
     nombre.innerHTML = `Nombre: ${new_name}`;
     let new_continent = terr_cont[new_name];
     continente.innerHTML = `Continente: ${new_continent}`;
@@ -66,6 +69,9 @@ left.addEventListener("click", function(){
 
 right.addEventListener("click", function(){
     let new_name = next_right[nombre.innerHTML.substr(8,)];
+    if(new_name == undefined){
+        new_name = 'Vladivostok'
+    }
     nombre.innerHTML = `Nombre: ${new_name}`;
     let new_continent = terr_cont[new_name];
     continente.innerHTML = `Continente: ${new_continent}`;

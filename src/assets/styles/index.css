@@ -787,15 +787,44 @@ body#territoriespage {
   width: 1000px;
   text-align: center;
   padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 7.7rem;
+}
+#territoriespage .tinfo-box {
+  background-color: beige;
+  padding: 2rem;
+  width: 361px;
+  border: 2px solid #abab8c;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+}
+#territoriespage .tinfo-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2.8rem;
+}
+#territoriespage .tinfo-img {
+  width: 80px;
+  padding-right: 0.7rem;
 }
 #territoriespage .flex1,
 #territoriespage .flex3 {
   flex-direction: row;
   cursor: pointer;
 }
+#territoriespage .flex21 {
+  font-size: 1.3rem;
+}
 #territoriespage .flex21 div {
-  font-size: 1rem;
   flex-direction: row;
+}
+#territoriespage .flex22 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
 }
 #territoriespage .flex4 {
   text-align: center;

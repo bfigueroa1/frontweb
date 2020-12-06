@@ -34,10 +34,41 @@ body#territoriespage{
       
 
        .flex2{
-          width: 1000px;
-          text-align: center;
-          padding: 1px;
+         width: 1000px;
+         text-align: center;
+         padding: 1px;
+
+         display: flex;
+         flex-direction: column;
+         align-items: baseline;
+         padding-left: 7.7rem;
        }
+
+      .tinfo{
+         &-box{
+            background-color: beige;
+            padding: 2rem;
+            width: 361px;
+            border: 2px solid #abab8c;
+            border-radius: 9px;
+            margin-bottom: 1rem;
+         }
+         &-row{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 2.8rem;
+            &-text{
+               // margin-right: 6rem;
+            }
+         }
+         &-img{
+            width: 80px;
+            padding-right: 0.7rem;
+         }
+      }
+
 
       .flex1,
       .flex3{
@@ -49,9 +80,16 @@ body#territoriespage{
 
       .flex21{
          div{
-            font-size: 1rem;
+            // font-size: 1rem;
             flex-direction: row;
          }
+         font-size: 1.3rem;
+      }
+      .flex22{
+         font-size: 1.3rem;
+         margin-bottom: 1.5rem;
+      }
+      .flex23{
       }
       .flex4{
          text-align: center;

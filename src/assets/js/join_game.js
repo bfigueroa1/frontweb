@@ -45,7 +45,7 @@ join.onclick = async function() {
 };
 
 async function fetch_getAllPlayers(id_game) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-    const rawResponse = await fetch(`http://localhost:3000/games/username/${id_game}`, {
+    const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/games/username/${id_game}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -58,7 +58,7 @@ async function fetch_getAllPlayers(id_game) {  //CONSEGUIR TODO LOS PLAYERS ID D
 
 
 async function fetch_map() { //CONSEGUIR MAP 
-    const rawResponse = await fetch('http://localhost:3000/maps/territories', {
+    const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/maps/territories', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -71,7 +71,7 @@ async function fetch_map() { //CONSEGUIR MAP
 }
 
 async function fetch_army_id(id_player) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-    const rawResponse = await fetch(`http://localhost:3000/armies/get_army_id/${id_player}`, {
+    const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/armies/get_army_id/${id_player}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',

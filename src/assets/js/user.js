@@ -48,7 +48,7 @@ var store = (e) => {
                 localStorage.setItem('users', JSON.stringify(userList));
 
                 (async () => {
-                    const rawResponse = await fetch('http://localhost:3000/players/new', {
+                    const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/players/new', {
                       method: 'POST',
                       headers: {
                         'Accept': 'application/json',
@@ -74,7 +74,7 @@ var store = (e) => {
             localStorage.setItem('users', JSON.stringify(userList));
 
             (async () => {
-                const rawResponse = await fetch('http://localhost:3000/players/new', {
+                const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/players/new', {
                   method: 'POST',
                   headers: {
                     'Accept': 'application/json',
@@ -110,7 +110,7 @@ function check(){
             }else{
                 
                 (async () => {
-                    const content = await fetch('http://localhost:3000/auth/login', {
+                    const content = await fetch('http://infinite-escarpment-66062.herokuapp.com/auth/login', {
                       method: 'POST',
                       headers: {
                         'Accept': 'application/json',

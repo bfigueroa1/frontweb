@@ -8,6 +8,10 @@
 | Borja Figueroa | bfigueroa1@uc.cl | [bfigueroa1](https://www.github.com/bfigueroa1) |
 | Juan Pablo Ramírez | jpramirez5@uc.cl | [jprampad](https://www.github.com/jprampad) |
 
+## Link front
+
+https://frontweb-jade.vercel.app/
+
 ## Descripción de la distribución del repositorio
 En la carpeta __documents__ se puede encontrar un pdf que corresponde a las reglas del juego y sus características (entrega 1), un archivo pdf llamado __ER__ que corresponde al diagrama entidad-relación actualizado y un archivo pdf llamado __UML__ que corresponde al diagrama de clases actualizado.
 

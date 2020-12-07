@@ -2867,7 +2867,7 @@ $(function () {
 		let query = {
 			"territory_attacked": ataque.attacked_territory,
 			"troops": ataque.troops};
-		let ruta = `http://infinite-escarpment-66062.herokuapp.com/territories/attack_t/${id_terr_ataca}`;
+		let ruta = `https://infinite-escarpment-66062.herokuapp.com/territories/attack_t/${id_terr_ataca}`;
 		let options = {
 			method: 'PATCH',
 			headers: {
@@ -2904,7 +2904,7 @@ $(function () {
 		let query = {
 			"territory_attacked": id_territories[ataque.attacked_territory],
 			"airplanes": ataque.troops};
-		let ruta = `http://infinite-escarpment-66062.herokuapp.com/territories/attack_a/${id_terr_ataca}`;
+		let ruta = `https://infinite-escarpment-66062.herokuapp.com/territories/attack_a/${id_terr_ataca}`;
 		let options = {
 			method: 'PATCH',
 			headers: {
@@ -2940,7 +2940,7 @@ $(function () {
 		let query = {
 			"territory_attacked": id_territories[ataque.attacked_territory],
 			"ships": ataque.troops};
-		let ruta = `http://infinite-escarpment-66062.herokuapp.com/territories/attack_s/${id_terr_ataca}`;
+		let ruta = `https://infinite-escarpment-66062.herokuapp.com/territories/attack_s/${id_terr_ataca}`;
 		let options = {
 			method: 'PATCH',
 			headers: {
@@ -2975,7 +2975,7 @@ $(function () {
 		let id_terr_colecta = id_territories[collect.territory];
 		let query = {
 			"colectors": collect.troops};
-		let ruta = `http://infinite-escarpment-66062.herokuapp.com/territories/colect/${id_terr_colecta}`;
+		let ruta = `https://infinite-escarpment-66062.herokuapp.com/territories/colect/${id_terr_colecta}`;
 		let options = {
 			method: 'PATCH',
 			headers: {
@@ -2996,7 +2996,7 @@ $(function () {
 
 	async function fetch_getGame() {  //CONSEGUIR GAME ID de DB
 		let current_user = JSON.parse(localStorage.getItem("current_user"));
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/games/${current_user.game}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/games/${current_user.game}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3010,7 +3010,7 @@ $(function () {
 
 	async function fetch_getAllPlayers() {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
 		let current_user = JSON.parse(localStorage.getItem("current_user"));
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/games/${current_user.game}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/games/${current_user.game}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3024,7 +3024,7 @@ $(function () {
 
 	async function fetch_getPlayed(id) { //CONSEGUIR USUARIO ACTUAL
 	
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/rounds/played/${id}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/rounds/played/${id}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3042,7 +3042,7 @@ $(function () {
 		let current_user = JSON.parse(localStorage.getItem("current_user"));
 		let query = {
 			"played": true};
-		let ruta = `http://infinite-escarpment-66062.herokuapp.com/rounds/played/${current_user.player}`;
+		let ruta = `https://infinite-escarpment-66062.herokuapp.com/rounds/played/${current_user.player}`;
 		let options = {
 			method: 'PATCH',
 			headers: {
@@ -3062,7 +3062,7 @@ $(function () {
 		
 		let query = {
 			"played": false};
-		let ruta = `http://infinite-escarpment-66062.herokuapp.com/rounds/played/${id}`;
+		let ruta = `https://infinite-escarpment-66062.herokuapp.com/rounds/played/${id}`;
 		let options = {
 			method: 'PATCH',
 			headers: {
@@ -3079,7 +3079,7 @@ $(function () {
 	}
 
 	async function fetch_map() { //CONSEGUIR MAP 
-		const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/maps/territories', {
+		const rawResponse = await fetch('https://infinite-escarpment-66062.herokuapp.com/maps/territories', {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3093,7 +3093,7 @@ $(function () {
 
 
 	async function fetch_territory_names(id_army) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/territories/name/${id_army}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/territories/name/${id_army}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3105,7 +3105,7 @@ $(function () {
 	}
 
 	async function fetch_territory_number(id_army) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/territories/number/${id_army}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/territories/number/${id_army}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3117,7 +3117,7 @@ $(function () {
 	}
 
 	async function fetch_get_resources(id_army) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/armies/get_resources/${id_army}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/armies/get_resources/${id_army}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3129,7 +3129,7 @@ $(function () {
 	}
 
 	async function fetch_total_territories(player_name) {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-		const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/armies/get_total_territories/${player_name}`, {
+		const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/armies/get_total_territories/${player_name}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
@@ -3141,7 +3141,7 @@ $(function () {
 	}
 
 	async function fetch_next_round() {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-		await fetch(`http://infinite-escarpment-66062.herokuapp.com/troops/next_round`, {
+		await fetch(`https://infinite-escarpment-66062.herokuapp.com/troops/next_round`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',

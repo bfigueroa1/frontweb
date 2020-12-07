@@ -50,7 +50,7 @@ create_g.onclick = async function() {
 };
 
 async function fetch_create_game(users) {
-    const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/games/new', {
+    const rawResponse = await fetch('https://infinite-escarpment-66062.herokuapp.com/games/new', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -61,7 +61,7 @@ async function fetch_create_game(users) {
   };
 
 async function fetch_create_round(users,game) {
-    const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/rounds/create_round', {
+    const rawResponse = await fetch('https://infinite-escarpment-66062.herokuapp.com/rounds/create_round', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -74,7 +74,7 @@ async function fetch_create_round(users,game) {
   };
 
 async function fetch_asign_ter(users) {
-    const rawResponse = await fetch('http://infinite-escarpment-66062.herokuapp.com/territories/asign', {
+    const rawResponse = await fetch('https://infinite-escarpment-66062.herokuapp.com/territories/asign', {
       method: 'PATCH',
       headers: {
         'Accept': 'application/json',
@@ -86,7 +86,7 @@ async function fetch_asign_ter(users) {
 
 
 async function fetch_getAllPlayers() {  //CONSEGUIR TODO LOS PLAYERS ID DEL GAME
-    const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/players/get_username`, {
+    const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/players/get_username`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',

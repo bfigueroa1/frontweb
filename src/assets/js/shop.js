@@ -9,7 +9,7 @@ async function fetch_add_airplanes (id_ter, cantidad)	{
 		
     let query = {
         "nivel": cantidad};
-    let ruta = `http://infinite-escarpment-66062.herokuapp.com/airplanes/${id_ter}`;
+    let ruta = `https://infinite-escarpment-66062.herokuapp.com/airplanes/${id_ter}`;
     let options = {
         method: 'PATCH',
         headers: {
@@ -28,7 +28,7 @@ async function fetch_add_ships (id_ter, cantidad)	{
 		
     let query = {
         "nivel": cantidad};
-    let ruta = `http://infinite-escarpment-66062.herokuapp.com/ships/${id_ter}`;
+    let ruta = `https://infinite-escarpment-66062.herokuapp.com/ships/${id_ter}`;
     let options = {
         method: 'PATCH',
         headers: {
@@ -47,7 +47,7 @@ async function fetch_add_wall(id_ter, cantidad)	{
 		
     let query = {
         "nivel": cantidad};
-    let ruta = `http://infinite-escarpment-66062.herokuapp.com/walls/${id_ter}`;
+    let ruta = `https://infinite-escarpment-66062.herokuapp.com/walls/${id_ter}`;
     let options = {
         method: 'PATCH',
         headers: {
@@ -63,7 +63,7 @@ async function fetch_add_wall(id_ter, cantidad)	{
 }
 
 async function fetch_ter_id(name) { 
-    const rawResponse = await fetch(`http://infinite-escarpment-66062.herokuapp.com/territories/get_id/${name}`, {
+    const rawResponse = await fetch(`https://infinite-escarpment-66062.herokuapp.com/territories/get_id/${name}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',

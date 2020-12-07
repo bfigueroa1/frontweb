@@ -2,7 +2,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Navbar CSS */
 .navbar {
@@ -14,7 +15,8 @@
   height: 7em;
   overflow: hidden;
   top: 0;
-  position: sticky; }
+  position: sticky;
+}
 
 .logo {
   width: 4rem;
@@ -22,36 +24,44 @@
   left: 5.313em;
   display: inline-block;
   margin-left: 4rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
 
 .background-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%; }
+  width: 25%;
+}
 
 .link_logo {
   margin-right: 40rem;
   display: inline-block;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .texto-bienvenida {
   text-align: center;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 @media screen and (max-width: 850px) {
   .logo {
-    display: none; }
+    display: none;
+  }
 
   .link_logo {
-    display: none; } }
+    display: none;
+  }
+}
 .navbar_items {
   list-style: none;
   display: inline-block;
   position: fixed;
   right: 20.875em;
   top: 2.5em;
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
 .navbar_item {
   font-family: "Montserrat", sans-serif;
@@ -61,7 +71,8 @@
   color: #edf0f1;
   text-decoration: none;
   display: inline-block;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .navbar_link,
 .navbar_link:link,
@@ -73,14 +84,16 @@
   color: #edf0f1;
   text-decoration: none;
   cursor: pointer;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .navbar_link:hover {
   color: black;
-  transform: scale(1.2); }
+  transform: scale(1.2);
+}
 
 .sign_up {
-  margin-left: 1.250em;
+  margin-left: 1.25em;
   padding: 0.563em 1.563em;
   background-color: #0088a9;
   border: none;
@@ -94,9 +107,10 @@
   text-decoration: none;
   white-space: nowrap;
   position: fixed;
-  right: 5.250em;
+  right: 5.25em;
   top: 2em;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .log_in {
   margin-left: 20px;
@@ -114,10 +128,12 @@
   position: fixed;
   right: 13.625em;
   top: 2em;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .log_in:hover, .sign_up:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 
 /* End of Navabar CSS*/
 /* About CSS*/
@@ -126,14 +142,16 @@ body#aboutpage {
   background-size: cover;
   height: auto;
   font-family: "Montserrat", sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 
 #aboutpage body {
   background-color: beige;
   background-size: cover;
   height: auto;
   font-family: "Montserrat", sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 #aboutpage .container {
   max-width: 62.5em;
   height: 43.75em;
@@ -141,7 +159,8 @@ body#aboutpage {
   margin: 50px auto;
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
-  padding: 40px; }
+  padding: 40px;
+}
 #aboutpage p {
   text-align: center;
   letter-spacing: 1px;
@@ -150,179 +169,224 @@ body#aboutpage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #aboutpage h4 {
   margin-bottom: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 #aboutpage .flex-box1 {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 #aboutpage .borja,
 #aboutpage .shaggy,
 #aboutpage .juampa {
   width: 11em;
   height: 17em;
-  border-radius: 20px; }
+  border-radius: 20px;
+}
 #aboutpage .grid {
   display: grid;
   grid-template-columns: auto auto auto;
   flex: 1 1 auto;
-  counter-reset: grid; }
+  counter-reset: grid;
+}
 #aboutpage .item {
   background: white;
-  padding: 5px; }
+  padding: 5px;
+}
 #aboutpage .nombre {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  margin-top: 1em; }
+  margin-top: 1em;
+}
 
 /* Sidebar CSS */
 #rulespage.body_rules {
   background-color: #f3f5f9;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 #rulespage {
   /* End of Sidebar CSS */
-  /* Tha General Rules */ }
-  #rulespage .wrapper {
-    display: flex;
-    position: relative; }
-  #rulespage .wrapper .sidebar {
-    width: 200px;
-    height: 100%;
-    background: #de9f3b;
-    padding: 30px 0px;
-    position: fixed;
-    overflow: scroll; }
-  #rulespage .wrapper .sidebar h2 {
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 30px; }
-  #rulespage .wrapper .sidebar ul li {
-    padding: 15px;
-    border-bottom: 1px solid #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    border-top: 1px solid rgba(255, 255, 255, 0.05); }
-  #rulespage .wrapper .sidebar ul li a {
-    color: #fff;
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer; }
-  #rulespage .wrapper .sidebar ul li a .fas {
-    width: 95px; }
-  #rulespage .wrapper .sidebar ul li:hover {
-    background-color: #DC7633; }
-  #rulespage .wrapper .sidebar ul li:hover a {
-    color: #bdb8d7; }
-  #rulespage .wrapper .main_content {
-    width: 100%;
-    margin-left: 200px; }
-  #rulespage .main_content {
-    overflow-x: scroll; }
-  #rulespage .wrapper .main_content .header {
-    padding: 20px;
-    background: #fff;
-    color: #717171;
-    border-bottom: 1px solid #e0e4e8;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 2rem; }
-  #rulespage .wrapper .main_content .info {
-    margin: 20px;
-    color: #717171;
-    line-height: 25px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px; }
-  #rulespage .texto_generalrules {
-    padding: 1rem; }
-  #rulespage .texto_generalrules strong {
-    color: black; }
-  #rulespage .tabla_territorios {
-    width: 60em;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto; }
-  #rulespage .tabla_territorios th {
-    border: 1px solid black; }
-  #rulespage .tabla_territorios td {
-    border: 1px solid black;
-    padding: 1rem; }
-  #rulespage .tabla_recursos {
-    width: 50rem;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto; }
-  #rulespage .tabla_recursos th {
-    border: 1px solid black; }
-  #rulespage .tabla_recursos td {
-    border: 1px solid black;
-    padding: 1rem; }
-  #rulespage .tabla_recursos2 {
-    width: 20rem;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto; }
-  #rulespage .tabla_recursos2 th {
-    border: 1px solid black; }
-  #rulespage .tabla_recursos2 td {
-    border: 1px solid black;
-    padding: 1rem; }
-  #rulespage .tabla_recursos3 {
-    width: 20rem;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto; }
-  #rulespage .tabla_recursos3 th {
-    border: 1px solid black; }
-  #rulespage .tabla_recursos3 td {
-    border: 1px solid black;
-    padding: 1rem; }
-  #rulespage .tabla_recursos4 {
-    width: 20rem;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto; }
-  #rulespage .tabla_recursos4 th {
-    border: 1px solid black; }
-  #rulespage .tabla_recursos4 td {
-    border: 1px solid black;
-    padding: 1rem; }
-  #rulespage .tabla_recursos5 {
-    width: 50rem;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto; }
-  #rulespage .tabla_recursos5 th {
-    border: 1px solid black; }
-  #rulespage .tabla_recursos5 td {
-    border: 1px solid black;
-    padding: 1rem; }
-  #rulespage .lista_spec {
-    padding: 1rem;
-    margin-left: 2rem; }
-  #rulespage .lista_spec strong {
-    color: black; }
-  #rulespage .list_objectives {
-    padding: 1rem;
-    margin-left: 1rem; }
+  /* Tha General Rules */
+}
+#rulespage .wrapper {
+  display: flex;
+  position: relative;
+}
+#rulespage .wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: #de9f3b;
+  padding: 30px 0px;
+  position: fixed;
+  overflow: scroll;
+}
+#rulespage .wrapper .sidebar h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+#rulespage .wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+#rulespage .wrapper .sidebar ul li a {
+  color: #fff;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#rulespage .wrapper .sidebar ul li a .fas {
+  width: 95px;
+}
+#rulespage .wrapper .sidebar ul li:hover {
+  background-color: #DC7633;
+}
+#rulespage .wrapper .sidebar ul li:hover a {
+  color: #bdb8d7;
+}
+#rulespage .wrapper .main_content {
+  width: 100%;
+  margin-left: 200px;
+}
+#rulespage .main_content {
+  overflow-x: scroll;
+}
+#rulespage .wrapper .main_content .header {
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+#rulespage .wrapper .main_content .info {
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+#rulespage .texto_generalrules {
+  padding: 1rem;
+}
+#rulespage .texto_generalrules strong {
+  color: black;
+}
+#rulespage .tabla_territorios {
+  width: 60em;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rulespage .tabla_territorios th {
+  border: 1px solid black;
+}
+#rulespage .tabla_territorios td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+#rulespage .tabla_recursos {
+  width: 50rem;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rulespage .tabla_recursos th {
+  border: 1px solid black;
+}
+#rulespage .tabla_recursos td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+#rulespage .tabla_recursos2 {
+  width: 20rem;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rulespage .tabla_recursos2 th {
+  border: 1px solid black;
+}
+#rulespage .tabla_recursos2 td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+#rulespage .tabla_recursos3 {
+  width: 20rem;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rulespage .tabla_recursos3 th {
+  border: 1px solid black;
+}
+#rulespage .tabla_recursos3 td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+#rulespage .tabla_recursos4 {
+  width: 20rem;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rulespage .tabla_recursos4 th {
+  border: 1px solid black;
+}
+#rulespage .tabla_recursos4 td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+#rulespage .tabla_recursos5 {
+  width: 50rem;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rulespage .tabla_recursos5 th {
+  border: 1px solid black;
+}
+#rulespage .tabla_recursos5 td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+#rulespage .lista_spec {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+#rulespage .lista_spec strong {
+  color: black;
+}
+#rulespage .list_objectives {
+  padding: 1rem;
+  margin-left: 1rem;
+}
 
 /* Contact Us CSS*/
 body#contactpage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #contactpage .container {
   max-width: 800px;
@@ -332,7 +396,8 @@ body#contactpage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 6em; }
+  margin-top: 6em;
+}
 #contactpage p {
   text-align: center;
   letter-spacing: 1px;
@@ -342,7 +407,8 @@ body#contactpage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #contactpage .input,
 #contactpage .msg .area {
   width: 100%;
@@ -354,15 +420,19 @@ body#contactpage {
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #contactpage .login .input {
   width: 48%;
   float: left;
-  margin-right: 4%; }
+  margin-right: 4%;
+}
 #contactpage .login .input:last-child {
-  margin-right: 0; }
+  margin-right: 0;
+}
 #contactpage .msg .area {
-  height: 200px; }
+  height: 200px;
+}
 #contactpage .btn {
   width: 250px;
   background-color: #0088a9;
@@ -373,14 +443,18 @@ body#contactpage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #contactpage .btn:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #contactpage .input:focus,
 #contactpage .msg .area:focus {
-  border: 2px solid #486255; }
+  border: 2px solid #486255;
+}
 #contactpage ::-webkit-input-placeholder {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Log In CSS*/
 body#loginpage {
@@ -388,7 +462,8 @@ body#loginpage {
   background-size: cover;
   height: auto;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 #loginpage .container {
   max-width: 649px;
@@ -398,7 +473,8 @@ body#loginpage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 7em; }
+  margin-top: 7em;
+}
 #loginpage p {
   text-align: center;
   letter-spacing: 1px;
@@ -407,7 +483,8 @@ body#loginpage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #loginpage .input {
   width: 25rem;
   padding: 20px;
@@ -417,24 +494,29 @@ body#loginpage {
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #loginpage .flex-box {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #loginpage .flex-1,
 #loginpage .flex-2,
 #loginpage .flex-3,
 #loginpage .flex-4 {
   display: flex;
   padding: 1rem;
-  align-items: baseline; }
+  align-items: baseline;
+}
 #loginpage .pw,
 #loginpage .uname {
   padding: 1rem;
-  width: 118px; }
+  width: 118px;
+}
 #loginpage .forgotten {
-  padding: 1rem; }
+  padding: 1rem;
+}
 #loginpage .btn {
   width: 250px;
   background-color: #0088a9;
@@ -445,17 +527,22 @@ body#loginpage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #loginpage .flex-4 a:link, #loginpage a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+}
 #loginpage .btn:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #loginpage .input:focus {
-  border: 2px solid #486255; }
+  border: 2px solid #486255;
+}
 #loginpage ::-webkit-input-placeholder {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Sign Up CSS*/
 body#signuppage {
@@ -463,7 +550,8 @@ body#signuppage {
   background-size: cover;
   height: auto;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 #signuppage .container {
   max-width: 649px;
@@ -473,7 +561,8 @@ body#signuppage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 5em; }
+  margin-top: 5em;
+}
 #signuppage p {
   text-align: center;
   letter-spacing: 1px;
@@ -482,7 +571,8 @@ body#signuppage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #signuppage .input {
   width: 25rem;
   padding: 20px;
@@ -492,11 +582,13 @@ body#signuppage {
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #signuppage .flex-box {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #signuppage .flex-1,
 #signuppage .flex-2,
 #signuppage .flex-3,
@@ -505,13 +597,15 @@ body#signuppage {
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  align-items: baseline; }
+  align-items: baseline;
+}
 #signuppage .pw,
 #signuppage .uname,
 #signuppage .cpw,
 #signuppage .email {
   padding: 1rem;
-  width: 118px; }
+  width: 118px;
+}
 #signuppage .btn {
   width: 250px;
   background-color: #0088a9;
@@ -522,33 +616,40 @@ body#signuppage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #signuppage .btn:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #signuppage .input:focus {
-  border: 2px solid #486255; }
+  border: 2px solid #486255;
+}
 #signuppage ::-webkit-input-placeholder {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Contact Us CSS*/
 body#playerpage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #playerpage dl {
   padding: 20px;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 #playerpage dt {
   background-color: #e0b570;
   border-radius: 5px;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 #playerpage .ejercito {
   border-radius: 5px;
   max-width: 800px;
@@ -558,7 +659,8 @@ body#playerpage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 20px;
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 #playerpage p {
   text-align: center;
   letter-spacing: 1px;
@@ -568,31 +670,36 @@ body#playerpage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #playerpage .row {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #de9f3b;
   width: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 #playerpage .column {
   background-color: #de9f3b;
   width: 200px;
   flex: 33.33%;
   padding: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 #playerpage .column img {
   width: 200px;
   border-radius: 5px;
-  min-width: 200px; }
+  min-width: 200px;
+}
 
 /* Contact Us CSS*/
 body#armypage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #armypage dl {
   padding: 20px;
@@ -600,11 +707,13 @@ body#armypage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  margin-top: 1em; }
+  margin-top: 1em;
+}
 #armypage dt {
   background-color: #e0b570;
   border-radius: 5px;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 #armypage .ejercito {
   border-radius: 5px;
   max-width: 800px;
@@ -614,7 +723,8 @@ body#armypage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 20px;
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 #armypage p {
   text-align: center;
   letter-spacing: 1px;
@@ -624,30 +734,35 @@ body#armypage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #armypage .row {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #de9f3b;
   width: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 #armypage .column {
   background-color: #de9f3b;
   width: 200px;
   flex: 33.33%;
   padding: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 #armypage .column img {
   width: 100%;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 /* Territories CSS*/
 body#territoriespage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #territoriespage .ejercito {
   border-radius: 5px;
@@ -659,13 +774,15 @@ body#territoriespage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 30px;
-  margin-top: 6em; }
+  margin-top: 6em;
+}
 #territoriespage .flexbox {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 730px;
-  height: 400px; }
+  height: 400px;
+}
 #territoriespage .flex2 {
   width: 1000px;
   text-align: center;
@@ -673,36 +790,45 @@ body#territoriespage {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding-left: 7.7rem; }
+  padding-left: 7.7rem;
+}
 #territoriespage .tinfo-box {
   background-color: beige;
   padding: 2rem;
   width: 361px;
   border: 2px solid #abab8c;
   border-radius: 9px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 #territoriespage .tinfo-row {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 0 2.8rem; }
+  padding: 0 2.8rem;
+}
 #territoriespage .tinfo-img {
   width: 80px;
-  padding-right: 0.7rem; }
+  padding-right: 0.7rem;
+}
 #territoriespage .flex1,
 #territoriespage .flex3 {
   flex-direction: row;
-  cursor: pointer; }
+  cursor: pointer;
+}
 #territoriespage .flex21 {
-  font-size: 1.3rem; }
-  #territoriespage .flex21 div {
-    flex-direction: row; }
+  font-size: 1.3rem;
+}
+#territoriespage .flex21 div {
+  flex-direction: row;
+}
 #territoriespage .flex22 {
   font-size: 1.3rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+}
 #territoriespage .flex4 {
-  text-align: center; }
+  text-align: center;
+}
 #territoriespage p {
   text-align: center;
   letter-spacing: 1px;
@@ -712,7 +838,8 @@ body#territoriespage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #territoriespage .shop {
   width: 250px;
   background-color: #0088a9;
@@ -723,23 +850,29 @@ body#territoriespage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  border: none; }
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
 #territoriespage .shop:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #territoriespage #chess {
-  width: 40px; }
+  width: 40px;
+}
 #territoriespage #jet {
-  width: 80px; }
+  width: 80px;
+}
 #territoriespage #ship {
-  width: 80px; }
+  width: 80px;
+}
 
 /* Sign Up CSS*/
 body#startplayingpage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #startplayingpage .container {
   max-width: 649px;
@@ -749,7 +882,8 @@ body#startplayingpage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+}
 #startplayingpage p {
   text-align: center;
   letter-spacing: 1px;
@@ -758,21 +892,25 @@ body#startplayingpage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #startplayingpage .logo-negro {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%; }
+  width: 40%;
+}
 #startplayingpage .flex-box {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+}
 #startplayingpage .flex-1,
 #startplayingpage .flex-2 {
   display: flex;
   flex-direction: column;
-  padding: 1rem; }
+  padding: 1rem;
+}
 #startplayingpage .flex-box a:link, #startplayingpage a:visited {
   width: 250px;
   background-color: #0088a9;
@@ -783,21 +921,26 @@ body#startplayingpage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none; }
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
 #startplayingpage .flex-box a:hover, #startplayingpage a:active {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #startplayingpage .input:focus {
-  border: 2px solid #486255; }
+  border: 2px solid #486255;
+}
 #startplayingpage ::-webkit-input-placeholder {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Shop CSS*/
 body#shoppage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #shoppage .ejercito {
   border-radius: 0.313rem;
@@ -808,7 +951,8 @@ body#shoppage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 4em; }
+  margin-top: 4em;
+}
 #shoppage p {
   text-align: center;
   letter-spacing: 1px;
@@ -818,7 +962,8 @@ body#shoppage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #shoppage .comprar {
   width: 150px;
   background-color: #0088a9;
@@ -829,10 +974,12 @@ body#shoppage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  border: none; }
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
 #shoppage .comprar:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #shoppage .recursos {
   width: 150px;
   background-color: #0088a9;
@@ -843,12 +990,14 @@ body#shoppage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #shoppage .recursos:hover,
 #shoppage .territorios:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #shoppage .territorios {
   width: 150px;
   background-color: #0088a9;
@@ -859,13 +1008,15 @@ body#shoppage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #shoppage .flex-boxx {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #shoppage .flexx-1,
 #shoppage .flexx-2,
 #shoppage .flexx-3,
@@ -873,31 +1024,39 @@ body#shoppage {
 #shoppage .flexx-5 {
   display: flex;
   flex-direction: row;
-  align-items: baseline; }
+  align-items: baseline;
+}
 #shoppage .flexx-1 p {
   font-size: 1.8rem;
-  margin: 0.5rem; }
+  margin: 0.5rem;
+}
 #shoppage .flexx-2 div,
 #shoppage .flexx-3 div,
 #shoppage .flexx-4 div,
 #shoppage .flexx-5 div {
-  margin: 1.5rem; }
-#shoppage input[type="number"] {
+  margin: 1.5rem;
+}
+#shoppage input[type=number] {
   width: 1.5 rem;
-  font-size: large; }
+  font-size: large;
+}
 #shoppage #chess {
-  width: 60px; }
+  width: 60px;
+}
 #shoppage #jet {
-  width: 90px; }
+  width: 90px;
+}
 #shoppage #ship {
-  width: 80px; }
+  width: 80px;
+}
 
 /* Contact Us CSS*/
 body#recursospage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #recursospage .ejercito {
   border-radius: 5px;
@@ -908,7 +1067,8 @@ body#recursospage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 6em; }
+  margin-top: 6em;
+}
 #recursospage p {
   text-align: center;
   letter-spacing: 1px;
@@ -917,7 +1077,8 @@ body#recursospage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #recursospage .shop {
   width: 150px;
   background-color: #0088a9;
@@ -928,12 +1089,14 @@ body#recursospage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #recursospage .shop:hover,
 #recursospage .territorios:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #recursospage .territorios {
   width: 150px;
   background-color: #0088a9;
@@ -944,18 +1107,21 @@ body#recursospage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #recursospage .shopxterritorios {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5em; }
+  padding: 0.5em;
+}
 #recursospage .flex-boxxx {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #recursospage .flexxx-1,
 #recursospage .flexxx-2,
 #recursospage .flexxx-3,
@@ -965,18 +1131,22 @@ body#recursospage {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursospage .flexxx-2 h1 {
   padding: 0px 4rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursospage .flexxx-3 h1 {
   padding: 0px 3rem;
   margin-right: 5rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+}
 #recursospage .flexxx-4 h1,
 #recursospage .flexxx-5 h1 {
   padding: 0px 3rem;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+}
 #recursospage .items {
   margin: 1rem;
   padding: 0px 20px;
@@ -987,25 +1157,31 @@ body#recursospage {
   display: inline-block;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursospage .items:hover {
   color: black;
-  transform: scale(1.2); }
+  transform: scale(1.2);
+}
 #recursospage #chess {
-  width: 60px; }
+  width: 60px;
+}
 #recursospage #jet {
   width: 80px;
   height: 80px;
   margin-right: 9rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 #recursospage #ship {
-  width: 80px; }
+  width: 80px;
+}
 
 body#recursosinterpage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #recursosinterpage .ejercito {
   border-radius: 5px;
@@ -1016,7 +1192,8 @@ body#recursosinterpage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 6em; }
+  margin-top: 6em;
+}
 #recursosinterpage p {
   text-align: center;
   letter-spacing: 1px;
@@ -1025,7 +1202,8 @@ body#recursosinterpage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #recursosinterpage .shop {
   width: 150px;
   background-color: #0088a9;
@@ -1036,12 +1214,14 @@ body#recursosinterpage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #recursosinterpage .shop:hover,
 #recursosinterpage .territorios:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #recursosinterpage .territorios {
   width: 150px;
   background-color: #0088a9;
@@ -1052,18 +1232,21 @@ body#recursosinterpage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #recursosinterpage .shopxterritorios {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5em; }
+  padding: 0.5em;
+}
 #recursosinterpage .flex-boxxx {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #recursosinterpage .flexxx-1,
 #recursosinterpage .flexxx-2,
 #recursosinterpage .flexxx-3,
@@ -1075,25 +1258,31 @@ body#recursosinterpage {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursosinterpage .flexxx-2 h1 {
   padding: 0px 4rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 #recursosinterpage .flexxx-3 h1 {
   padding: 0px 0rem;
   margin-right: 5rem;
-  margin-left: 0rem; }
+  margin-left: 0rem;
+}
 #recursosinterpage .flexxx-4 h1,
 #recursosinterpage .flexxx-5 h1,
 #recursosinterpage .flexxx-6 h1 {
   padding: 0px 3rem;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+}
 #recursosinterpage .flexxx-7 .xd {
   padding: 0px 2rem;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+}
 #recursosinterpage .flexxx-7 .xdxd {
   padding: 0px 2rem;
-  margin-right: 6.5rem; }
+  margin-right: 6.5rem;
+}
 #recursosinterpage .items {
   margin: 1rem;
   padding: 0px 20px;
@@ -1104,37 +1293,44 @@ body#recursosinterpage {
   display: inline-block;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursosinterpage .items:hover {
   color: black;
-  transform: scale(1.2); }
+  transform: scale(1.2);
+}
 #recursosinterpage #petroleo {
   width: 80px;
   height: 80px;
   margin-right: 12rem;
-  margin-left: 0rem; }
+  margin-left: 0rem;
+}
 #recursosinterpage #jet {
   width: 80px;
   height: 80px;
   margin-right: 9rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 #recursosinterpage #ship {
   width: 80px;
   height: 80px;
   margin-right: 11rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 #recursosinterpage #nuclear {
   width: 80px;
   height: 80px;
   margin-right: 10rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+}
 
 /* Contact Us CSS*/
 body#recursosrarospage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #recursosrarospage .ejercito {
   border-radius: 5px;
@@ -1145,7 +1341,8 @@ body#recursosrarospage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 6em; }
+  margin-top: 6em;
+}
 #recursosrarospage p {
   text-align: center;
   letter-spacing: 1px;
@@ -1154,7 +1351,8 @@ body#recursosrarospage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #recursosrarospage .shop {
   width: 150px;
   background-color: #0088a9;
@@ -1165,12 +1363,14 @@ body#recursosrarospage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #recursosrarospage .shop:hover,
 #recursosrarospage .territorios:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #recursosrarospage .territorios {
   width: 150px;
   background-color: #0088a9;
@@ -1181,18 +1381,21 @@ body#recursosrarospage {
   margin: 0 auto;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  text-align: center; }
+  text-align: center;
+}
 #recursosrarospage .shopxterritorios {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5em; }
+  padding: 0.5em;
+}
 #recursosrarospage .flex-boxxx {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #recursosrarospage .flexxx-1,
 #recursosrarospage .flexxx-2,
 #recursosrarospage .flexxx-3,
@@ -1203,24 +1406,30 @@ body#recursosrarospage {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursosrarospage .flexxx-2 h1 {
   padding: 0px 4rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursosrarospage .flexxx-3 h1 {
   padding: 0px 2.5rem;
   margin-right: 5rem;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+}
 #recursosrarospage .flexxx-4 h1,
 #recursosrarospage .flexxx-6 h1 {
   padding: 0px 3.5rem;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+}
 #recursosrarospage .flexxx-5 .tech {
   padding: 0px 3rem;
-  margin-right: 3rem; }
+  margin-right: 3rem;
+}
 #recursosrarospage .flexxx-5 .n_tech {
   padding: 0px 7rem;
-  margin-right: 3rem; }
+  margin-right: 3rem;
+}
 #recursosrarospage .items {
   margin: 1rem;
   padding: 0px 20px;
@@ -1231,29 +1440,35 @@ body#recursosrarospage {
   display: inline-block;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 #recursosrarospage .items:hover {
   color: black;
-  transform: scale(1.2); }
+  transform: scale(1.2);
+}
 #recursosrarospage #comp {
   width: 80px;
   height: 80px;
   margin-right: 6rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 #recursosrarospage #jet {
   width: 80px;
   height: 80px;
   margin-right: 9rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 #recursosrarospage #ship {
-  width: 80px; }
+  width: 80px;
+}
 
 /* Join Game CSS*/
 body#joingamepage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #joingamepage .container {
   max-width: 649px;
@@ -1263,7 +1478,8 @@ body#joingamepage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+}
 #joingamepage p {
   text-align: center;
   letter-spacing: 1px;
@@ -1272,7 +1488,8 @@ body#joingamepage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #joingamepage .input {
   width: 25rem;
   padding: 20px;
@@ -1282,22 +1499,27 @@ body#joingamepage {
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #joingamepage .flex-box {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #joingamepage .flex-1,
 #joingamepage .flex-2 {
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  align-items: baseline; }
+  align-items: baseline;
+}
 #joingamepage .flex-2 a:link, #joingamepage a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+}
 #joingamepage .gcode {
   padding: 1rem;
-  width: 118px; }
+  width: 118px;
+}
 #joingamepage .btn {
   width: 250px;
   background-color: #0088a9;
@@ -1309,42 +1531,47 @@ body#joingamepage {
   color: #fff;
   cursor: pointer;
   border: none;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #joingamepage .btn:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #joingamepage .input:focus {
-  border: 2px solid #486255; }
+  border: 2px solid #486255;
+}
 #joingamepage ::-webkit-input-placeholder {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Join Game CSS*/
 body#mappage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #mappage {
   /*.asia{
     fill:#ACA71E;
   }
-  
+
   .anorte{
     fill:#AB1A17;
   }
-  
+
   .asur{
     fill:#26378C;
   }
-  
+
   .oceania{
     fill:#AD4E8C;
   }
-  
+
   .europa{
     fill:#3E98AA;
   }
-  
+
   .africa{
     fill:#46AC35;
   }*/
@@ -1370,262 +1597,314 @@ body#mappage {
   */
   /* Hover Menu */
   /* Modal */
-  /* Troops Attack Modal */ }
-  #mappage .container {
-    max-width: 80%;
-    height: 70%;
-    background: #fff;
-    margin: 50px auto;
-    box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
-    box-sizing: border-box;
-    padding: 40px;
-    margin-top: 3.5rem; }
-  #mappage p {
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 45px;
-    margin-bottom: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 3.5rem;
-    color: #DC7633; }
-  #mappage .input {
-    width: 25rem;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid #e9eaea;
-    font-size: 14px;
-    border-radius: 5px;
-    outline: none;
-    transform: all 0.5s ease;
-    font-family: 'Montserrat', sans-serif; }
-  #mappage .flex-box {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row; }
-  @media screen and (min-width: 801px) {
-    #mappage div.flex-box {
-      font-size: 15px; } }
-  @media screen and (max-width: 800px) {
-    #mappage div.flex-box {
-      font-size: 8px; } }
-  @media screen and (max-width: 400px) {
-    #mappage div.flex-box {
-      font-size: 3px; } }
-  #mappage .flex-1,
-  #mappage .flex-2,
-  #mappage .flex-3,
-  #mappage .flex-4,
-  #mappage .flex-5 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 1em;
-    border: solid;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    text-align: center; }
-  #mappage #uname1 {
-    color: #ACA71E; }
-  #mappage #uname2 {
-    color: #AB1A17; }
-  #mappage #uname3 {
-    color: #AD4E8C; }
-  #mappage #uname4 {
-    color: #26378C; }
-  #mappage #uname5 {
-    color: #46AC35; }
-  #mappage .gcode {
-    padding: 1rem;
-    width: 118px; }
-  #mappage .flex-box-b {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  #mappage #send_moveBtn.hide {
-    opacity: 0;
-    pointer-events: none;
-    cursor: none; }
-  #mappage .btn {
-    width: 250px;
-    background-color: #0088a9;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50px;
-    margin: 0 auto;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif; }
-  #mappage .btn:hover {
-    background-color: rgba(0, 136, 169, 0.8); }
-  #mappage .input:focus {
-    border: 2px solid #486255; }
-  #mappage ::-webkit-input-placeholder {
-    font-family: 'Montserrat', sans-serif; }
-  #mappage .mapa {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    /* width: 60%;
-    height: 50%;
-    top: 30%; */
-    stroke: black;
-    background-color: #657BBC; }
-  #mappage .mapa path {
-    pointer-events: all; }
-  #mappage .vladivostok:hover path, #mappage .chile-bolivia-peru-ecuador:hover path, #mappage .el-congo:hover path, #mappage .africa-del-sur:hover path,
-  #mappage .egipto:hover path, #mappage .japon:hover path, #mappage .nueva-york:hover path, #mappage .vietnam:hover path, #mappage .alaska:hover path,
-  #mappage .moscu:hover path, #mappage .suecia:hover path, #mappage .sudan:hover path, #mappage .brasil:hover path, #mappage .labrador:hover path,
-  #mappage .vancouver:hover path, #mappage .borneo:hover path, #mappage .australia:hover path, #mappage .sumatra:hover path, #mappage .dudinka:hover path,
-  #mappage .mexico:hover path, #mappage .groenlandia:hover path, #mappage .madagascar:hover path, #mappage .india:hover path, #mappage .argelia-nigeria:hover path,
-  #mappage .china:hover path, #mappage .tchita:hover path, #mappage .inglaterra:hover path, #mappage .omsk:hover path, #mappage .california:hover path,
-  #mappage .ottawa:hover path, #mappage .mongolia:hover path, #mappage .siberia:hover path, #mappage .aral:hover path, #mappage .medio-oriente:hover path,
-  #mappage .mackenzie:hover path, #mappage .argentina-paraguay-uruguay:hover path, #mappage .polonia-yugoeslavia:hover path, #mappage .alemania:hover path,
-  #mappage .espana-francia-italia:hover path, #mappage .colombia-venezuela:hover path, #mappage .islandia:hover path, #mappage .nueva-guinea:hover path {
-    fill: #060606 !important; }
-  #mappage .vladivostokPath, #mappage .chile-bolivia-peru-ecuadorPath, #mappage .el-congoPath, #mappage .africa-del-surPath, #mappage .egiptoPath,
-  #mappage .japonPath, #mappage .nueva-yorkPath, #mappage .colombia-venezuelaPath, #mappage .vietnamPath, #mappage .alaskaPath, #mappage .moscuPath,
-  #mappage .sueciaPath, #mappage .sudanPath, #mappage .brasilPath, #mappage .labradorPath, #mappage .vancouverPath, #mappage .espana-francia-italiaPath,
-  #mappage .borneoPath, #mappage .australiaPath, #mappage .sumatraPath, #mappage .dudinkaPath, #mappage .mexicoPath, #mappage .groenlandiaPath,
-  #mappage .madagascarPath, #mappage .indiaPath, #mappage .islandiaPath, #mappage .argelia-nigeriaPath, #mappage .chinaPath, #mappage .tchitaPath,
-  #mappage .inglaterraPath, #mappage .omskPath, #mappage .californiaPath, #mappage .ottawaPath, #mappage .nueva-guineaPath, #mappage .mongoliaPath,
-  #mappage .siberiaPath, #mappage .aralPath, #mappage .medio-orientePath, #mappage .mackenziePath, #mappage .argentina-paraguay-uruguayPath,
-  #mappage .polonia-yugoeslaviaPath, #mappage .alemaniaPath {
-    fill: black;
-    stroke: darkgoldenrod;
-    stroke-width: 0px; }
-  #mappage .territory-box {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    opacity: 0; }
-  #mappage .territory-box-show {
-    opacity: 1; }
-  #mappage .flex-territory {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 1em;
-    border: solid;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    text-align: center; }
-  #mappage .flex-territory g {
-    margin: auto; }
-  #mappage .war-icon {
-    width: 25px; }
-  @media screen and (max-width: 700px) {
-    #mappage div.territory-box {
-      font-size: 10px; }
-    #mappage img.war-icon {
-      width: 10px; } }
-  #mappage .territory-name {
-    font-weight: bold; }
-  #mappage .modal {
-    position: absolute;
-    padding: 30px;
-    width: 400px;
-    height: 70%;
-    background-color: #edf0f1;
-    color: #de9f3b;
-    text-align: center;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
-    box-sizing: border-box;
-    pointer-events: none;
-    opacity: 0; }
-  #mappage .modal-data {
-    max-width: 100%;
-    height: 100%;
-    background: #fff;
-    box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
-    box-sizing: border-box;
-    margin-top: 3.5rem; }
-  #mappage .modal-hr {
-    border: 1px solid #0088a9; }
-  #mappage .modal.modal-open {
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer; }
-  #mappage .modal-flexBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  #mappage .modal-flex {
-    display: flex;
-    padding: 1rem;
-    align-items: baseline; }
-  #mappage .modal-closeBtn {
-    background-color: #0088a9;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    padding: 3px 9px;
-    font-size: 24px;
-    top: -1px;
-    right: 0;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out; }
-  #mappage .modal-chooseBtn {
-    width: 30%;
-    background-color: #0088a9;
-    height: 30px;
-    line-height: 10px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 0 auto;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif; }
-  #mappage .modal-chooseBtn:hover {
-    background-color: rgba(0, 136, 169, 0.8); }
-  #mappage .attackMenu {
-    position: absolute;
-    padding: 30px;
-    width: 400px;
-    height: 20%;
-    background-color: #edf0f1;
-    color: #de9f3b;
-    text-align: center;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
-    box-sizing: border-box;
-    pointer-events: none;
-    opacity: 0; }
-  #mappage .attackData {
-    max-width: 100%;
-    height: 80%;
-    background: #fff;
-    box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
-    box-sizing: border-box;
-    margin-top: 0.5rem; }
-  #mappage #troops-attackMenu.modal-open {
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer; }
-  #mappage #airplanes-attackMenu.modal-open {
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer; }
-  #mappage #ships-attackMenu.modal-open {
-    opacity: 1;
-    pointer-events: auto;
-    cursor: pointer; }
+  /* Troops Attack Modal */
+}
+#mappage .container {
+  max-width: 80%;
+  height: 70%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 3.5rem;
+}
+#mappage p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #DC7633;
+}
+#mappage .input {
+  width: 25rem;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+}
+#mappage .flex-box {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 801px) {
+  #mappage div.flex-box {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #mappage div.flex-box {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #mappage div.flex-box {
+    font-size: 3px;
+  }
+}
+#mappage .flex-1,
+#mappage .flex-2,
+#mappage .flex-3,
+#mappage .flex-4,
+#mappage .flex-5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1em;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+}
+#mappage #uname1 {
+  color: #ACA71E;
+}
+#mappage #uname2 {
+  color: #AB1A17;
+}
+#mappage #uname3 {
+  color: #AD4E8C;
+}
+#mappage #uname4 {
+  color: #26378C;
+}
+#mappage #uname5 {
+  color: #46AC35;
+}
+#mappage .gcode {
+  padding: 1rem;
+  width: 118px;
+}
+#mappage .flex-box-b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#mappage #send_moveBtn.hide {
+  opacity: 0;
+  pointer-events: none;
+  cursor: none;
+}
+#mappage .btn {
+  width: 250px;
+  background-color: #0088a9;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+#mappage .btn:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+#mappage .input:focus {
+  border: 2px solid #486255;
+}
+#mappage ::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+#mappage .mapa {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  /* width: 60%;
+  height: 50%;
+  top: 30%; */
+  stroke: black;
+  background-color: #657BBC;
+}
+#mappage .mapa path {
+  pointer-events: all;
+}
+#mappage .vladivostok:hover path, #mappage .chile-bolivia-peru-ecuador:hover path, #mappage .el-congo:hover path, #mappage .africa-del-sur:hover path,
+#mappage .egipto:hover path, #mappage .japon:hover path, #mappage .nueva-york:hover path, #mappage .vietnam:hover path, #mappage .alaska:hover path,
+#mappage .moscu:hover path, #mappage .suecia:hover path, #mappage .sudan:hover path, #mappage .brasil:hover path, #mappage .labrador:hover path,
+#mappage .vancouver:hover path, #mappage .borneo:hover path, #mappage .australia:hover path, #mappage .sumatra:hover path, #mappage .dudinka:hover path,
+#mappage .mexico:hover path, #mappage .groenlandia:hover path, #mappage .madagascar:hover path, #mappage .india:hover path, #mappage .argelia-nigeria:hover path,
+#mappage .china:hover path, #mappage .tchita:hover path, #mappage .inglaterra:hover path, #mappage .omsk:hover path, #mappage .california:hover path,
+#mappage .ottawa:hover path, #mappage .mongolia:hover path, #mappage .siberia:hover path, #mappage .aral:hover path, #mappage .medio-oriente:hover path,
+#mappage .mackenzie:hover path, #mappage .argentina-paraguay-uruguay:hover path, #mappage .polonia-yugoeslavia:hover path, #mappage .alemania:hover path,
+#mappage .espana-francia-italia:hover path, #mappage .colombia-venezuela:hover path, #mappage .islandia:hover path, #mappage .nueva-guinea:hover path {
+  fill: #060606 !important;
+}
+#mappage .vladivostokPath, #mappage .chile-bolivia-peru-ecuadorPath, #mappage .el-congoPath, #mappage .africa-del-surPath, #mappage .egiptoPath,
+#mappage .japonPath, #mappage .nueva-yorkPath, #mappage .colombia-venezuelaPath, #mappage .vietnamPath, #mappage .alaskaPath, #mappage .moscuPath,
+#mappage .sueciaPath, #mappage .sudanPath, #mappage .brasilPath, #mappage .labradorPath, #mappage .vancouverPath, #mappage .espana-francia-italiaPath,
+#mappage .borneoPath, #mappage .australiaPath, #mappage .sumatraPath, #mappage .dudinkaPath, #mappage .mexicoPath, #mappage .groenlandiaPath,
+#mappage .madagascarPath, #mappage .indiaPath, #mappage .islandiaPath, #mappage .argelia-nigeriaPath, #mappage .chinaPath, #mappage .tchitaPath,
+#mappage .inglaterraPath, #mappage .omskPath, #mappage .californiaPath, #mappage .ottawaPath, #mappage .nueva-guineaPath, #mappage .mongoliaPath,
+#mappage .siberiaPath, #mappage .aralPath, #mappage .medio-orientePath, #mappage .mackenziePath, #mappage .argentina-paraguay-uruguayPath,
+#mappage .polonia-yugoeslaviaPath, #mappage .alemaniaPath {
+  fill: black;
+  stroke: darkgoldenrod;
+  stroke-width: 0px;
+}
+#mappage .territory-box {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+#mappage .territory-box-show {
+  opacity: 1;
+}
+#mappage .flex-territory {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1em;
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  text-align: center;
+}
+#mappage .flex-territory g {
+  margin: auto;
+}
+#mappage .war-icon {
+  width: 25px;
+}
+@media screen and (max-width: 700px) {
+  #mappage div.territory-box {
+    font-size: 10px;
+  }
+  #mappage img.war-icon {
+    width: 10px;
+  }
+}
+#mappage .territory-name {
+  font-weight: bold;
+}
+#mappage .modal {
+  position: absolute;
+  padding: 30px;
+  width: 400px;
+  height: 70%;
+  background-color: #edf0f1;
+  color: #de9f3b;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+}
+#mappage .modal-data {
+  max-width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  margin-top: 3.5rem;
+}
+#mappage .modal-hr {
+  border: 1px solid #0088a9;
+}
+#mappage .modal.modal-open {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+#mappage .modal-flexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mappage .modal-flex {
+  display: flex;
+  padding: 1rem;
+  align-items: baseline;
+}
+#mappage .modal-closeBtn {
+  background-color: #0088a9;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  padding: 3px 9px;
+  font-size: 24px;
+  top: -1px;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#mappage .modal-chooseBtn {
+  width: 30%;
+  background-color: #0088a9;
+  height: 30px;
+  line-height: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+#mappage .modal-chooseBtn:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+#mappage .attackMenu {
+  position: absolute;
+  padding: 30px;
+  width: 400px;
+  height: 20%;
+  background-color: #edf0f1;
+  color: #de9f3b;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+}
+#mappage .attackData {
+  max-width: 100%;
+  height: 80%;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+}
+#mappage #troops-attackMenu.modal-open {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+#mappage #airplanes-attackMenu.modal-open {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+#mappage #ships-attackMenu.modal-open {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
 
 /* Sign Up CSS*/
 body#newgamepage {
   background-color: beige;
   background-size: cover;
   height: auto;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 #newgamepage .container {
   max-width: 649px;
@@ -1635,7 +1914,8 @@ body#newgamepage {
   box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
   box-sizing: border-box;
   padding: 40px;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+}
 #newgamepage p {
   text-align: center;
   letter-spacing: 1px;
@@ -1644,7 +1924,8 @@ body#newgamepage {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 3.5rem;
-  color: #DC7633; }
+  color: #DC7633;
+}
 #newgamepage .input {
   width: 25rem;
   padding: 20px;
@@ -1654,11 +1935,13 @@ body#newgamepage {
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #newgamepage .flex-box {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 #newgamepage .flex-1,
 #newgamepage .flex-2,
 #newgamepage .flex-3,
@@ -1667,13 +1950,15 @@ body#newgamepage {
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  align-items: baseline; }
+  align-items: baseline;
+}
 #newgamepage .iuname1,
 #newgamepage .iuname2,
 #newgamepage .iuname3,
 #newgamepage .iuname4 {
   padding: 1rem;
-  width: 118px; }
+  width: 118px;
+}
 #newgamepage .btn {
   width: 250px;
   background-color: #0088a9;
@@ -1685,13 +1970,106 @@ body#newgamepage {
   color: #fff;
   cursor: pointer;
   border: none;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 #newgamepage .btn:hover {
-  background-color: rgba(0, 136, 169, 0.8); }
+  background-color: rgba(0, 136, 169, 0.8);
+}
 #newgamepage .input:focus {
-  border: 2px solid #486255; }
+  border: 2px solid #486255;
+}
 #newgamepage ::-webkit-input-placeholder {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Log In CSS*/
+body#gameendedpage {
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#gameendedpage .container {
+  max-width: 649px;
+  height: 510px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 7em;
+}
+#gameendedpage p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #DC7633;
+}
+#gameendedpage .input {
+  width: 25rem;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+}
+#gameendedpage .flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gameendedpage .flex-1,
+#gameendedpage .flex-2,
+#gameendedpage .flex-4 {
+  display: flex;
+  padding: 1rem;
+  align-items: baseline;
+}
+#gameendedpage .flex-1 div {
+  padding: 7px;
+  margin-left: 2rem;
+  font-size: 1.65rem;
+}
+#gameendedpage .flex-2 div {
+  padding: 7px;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+#gameendedpage .btn {
+  width: 250px;
+  background-color: #0088a9;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-align: center;
+}
+#gameendedpage .flex-4 a:link, #gameendedpage a:visited {
+  text-decoration: none;
+}
+#gameendedpage .btn:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+#gameendedpage .input:focus {
+  border: 2px solid #486255;
+}
+#gameendedpage ::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Navbar CSS */
 .navbar#navloged {
@@ -1707,80 +2085,94 @@ body#newgamepage {
   position: sticky;
   /* OPTION 3 */
   /* move default logo position to left and hide it when window size is less than 886px */
-  /* uncomment .logo and .link_logo ^^up there and use the ones down here */ }
+  /* uncomment .logo and .link_logo ^^up there and use the ones down here */
+}
+.navbar#navloged .logo {
+  width: 4rem;
+  height: 5rem;
+  left: 5.313em;
+  display: inline-block;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+.navbar#navloged .background-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.navbar#navloged .link_logo {
+  margin-right: 40rem;
+  display: inline-block;
+  overflow: auto;
+}
+.navbar#navloged .texto-bienvenida {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 880px) {
   .navbar#navloged .logo {
-    width: 4rem;
-    height: 5rem;
-    left: 5.313em;
-    display: inline-block;
-    margin-left: 4rem;
-    margin-top: 1rem; }
-  .navbar#navloged .background-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%; }
+    display: none;
+  }
   .navbar#navloged .link_logo {
-    margin-right: 40rem;
-    display: inline-block;
-    overflow: auto; }
-  .navbar#navloged .texto-bienvenida {
-    text-align: center;
-    font-family: "Montserrat", sans-serif; }
-  @media screen and (max-width: 880px) {
-    .navbar#navloged .logo {
-      display: none; }
-    .navbar#navloged .link_logo {
-      display: none; } }
-  .navbar#navloged .navbar_items {
-    list-style: none;
-    display: inline-block;
-    position: fixed;
-    right: 10.875em;
-    top: 2.5em;
-    white-space: nowrap; }
-  .navbar#navloged .navbar_item {
-    font-family: "Montserrat", sans-serif;
-    padding: 0px 20px;
-    font-weight: 500;
-    font-size: 1em;
-    color: #edf0f1;
-    text-decoration: none;
-    display: inline-block;
-    overflow: hidden; }
-  .navbar#navloged .navbar_link,
-  .navbar#navloged .navbar_link:link,
-  .navbar#navloged .navbar_link:visited {
-    transition: all 0.3s ease 0s;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    color: #edf0f1;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block; }
-  .navbar#navloged .navbar_link:hover {
-    color: black;
-    transform: scale(1.2); }
-  .navbar#navloged .log_out {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: #0088a9;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-    position: fixed;
-    right: 3.625em;
-    top: 2em;
-    overflow: hidden; }
-  .navbar#navloged .log_out:hover {
-    background-color: rgba(0, 136, 169, 0.8); }
+    display: none;
+  }
+}
+.navbar#navloged .navbar_items {
+  list-style: none;
+  display: inline-block;
+  position: fixed;
+  right: 10.875em;
+  top: 2.5em;
+  white-space: nowrap;
+}
+.navbar#navloged .navbar_item {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+}
+.navbar#navloged .navbar_link,
+.navbar#navloged .navbar_link:link,
+.navbar#navloged .navbar_link:visited {
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.navbar#navloged .navbar_link:hover {
+  color: black;
+  transform: scale(1.2);
+}
+.navbar#navloged .log_out {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  position: fixed;
+  right: 3.625em;
+  top: 2em;
+  overflow: hidden;
+}
+.navbar#navloged .log_out:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
 
 /* End of Navabar CSS*/
 
